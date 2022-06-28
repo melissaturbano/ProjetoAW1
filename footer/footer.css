@@ -1,0 +1,28 @@
+/*Autoria: Nicole Miguel */
+
+/*css aplicado em todo o html e body*/
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+/*css aplicado no footer, centralizando os elementos, estilizando a fonte, cor de fundo e deixando com posição fixa*/
+footer {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: rgb(2, 34, 41);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+}
+
+/*css aplicado na hr*/
+.linha_footer {
+    border: 0;
+    border-top: 1px dashed#CCC;
+    margin-right: 5%;
+    margin-left: 5%;
+}
