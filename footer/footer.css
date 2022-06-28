@@ -9,7 +9,7 @@ html, body {
 /*css aplicado no footer, centralizando os elementos, estilizando a fonte, cor de fundo e deixando com posição fixa*/
 footer {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rubik', Helvetica, sans-serif;
     color: #d4d4d4;
     font-weight: 400;
     font-size: small;
