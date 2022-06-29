@@ -1,4 +1,6 @@
-/*Autoria: Nicole Miguel */
+/*Header.css codado por Nicole Miguel
+Header.css revisado por Isabella Valerio*/
+
 html, body {
     height: 100%;
     width: 100%;
@@ -7,12 +9,13 @@ html, body {
 /*estilizando a fonte, cor de fundo e definindo posição fixa do header (cabeçalho)*/
 header {
     background-color: rgb(2, 34, 41);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rubik', Helvetica, sans-serif;
     color: rgb(255, 255, 255);
     top: 0;
     left: 0;
     width: 100%;
     position: fixed;
+    height: 10%;
 }
 
 /*css aplicado em uma div para posicioná-la na esquerda*/
@@ -22,23 +25,36 @@ header {
     float: left;
 }
 
+/*configuração da logo*/
+#img_logo {
+    padding: 8px;
+}
+
 /*posicionando uma escrita e a linha que ficam sobre o logo*/
 #letra_logo, #linha_logo{
     position: absolute;
-    font-weight: 900;
-    font-size: 30px;
-    margin-left: 20px;
+    font-weight: 800;
+    font-size: 16px;
+    margin-left: 13px;
     z-index: 0;
 }
 
-#linha_logo {
-    margin-top: 60px;
-    width: 70px;
-    border: 5px solid rgb(255, 255, 255);
+#letra_logo {
+    margin-top: 10px;
 }
 
+#linha_logo {
+    margin-top: 25px;
+    width: 36px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+/*estilizando o título*/
 #titulo {
-    margin-left: 30px;
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 130%;
+    text-transform: uppercase;
 }
 
 /*css aplicado em uma div para posicioná-la na direita*/
@@ -55,6 +71,7 @@ header {
     border: none;
     background-color: rgb(2, 34, 41);
     margin-right: 30px;
+    margin-bottom: 50px;
 }
 
 /*estilizando o form que contém a caixa de pesquisa, uma imagem de lupa e botão Ok*/
@@ -62,8 +79,8 @@ header {
     background-color: rgb(155, 155, 155);
     border: 2px solid rgb(214, 209, 209);
     border-radius: 10px;
-    width: 300px;
-    height: 32px;
+    width: 198px;
+    height: 25px;
 }
 
 /*ajustes na caixa de pesquisa propriamente dita*/
@@ -72,10 +89,10 @@ header {
     background-color: transparent;
     padding-left: 5px;
     font-style: italic;
-    font-size: 18px;
-    border:none;
-    height:32px;
-    width: 193px;
+    font-size: 12px;
+    border: none;
+    height: 25px;
+    width: 110px;
 }
 
 /*estilizando o botão Ok da caixa de pesquisa*/
@@ -84,8 +101,8 @@ header {
     border: none;
     border-radius: 0 10px 10px 0;
     float: left;
-    height: 32px;
-    width: 50px;
+    height: 25px;
+    width: 30px;
     font-weight: bold;
     background: none;
     color: rgb(80, 76, 76);
@@ -100,6 +117,11 @@ header {
 /*ajustes na imagem da lupa*/
 form img {
     float:left;
-    width: 50px;
-    height: 32px;
+    width: 35px;
+    height: 25px;
+}
+
+#search, #caixa_pesquisa {
+    margin-bottom: 15%;
+    margin-right: 16px;
 }
