@@ -1,0 +1,33 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* HEADER */
+
+/* Estilizando a fonte, cor de fundo e definindo posição fixa do header (cabeçalho) */
+header {
+    background-color: rgb(2, 34, 41);
+    font-family: 'Rubik', Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    height: 10%;
+}
+
+/* Posicionando div na esquerda */
+.logo {
+    align-items: center;
+    display: flex;
+    float: left;
+}
+
+/* Configuração da logo */
+#logo__img{
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+}
