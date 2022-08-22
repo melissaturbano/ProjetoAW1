@@ -26,8 +26,89 @@ header {
 }
 
 /* Configuração da logo */
-#logo__img{
+#logo_img{
     width: 50px;
     height: 50px;
     padding: 8px;
+}
+
+/* Posicionando uma escrita e a linha que ficam sobre o logo */
+#letra_logo, #linha_logo{
+    position: absolute;
+    font-weight: 800;
+    font-size: 16px;
+    margin-left: 13px;
+    z-index: 0;
+}
+
+#logo_letra {
+    margin-top: 10px;
+}
+
+#logo_linha {
+    margin-top: 25px;
+    width: 36px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+/* Estilizando os botões help e faq */
+#help, #faq {
+    cursor: pointer;
+    border: none;
+    background-color: rgb(2, 34, 41);
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+/* Estilizando o form que contém a caixa de pesquisa, uma imagem de lupa e botão OK */
+#caixa_pesquisa {
+    background-color: rgb(155, 155, 155);
+    border: 2px solid rgb(214, 209, 209);
+    border-radius: 10px;
+    width: 198px;
+    height: 25px;
+}
+
+/* Ajustes na caixa de pesquisa propriamente dita */
+#search {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 12px;
+    border: none;
+    height: 25px;
+    width: 110px;
+}
+
+/* Estilizando o botão Ok da caixa de pesquisa */
+#button_ok {
+    cursor: pointer;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    float: left;
+    height: 25px;
+    width: 30px;
+    font-weight: bold;
+    background: none;
+    color: rgb(80, 76, 76);
+}
+  
+/* Ao passar o mouse sobre o botão Ok, ele muda de cor */
+#button_ok {
+    background: rgb(80, 76, 76);
+    color: rgb(214, 209, 209);
+}
+  
+/* Ajustes na imagem da lupa */
+#search_img {
+    float:left;
+    width: 35px;
+    height: 25px;
+}
+
+/* Estilizando pesquisa e respectiva caixa */
+#search, #caixa_pesquisa {
+    margin-bottom: 15%;
+    margin-right: 16px;
 }
