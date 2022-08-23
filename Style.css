@@ -9,13 +9,14 @@ html, body {
 /* Estilizando a fonte, cor de fundo e definindo posição fixa do header (cabeçalho) */
 header {
     background-color: rgb(2, 34, 41);
-    font-family: 'Rubik', Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
     top: 0;
     left: 0;
     width: 100%;
     position: fixed;
     height: 10%;
+    align-items: center;
 }
 
 /* Posicionando div na esquerda */
@@ -29,26 +30,31 @@ header {
 #logo_img{
     width: 50px;
     height: 50px;
-    padding: 8px;
+    padding: 15px;
 }
 
 /* Posicionando uma escrita e a linha que ficam sobre o logo */
-#letra_logo, #linha_logo{
+#logo_leter, #logo_line{
     position: absolute;
-    font-weight: 800;
-    font-size: 16px;
-    margin-left: 13px;
+    font-weight: 700;
+    font-size: 25px;
     z-index: 0;
+    margin-left: 80px;
 }
 
-#logo_letra {
+#logo_leter {
     margin-top: 10px;
+    margin-left: 83px;
 }
 
-#logo_linha {
+#logo_line {
     margin-top: 25px;
-    width: 36px;
+    width: 55px;
     border: 2px solid rgb(255, 255, 255);
+}
+
+#logo_title {
+    margin-left: 76px;
 }
 
 /* Estilizando os botões help e faq */
@@ -58,6 +64,11 @@ header {
     background-color: rgb(2, 34, 41);
     margin-right: 30px;
     margin-bottom: 50px;
+}
+
+#help {
+    width: 28px;
+    height: 28px;
 }
 
 /* Estilizando o form que contém a caixa de pesquisa, uma imagem de lupa e botão OK */
@@ -109,6 +120,6 @@ header {
 
 /* Estilizando pesquisa e respectiva caixa */
 #search, #caixa_pesquisa {
-    margin-bottom: 15%;
-    margin-right: 16px;
+    margin-bottom: 0;
+    margin-right: 0;
 }
