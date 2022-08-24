@@ -163,7 +163,7 @@ header {
     font-family: 'Rubik', Helvetica, sans-serif;
     font-size: 80%;
     margin-top: 51px;
-    margin-left: -8px;
+    
 }
         
 .menu > ul{
@@ -335,11 +335,17 @@ footer {
 
 /* menu em geral */
 .aside1 {
-    margin-top: 5%;
+   /* margin-top: 5%;
     margin-left: 60%; 
-    margin-right: 15%;
+    margin-right: 15%;*/
     width: 400px;
     height: auto;
+
+    margin-right: 5%;
+    margin-top: -40%;
+    float: right;
+    color: rgb(0, 0, 0);
+    
 
 }
 
@@ -353,17 +359,19 @@ footer {
     float:none;
     align-items: center;
     font-family: 'Rubik', Helvetica, sans-serif;
-    color: rgb(0, 0, 0);
+    color: black;
     font-size: 18px;
+    list-style: none;
 }
 
 .aside1 a{
     padding: 1px;
     display: block;
     text-decoration: none;
-    background-color: rgba(56, 98, 102, 100);
+    background-color: rgb(170, 170, 170); /*rgba(56, 98, 102, 100);*/
     text-align: center;
     align-items: center;
+    color: black;
 }
 
 /* menu sobre o mouse */
@@ -380,8 +388,11 @@ footer {
 
 /* menu em geral */
 .aside-menu{
-    margin-left: 60%;
-    margin-top: 0px;
+    margin-right: 5%;
+    margin-top: -30%;
+
+    display: inline;
+    float: right;
 }
 
 .aside-menu ul li{
@@ -411,6 +422,7 @@ footer {
     background-color: rgba(87, 145, 156);
     text-align: center;
     align-items: center;
+    color: black;
 }
 
 .aside-menu ul ul{
