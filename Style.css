@@ -1,474 +1,115 @@
+/* GERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 html, body {
     height: 100%;
     width: 100%;
 
     padding: 0px;
     margin: 0px;
-}
 
-
-/*HEADER*/
-
-/*estilizando a fonte, cor de fundo e definindo posição fixa do header (cabeçalho)*/
-header {
-    /*background-color: rgb(2, 34, 41);
-    font-family: 'Rubik', Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    top: 0;
-    left: 0;
-    width: 100%;
-    position: fixed;
-    height: 10%;*/
-    background-color: rgb(2, 34, 41);
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    top: 0;
-    left: 0;
-    width: 100%;
-    position: fixed;
-    height: 11%;
-    align-items: center;
-    
 }
 
-/*css aplicado em uma div para posicioná-la na esquerda*/
-#logo {
+
+/* HEADER */
+
+/* Estilizando a fonte, cor de fundo e definindo posição fixa do header (cabeçalho) */
+
+header {
+    background-color: #052c32;
+    color: #ffffff;
+    position: fixed;
+    height: 8%;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* Posicionando logo */
+
+.logo {
     align-items: center;
     display: flex;
     float: left;
 }
 
-/*configuração da logo*/
-#img_logo {
-    /*padding: 8px;*/
+
+/* Configuração da logo */
+
+#logo_letra {
+    margin-left: 15px;
+}
+
+#logo_img {
     width: 50px;
     height: 50px;
-    padding: 15px;
+    padding: 10px;
+    margin-left: 5px;
+    cursor: pointer;
 }
 
-/*posicionando uma escrita e a linha que ficam sobre o logo*/
-#letra_logo, #linha_logo{
-    /*position: absolute;
-    font-weight: 800;
-    font-size: 16px;
-    margin-left: 13px;
-    z-index: 0;*/
-
-    position: absolute;
-    font-weight: 700;
-    font-size: 25px;
-    z-index: 0;
-    margin-left: 80px;
-}
-
-#letra_logo {
-    margin-top: 15px;
-    margin-left: 83px;
-}
-
-#linha_logo {
-    margin-top: 40px;
+#logo_linha {
+    margin-top: 30px;
     width: 55px;
-    border: 2px solid rgb(255, 255, 255);
+    margin-left: -55px;
+    border: 2px solid #ffffff;
 }
 
-/*estilizando o título*/
-#titulo {
-    margin-top: 15px;
-    margin-left: 76px;
-    font-size: 130%;
-    text-transform: uppercase;
+#logo_titulo {
+    margin-left: 20px;
 }
 
-/*css aplicado em uma div para posicioná-la na direita*/
-#buttons {
-    align-items: center;
-    margin-top: 25px;
-    display: flex;
-    float: right;
-    justify-content: center;
+.botoes {
+    padding: 18px;
 }
 
-/*estilizando os botões help e faq*/
-#help, #faq {
+#help_bt, #faq_bt {
     cursor: pointer;
     border: none;
-    background-color: rgb(2, 34, 41);
-    margin-right: 50px;
-    margin-bottom: 50px;
+    background-color: #052c32;
+    margin-left: 15px;
 }
 
-/*estilizando o form que contém a caixa de pesquisa, uma imagem de lupa e botão Ok*/
-#caixa_pesquisa {
-    background-color: rgb(155, 155, 155);
-    border: 2px solid rgb(214, 209, 209);
-    border-radius: 10px;
-    width: 198px;
-    height: 25px;
-    margin-top: 15px;
+#help_img {
+    width: 35px;
+    height: 35px;
 }
 
-/*ajustes na caixa de pesquisa propriamente dita*/
-#search {
-    float: left;
-    background-color: transparent;
-    padding-left: 5px;
+#faq_img {
+    width: 80px;
+    height: 40px;
+}
+
+#lupa {
+    color: #ffffff;
     font-style: italic;
     font-size: 12px;
     border: none;
-    height: 25px;
-    width: 110px;
-}
-
-/*estilizando o botão Ok da caixa de pesquisa*/
-#btnOk {
-    cursor: pointer;
-    border: none;
-    border-radius: 0 10px 10px 0;
-    float: left;
-    height: 25px;
-    width: 30px;
-    font-weight: bold;
-    background: none;
-    color: rgb(80, 76, 76);
-}
-  
-/*ao passar o mouse sobre o botão Ok, ele muda de cor*/
-#btnOk:hover {
-    background: rgb(80, 76, 76);
-    color: rgb(214, 209, 209);
-}
-  
-/*ajustes na imagem da lupa*/
-#img_lupa {
-    float:left;
-    width: 35px;
-    height: 25px;
-}
-
-/*estilizando pesquisa e respectiva caixa*/
-#search, #caixa_pesquisa {
-    margin-bottom: 15%;
-    margin-right: 16px;
-}
-
-
-/*MENU*/
-
-/*config da faixa*/
-.menu{
-    width: 100%;
-    height: 55px;
-    background-color: #918f8f;
-    font-family: 'Rubik', Helvetica, sans-serif;
-    font-size: 80%;
-    margin-top: 51px;
-    
-}
-        
-.menu > ul{
-    list-style: none;	
-    margin-left:20%;
-    font-weight: bold;
-    
-    
-}
-
-/*config de dentro da faixa*/
-.menu ul li{
-    width: 150px;
-    float: left;
-    /*aligntems: center;*/
-    
-}
-
-.menu a{
-    padding: 20px;
-    display: block;
-    text-decoration: none;
-    background-color: #918f8f;
-    text-align: center;
-    align-items: center;
-   /*height: 10px;*/
-    color: rgb(0, 0, 0);
-    
-    
-}
-
-.menu ul ul{
-    list-style: none;
-    position: absolute;
-    visibility: hidden;
-    
-    
-}
-
-/*sobre o mouse*/
-.menu ul li:hover ul{
-    visibility: visible;
-}
-        
-.menu a:hover{
-    background-color: #e2e2e2;
-}
-
-
-
-/*submenu*/
-.menu ul ul li{
-    
-    margin-top: 1px;
-    margin-left: -38px;
-    float: none;
-    border-bottom: solid 1px #ccc;
-    font-weight: 500;
-
-
-    
-/*
-    float:none;
-    border-bottom: solid 1px #ccc;*/
-}
-
-.menu ul ul li a{
-    background-color: #c4c3c3;
-    /*
-    height: 6%;
-    text-align: left;
-    text-indent: 2px;*/
-}
-
-
-
-
-
-/*FOOTER*/
-
-/*css aplicado no footer, centralizando os elementos, estilizando a fonte, cor de fundo e deixando com posição fixa*/
-footer {
-    text-align: center;
-    font-family: 'Rubik', Helvetica, sans-serif;
-    color: #d4d4d4;
-    font-weight: 400;
-    font-size: 10px;
-    background-color: rgb(2, 34, 41);
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 7%;
-    position: fixed;
-}
-
-.linha {
-    margin: 3px;
-}
-
-/*css aplicado na hr*/
-.linha_footer {
-    background-image: linear-gradient(to right, transparent, rgb(158, 158, 158), transparent); 
-    border: 0;
-    height: 1px;
-    margin-right: 5%;
-    margin-left: 5%;
-}
-
-
-/*ARTICLE*/
-
-#sobreMPU {
-    display: flex;
-    background-color: rgb(237, 237, 237);
-    width: 60%;
-    height: 100px;
-    padding: 20px;
-    margin-top: 50px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-#fotoMPU {
-    height: 180px;
-    width: 30%;
-    margin: 10px;
-    border: 2px solid rgb(9, 29, 94);
-    margin-left: 12%;
-    margin-right: 12%;
-}
-
-#areaCandidato {
-    font-family: 'Rubik', Helvetica, sans-serif;
-    text-transform: uppercase;
-}
-
-.linha_candidato {
-    height: 2px;
-    width: 50%;
-    float: left;
-    margin-top: 0px;
-}
-
-#paginaCandidato, #concursoRemocao {
-    margin: 10px;
-    margin-top: 60px;
-}
-
-#paginaCandidato > img, #concursoRemocao > img {
-    float: left;
-    border: none;
-    width: 120px;
-    height: 120px;
-}
-
-#btnCandidato, #btnConcurso {
-    cursor: pointer;
-    border: none;
+    background-color: #717171;
+    border: 2px solid #d7faff;
     border-radius: 10px;
-    height: 120px;
-    width: 35%;
-    font-weight: bold;
-    background-color: rgb(255, 255, 122);
-    border: 2px solid rgb(255, 255, 0);
-    font-size: 18px;  
-}
-
-
-/*ASIDE*/
-
-/* menu em geral */
-.aside1 {
-   /* margin-top: 5%;
-    margin-left: 60%; 
-    margin-right: 15%;*/
-    width: 400px;
-    height: auto;
-
-    margin-right: 5%;
-    margin-top: -40%;
-    float: right;
-    color: rgb(0, 0, 0);
-    
-
-}
-
-        
-.aside1 > ul{
-    margin-left: 50px;
-}
-
-/* config de dentro do menu */
-.aside1 ul li{
-    float:none;
-    align-items: center;
-    font-family: 'Rubik', Helvetica, sans-serif;
-    color: black;
-    font-size: 18px;
-    list-style: none;
-}
-
-.aside1 a{
-    padding: 1px;
-    display: block;
-    text-decoration: none;
-    background-color: rgb(170, 170, 170); /*rgba(56, 98, 102, 100);*/
+    width: 198px;
+    height: 25px;
     text-align: center;
-    align-items: center;
-    color: black;
 }
 
-/* menu sobre o mouse */
-.aside1 ul li:hover {
-    visibility: visible;
-    background-color: #a5a5a5;
-}
-        
-.aside1 a:hover{
-    background-color: #a5a5a5;
+#ok_bt {
+    background-color: #052c32;
+    color: #ffffff;
 }
 
-/*--*/
-
-/* menu em geral */
-.aside-menu{
-    margin-right: 5%;
-    margin-top: -30%;
-
-    display: inline;
-    float: right;
+#ok_bt:hover {
+    background: #defbff;
+    color: #000000;
 }
 
-.aside-menu ul li{
-    width: 350px;
-    float: none;
+#lupa_img {
+    float: left;
+    width: 45px;
+    height: 40px;
 }
-        
-.aside-menu > ul{
-    list-style: none; 
-    position: relative;
-    margin-left: 50px;
-}
-
-/* config de dentro do menu */
-.aside-menu ul li{
-    float:none;
-    align-items: center;
-    font-family: 'Rubik', Helvetica, sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-}
-
-.aside-menu a{
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    background-color: rgba(87, 145, 156);
-    text-align: center;
-    align-items: center;
-    color: black;
-}
-
-.aside-menu ul ul{
-    list-style: none;
-    position: absolute;
-    visibility: hidden;
-}
-
-/* menu sobre o mouse */
-.aside-menu ul li:hover ul{
-    visibility: visible;
-}
-        
-.aside-menu a:hover{
-    background-color: #a5a5a5;
-}
-
-/* submenu */
-.aside-menu ul ul li{
-    float:none;
-    border-bottom: solid 1px rgb(255, 255, 255);
-    font-weight: 500px;
-}
-
-.aside-menu ul ul li a{
-    background-color: #bdbaba;
-    height: 6%;
-    text-align: left;
-    text-indent: 2px;
-    text-align: center;
-    
-}
-  
-.aside-menu ul ul{
-    position: static;
-    overflow: hidden;
-    max-height: 0;
-    transition: all .4s;
-}
-
-.aside-menu ul li:hover ul{
-    height: auto;
-    max-height: 200px;
-    transition: all .4s;
-}
-
-
-
-
