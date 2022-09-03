@@ -24,7 +24,6 @@ header {
     background-color: #052c32;
     color: #ffffff;
     position: fixed;
-    height: 8%;
     align-items: center;
     width: 100%;
 }
@@ -65,7 +64,9 @@ header {
 }
 
 .botoes {
-    padding: 18px;
+    margin: 15px 20px 0 18px;
+    display: flex;
+    float: right;
 }
 
 #help_bt, #faq_bt {
@@ -113,3 +114,7 @@ header {
     width: 45px;
     height: 40px;
 }
+
+
+/* MENU */
+
