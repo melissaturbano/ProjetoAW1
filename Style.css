@@ -54,8 +54,8 @@ header {
 }
 
 #logo_linha {
-    margin-top: 27px;
-    width: 45px;
+    margin-top: 22px;
+    width: 42px;
     margin-left: -43px;
     border: 2px solid #ffffff;
 }
@@ -132,13 +132,13 @@ header {
 
 .menu {
     background-color: #a5a4a4;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
     width: 100%;
     margin-top: 40px;
-    height: 25px;
+    height: 28px;
     align-items: center;
     text-align: center;
-    line-height: 25px;
+    line-height: 28px;
     float: left;
 }
 
@@ -196,6 +196,27 @@ header {
 .menu ul ul li a {
     color: #ffffff;
     font-weight: normal;
+}
+
+
+/* SOBRE MPU */
+
+#MPU_sobre {
+    margin-top: 100px;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: justify;
+}
+
+#MPU_img {
+    height: 180px;
+    width: 30%;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 6px 6px 16px 0 rgba(0,0,0,0.4);
+    align-items: center;
+    margin-left: 33%;
+    margin-top: 2%;
 }
 
 
