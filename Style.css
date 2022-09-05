@@ -226,10 +226,13 @@ header {
     margin-top: 30px;
     text-transform: uppercase;
     margin-left: 0;
+    height: 100px;
+    width: 40%px; 
 }
 
 #candidato_titulo {
     margin-left: 20px;
+    
 }
 
 #candidato_linha {
@@ -242,12 +245,17 @@ header {
 .concursoRemocao, #candidato_pag {
     margin: 10px;
     margin-top: 60px;
+    height: 100px;
+    width: 40%px;
+    
+    
 }
 
 .concursoRemocao > img, #candidato_pag > img {
     border: none;
     width: 120px;
     height: 120px;
+    float: left;
 }
 
 #candidato_btn, #concurso_btn {
@@ -261,6 +269,7 @@ header {
     border: 2px solid rgb(252, 252, 126);
     font-size: 18px;
     text-transform: uppercase;
+    float: left;
 }
 
 
@@ -277,6 +286,7 @@ footer {
     position: fixed;
     line-height: 20px;
     font-size: 10px;
+    
 }
 
 .footer_linha {
@@ -286,3 +296,131 @@ footer {
     margin-right: 5%;
     margin-left: 5%;
 }
+
+
+/* menu lateral (aside) */
+.aside-menu{
+    margin-left: 60%;
+}
+
+.aside-menu ul li{
+    width: 350px;
+    float: none;
+    
+}
+        
+.aside-menu > ul{
+    list-style: none;	
+    position: relative;
+    margin-left: 50px;
+}
+
+/* config de dentro do menu */
+.aside-menu ul li{
+    float:none;
+    align-items: center;
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.aside-menu a{
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    background-color: rgba(87, 145, 156);
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    
+}
+
+.aside-menu ul ul{
+    list-style: none;
+    position: absolute;
+    visibility: hidden;
+}
+
+/* menu sobre o mouse */
+.aside-menu ul li:hover ul{
+    visibility: visible;
+}
+        
+.aside-menu a:hover{
+    background-color: #a5a5a5;
+}
+
+/* submenu */
+.aside-menu ul ul li{
+    float:none;
+    border-bottom: solid 1px rgb(255, 255, 255);
+    font-weight: 500px;
+}
+
+.aside-menu ul ul li a{
+    background-color: #bdbaba;
+    height: 6%;
+    text-align: left;
+    text-indent: 2px;
+    text-align: center;
+    
+}
+  
+.aside-menu ul ul{
+    position: static;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .4s;
+}
+
+.aside-menu ul li:hover ul{
+    height: auto;
+    max-height: 200px;
+    transition: all .4s;
+}
+
+
+
+/*ASIDE*/
+.aside{
+    margin-left: 60%;
+    margin-top: 30px;
+}
+
+.aside ul li{
+    width: 350px;
+    float: none;
+    
+}
+        
+.aside > ul{
+    list-style: none;	
+    position: relative;
+    margin-left: 50px;
+}
+
+.aside a{
+    display: block;
+    text-decoration: none;
+    background-color: rgba(87, 145, 156);
+    text-align: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* aside sobre o mouse*/ 
+.aside ul li:hover {
+    visibility: visible;
+    background-color: #a5a5a5;
+}
+.aside a:hover{
+    background-color: #a5a5a5;
+}
+
+/* config de dentro do aside */
+.aside ul li{
+    float:none;
+    align-items: center;
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-size: 20px;
+}
+
