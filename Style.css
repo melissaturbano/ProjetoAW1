@@ -140,6 +140,7 @@ header {
     text-align: center;
     line-height: 28px;
     float: left;
+    position: fixed;
 }
 
 .menu > ul > li {
@@ -194,7 +195,10 @@ header {
     font-weight: normal;
 }
 
-
+#subMenu {
+    display: flex;
+    flex-direction: column;
+}
 /* ARTICLE */
 
 #MPU_sobre {
