@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- tags meta que auxiliam nos mecanismos de pesquisa-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Isabella Valerio, Melissa Turbano, Nicole Miguel">
+        <meta name="description" content="Home - reestruturação do site MPU">
+        <meta name="keywords" content="html, home, mpu, governo, seleção">
+        <link rel="stylesheet" type="text/css" href="faq.css">
+        <link rel="shortcut icon" type="image/x-icon" href="Image/logo.png">
+        <title>Home</title>
+    </head>
+
+
+
+    <body>
+        <header>
+            <!-- Inserção do logo e título da página-->
+            <div class="logo">
+                <a href="#"></a><img id="logo_img" src="Image/logo.png" alt="Logo MPU"></a>
+                <h2 id="logo_letra">MPU</h2>
+                <hr id="logo_linha">
+                <h1 id="logo_titulo">Ministério Público da União</h1>
+            </div>
+           
+            <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
+            <div class="botoes">
+                <a href="#"><button id="help_bt"><img src="Image/help.jpg" id="help_img"></button></a>
+                <a href="#"><button id="faq_bt"><img src="Image/faq.jpg" id="faq_img"></button></a>
+                <form id="caixa_pesquisa">
+                    <img id="lupa_img" src="Image/search.png" alt="Lupa de pesquisa"/>
+                    <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
+                    <button type="submit" id="ok_bt">OK</button>
+                </form>
+            </div>
+        </header>
+
+        <!-- Inserção de botão menu responsivo -->
+        <input type="checkbox" id="bt_menu">
+        <label for="bt_menu">&#9776;</label>
+
+        <!-- Inserção de estrutura do menu -->
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Institucional</a>
+                    <ul>
+                        <li id="subMenu"><a href="#">Sobre o MPU</a>
+                        <li id="subMenu"><a href="#">Histórico</a>
+                    </ul>
+                </li>
+                <li><a href="#">Documentos</a>
+                    <ul>
+                        <li id="subMenu"><a href="#">Tabelas</a>
+                        <li id="subMenu"><a href="#">Demonstrativos</a>
+                        <li id="subMenu"><a href="#">Portaria Conjunta</a>
+                    </ul>
+                </li>
+                <li><a href="#">Legislação</a></li>
+                <li><a href="#">Órgãos</a>
+                    <ul>
+                        <li id="subMenu"><a href="#">AUDIN</a>
+                        <li id="subMenu"><a href="#">ESMPU</a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!--
+        <aside>
+            <div class="aside-menu">
+                <ul>
+                    <li><a href="#">Concursos</a>
+                        <ul>
+                            <li><a href="#">10º Concurso</a>
+                            <li><a href="#">9º Concurso</a>
+                            <li><a href="#">8º Concurso</a>
+                            <li><a href="#">7º Concurso</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Órgãos Relacionados</a>
+                        <ul>
+                            <li><a href="#">CNMP</a>
+                            <li><a href="#">PGR</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Ramos do MPU</a>
+                        <ul>
+                            <li><a href="#">Ministério Público Federal (MPF)</a>
+                            <li><a href="#">Ministério Público do Trabalho (MPT)</a>
+                            <li><a href="#">Ministério Público do DF</a>
+                            <li><a href="#">Ministério Público Militar (MPM)</a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="aside">
+                <ul>
+                    <li><a href="#">Concursos MPU e MPF<a></li>
+                    <li><a href="#">Transparência Ministério Público</a></li>
+                </ul>
+            </div>
+            
+        </aside> -->
+
+
+
+        <section class="faq">
+            <h1 id="faq_titulo">FAQ - DÚVIDAS FREQUENTES </h1>
+            <hr id="faq_linha">
+            <h2 id="faq_subtitulo">Ministério Público (MP), um quarto poder?</h2>
+            <hr id="faq_sublinha">
+            <div id = "questao01">
+                <p>Se Monstequieu tivesse escrito hoje o Espírito das Leis, por certo não seria tríplice, mas quádrupla, a divisão de...</p>
+            </div>
+            <h2 id="faq_subtitulo">MPU x MPE</h2>
+            <hr id="faq_sublinha">
+            <div id = "questao01">
+                <p>O Ministério Público pode ser FEDERAL ou ESTADUAL. No primeiro, há os Procuradores da República que atuam junto aos Juizes Federais (Justiça Federal) e pertencem ao...</p>
+            </div>
+            <div id = "contato">
+                <p>Entre em <a href="#">contato</a> e envie e sua dúvida. </p> 
+            </div>
+        </section>
+
+        <footer>
+            <p class="linha"> SAF Sul Quadra 4 Conjunto C - Brasília / DF - CEP 70050-900 - PABX: (61) 3105-5100</p>
+            <hr class="footer_linha">
+            <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
+        </footer>
+    </body>
+</html>
