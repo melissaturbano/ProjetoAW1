@@ -4,11 +4,13 @@ Reelaboração do site http://www.mpu.mp.br/
 
 ## Linguagens
 - HTML;
-- CSS.
+- CSS;
+- JS.
 
 
 ## Progresso
 - Parte 1.
+- Parte 2.
 
 
 ## Integrantes
