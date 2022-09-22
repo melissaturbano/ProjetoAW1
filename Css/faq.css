@@ -9,7 +9,8 @@
 
 #faq_titulo {
     margin-left: 5%;
-    font-size: 40px;
+    /*font-size: 40px;*/
+    font-size: 200%;
     
 }
 
@@ -22,7 +23,8 @@
 
 #faq_subtitulo {
     margin-left: 7%;
-    font-size: 25px;
+    /*font-size: 25px;*/
+    font-size: 150%;
     margin-top: 30px;
     
 }
@@ -37,21 +39,24 @@
 
 #questao01 {
     box-shadow: 3px 3px 10px 0 rgb(0 0 0 / 40%);
-    height: 100px;
+    height: 150%;
     width: 43%;
     font-weight: lighter;
     background-color: #d4d4d4;
     border: 2px solid #717171;
-    font-size: 20px;
+    font-size: 100%;
     text-transform: uppercase;
     margin-top: 20px;
     margin-left: 5%;
+
+    
 }
 
 #contato {
     border-radius: 15px;
     box-shadow: 3px 3px 10px 0 rgb(0 0 0 / 40%);
-    height: 50px;
+    /*height: 50px;*/
+    height: 50%;
     width: 35%;
     font-weight: lighter;
     background-color: rgb(255 255 122 / 59%);
@@ -59,10 +64,11 @@
     font-size: 18px;
     text-transform: uppercase;
     margin-left: 8%;
-    margin-top: 10px;
+    margin-top: 1%;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 
