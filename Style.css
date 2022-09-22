@@ -304,7 +304,8 @@ footer {
 }
 
 .aside-menu ul li{
-    width: 350px;
+    /*width: 350px;*/
+    width: 62%;
     float: none;
     
 }
@@ -320,7 +321,8 @@ footer {
     float:none;
     align-items: center;
     font-family: 'Rubik', Helvetica, sans-serif;
-    font-size: 18px;
+    /*font-size: 18px;*/
+    font-size: 100%;
 }
 
 .aside-menu a{
@@ -354,6 +356,9 @@ footer {
     float:none;
     border-bottom: solid 1px rgb(255, 255, 255);
     font-weight: 500px;
+
+
+    width: 100%;
 }
 
 .aside-menu ul ul li a{
@@ -388,8 +393,9 @@ footer {
 }
 
 .aside ul li{
-    width: 350px;
+   /* width: 350px;*/
     float: none;
+    width: 62%;
     
 }
         
@@ -424,7 +430,6 @@ footer {
     font-family: 'Rubik', Helvetica, sans-serif;
     font-size: 20px;
 }
-
 
 
 

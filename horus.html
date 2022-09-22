@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- tags meta que auxiliam nos mecanismos de pesquisa-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Isabella Valerio, Melissa Turbano, Nicole Miguel">
+        <meta name="description" content="Home - reestruturação do site MPU">
+        <meta name="keywords" content="html, home, mpu, governo, seleção">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <link rel="stylesheet" type="text/css" href="Css/horus.css">
+        <link rel="shortcut icon" type="image/x-icon" href="Image/logo.png">
+        <title>Sistema Hórus</title>
+    </head>
+
+    <body>
+        <header>
+            <!-- Inserção do logo e título da página-->
+            <div class="logo">
+                <a href="home.html"><img id="logo_img" src="Image/logo.png" alt="Logo MPU"></a>
+                <h2 id="logo_letra">MPU</h2>
+                <hr id="logo_linha">
+                <h1 id="logo_titulo">Ministério Público da União</h1>
+            </div>
+           
+            <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
+            <div class="botoes">
+                <a href="#"><button id="help_bt"><img src="Image/help.jpg" id="help_img"></button></a>
+                <a href="faq.html"><button id="faq_bt"><img src="Image/faq.jpg" id="faq_img"></button></a>
+                <form id="caixa_pesquisa">
+                    <img id="lupa_img" src="Image/search.png" alt="Lupa de pesquisa"/>
+                    <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
+                    <button type="submit" id="ok_bt">OK</button>
+                </form>
+            </div>
+        </header>
+
+        <!-- Inserção de botão menu responsivo -->
+        <input type="checkbox" id="bt_menu">
+        <label for="bt_menu">&#9776;</label>
+
+        <!-- Inserção de estrutura do menu -->
+        <nav class="menu">
+            <ul>
+                <li><a href="home.html">Página Inicial</a></li>
+                <li><a href="#">Institucional</a>
+                    <ul>
+                        <li id="subMenu"><a href="#">Sobre o MPU</a>
+                        <li id="subMenu"><a href="#">Histórico</a>
+                    </ul>
+                </li>
+                <li><a href="#">Documentos</a>
+                    <ul>
+                        <li id="subMenu"><a href="#">Tabelas</a>
+                        <li id="subMenu"><a href="#">Demonstrativos</a>
+                        <li id="subMenu"><a href="#">Portaria Conjunta</a>
+                    </ul>
+                </li>
+                <li><a href="#">Legislação</a></li>
+                <li><a href="#">Órgãos</a>
+                    <ul>
+                        <li id="subMenu"><a href="#">AUDIN</a>
+                        <li id="subMenu"><a href="#">ESMPU</a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+        <section class="horus">
+            <h1>Sistema Hórus</h1>
+            <hr>
+
+            <article class="formulario">
+                <form action=" " name="form_horus" method="POST">
+                    <fieldset id="ministerio">
+                        <legend>Ministério</legend>
+                        <div id="atuacao">
+                            <label id="lab_titulo" for="atuação_id">Atuação</label>
+                            <br><br>
+                            <select name="atuacao" id="atuacao_id">
+                                <option selected="selected">Selecione seu local de trabalho</option>
+                                <option value="mpf">MPF - Ministério Público Federal</option>
+                                <option value="mpt">MPT - Ministério Público do Trabalho</option>
+                                <option value="mpm">MPM - Ministério Público Militar</option>
+                                <option value="mpdft">MPDFT - Ministério Público do Distrito Federal e Territórios</option>
+                            </select>
+                        </div>
+
+                        <div id="profissao">
+                            <label id="lab_titulo" for="profissao_id">Profissão</label>
+                            <br><br>
+                            <select name="profissao" id="profissao_id">
+                                <option selected="selected">Selecione seu cargo</option>
+                                <option value="membro">Membro/Servidor (Quadro, Contratado, Requisitado)</option>
+                                <option value="cedido">Servidor Cedido</option>
+                                <option value="provisorio">Servidor em Lotação Provisória fora do MPF</option>
+                                <option value="aposentado">Membro/Servidor Aposentado</option>
+                                <option value="pensionista">Pensionista</option>
+                                <option value="estagiario">Estagiário</option>
+                                <option value="exonerado">Exonerado</option>
+                                <option value="removido">Removido para MPT, MPM ou MPDFT</option>
+                                <option value="terceirizado">Terceirizado</option>
+                                <option value="voluntario">Voluntário</option>
+                                <option value="inativo">Estagiário Inativo</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="login">
+                        <legend>Login</legend>
+                        <div id="email">
+                            <label id="lab_titulo" for="email_id">E-mail* </label>
+                            <br><br>
+                            <input type="email" name="email" id="email_id" required placeholder="xxxxx@xxx.xx" onblur="validarEmail()">
+                        </div>
+                        <div id="msgemail"></div>
+                        <div id="senha">
+                            <label id="lab_titulo" for="senha_id">Senha* </label>
+                            <br><br>
+                            <input type="password" name="senha" id="senha_id" required placeholder="senha1234_">
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" id="entrar_horus">Entrar</button>
+                    <button type="reset" id="cancelar_horus">Cancelar</button>
+                </form>
+            </article>
+
+        </section>
+
+        <footer>
+            <p class="linha"> SAF Sul Quadra 4 Conjunto C - Brasília / DF - CEP 70050-900 - PABX: (61) 3105-5100</p>
+            <hr class="footer_linha">
+            <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
+        </footer>
+
+        <script src="Js/horus.js"></script>
+    </body>
+</html>
