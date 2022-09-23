@@ -1,8 +1,7 @@
 /* SECTION FAQ -- Melissa Turbano */
 .faq {
     margin: auto;
-    height: 100px;
-    width: 40%px; 
+    height: 100px;   
     margin-top: 100px;
 }
 
@@ -10,13 +9,13 @@
     margin-left: 5%;
     /*font-size: 40px;*/
     font-size: 200%;
-    margin-left: 13%;
+    margin-left: 10%;
     
 }
 
 #faq_linha {
     height: 2px;
-    width: 60%;
+    width: 55%;
     float: left;
     margin-top: 0px;
     background-color: rgb(45, 45, 45);
@@ -32,19 +31,19 @@
 
 #faq_sublinha {
     height: 2px;
-    width: 43%;
+    width: 50%;
     float: left;
     margin-top: 0px;
     margin-left: 5%;
 }
 
-#questao01 {
-    box-shadow: 3px 3px 10px 0 rgb(0 0 0 / 40%);
+#questao {
+    
     height: 150%;
-    width: 43%;
+    width: 50%;
     font-weight: lighter;
-    background-color: #d4d4d4;
-    border: 2px solid #717171;
+    background-color: #e6e6e6;
+    border: 1px solid #717171;
     font-size: 100%;
     text-transform: uppercase;
     margin-top: 20px;
@@ -53,18 +52,21 @@
     
 }
 
+#questao > p {
+    margin: 2%;
+}
+
 #contato {
     border-radius: 15px;
-    box-shadow: 3px 3px 10px 0 rgb(0 0 0 / 40%);
     /*height: 50px;*/
     height: 50%;
-    width: 35%;
+    width: 50%;
     font-weight: lighter;
     background-color: rgb(255 255 122 / 59%);
     border: 3px solid rgb(255 255 0);
     font-size: 18px;
     text-transform: uppercase;
-    margin-left: 8%;
+    margin-left: 5%;
     margin-top: 1%;
     display: flex;
     align-items: center;
