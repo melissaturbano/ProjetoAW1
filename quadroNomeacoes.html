@@ -10,9 +10,9 @@
         <meta name="description" content="Home - reestruturação do site MPU">
         <meta name="keywords" content="html, home, mpu, governo, seleção">
         <link rel="stylesheet" type="text/css" href="Style.css">
-        <link rel="stylesheet" type="text/css" href="Css/horus.css">
+        <link rel="stylesheet" type="text/css" href="Css/quadroNomeacoes.css">
         <link rel="shortcut icon" type="image/x-icon" href="Image/logo.png">
-        <title>Sistema Hórus</title>
+        <title>Quadro de nomeações</title>
     </head>
 
     <body>
@@ -68,33 +68,34 @@
             </ul>
         </nav>
 
-        <!--Formulário horus -->
-        <section class="horus">
-            <h1>Sistema Hórus</h1>
-            <hr id="linha_horus">
+        <!--Quadro de nomeações -->
+        <article class="quadroNomeacoes">
+            <h1>Quadro de nomeações</h1>
+            <hr id="linha_quadroNomeacoes">
 
-            <article class="formulario">
-                <form action=" " name="form_horus" method="POST">
-                    <fieldset id="ministerio">
-                        <legend>Ministério</legend>
-                        <div id="atuacao">
-                            <label id="lab_titulo" for="atuação_id">Atuação</label>
+            <section class="formulario">
+                <form action=" " name="form_quadro" method="POST">
+                    <section class="selects">
+                        <div id="concurso">
+                            <label id="lab_titulo" for="concurso_id">Concurso</label>
                             <br><br>
-                            <select name="atuacao" id="atuacao_id">
-                                <option selected="selected">Selecione seu local de trabalho</option>
-                                <option value="mpf">MPF - Ministério Público Federal</option>
-                                <option value="mpt">MPT - Ministério Público do Trabalho</option>
-                                <option value="mpm">MPM - Ministério Público Militar</option>
-                                <option value="mpdft">MPDFT - Ministério Público do Distrito Federal e Territórios</option>
+                            <select name="concurso" id="concurso_id">
+                                <option selected="selected">Selecione o concurso desejado</option>
+                                <option value="quarto">4° Concurso</option>
+                                <option value="quinto">5° Concurso</option>
+                                <option value="sexto">6° Concurso</option>
+                                <option value="setimo">7° Concurso</option>
+                                <option value="oitavo">8° Concurso</option>
+                                <option value="nono">9° Concurso</option>
+                                <option value="decimo">10° Concurso</option>
                             </select>
                         </div>
-
-                        <div id="profissao">
-                            <label id="lab_titulo" for="profissao_id">Profissão</label>
+    
+                        <div id="cargo">
+                            <label id="lab_titulo" for="profissao_id">Cargo</label>
                             <br><br>
-                            <select name="profissao" id="profissao_id">
-                                <option selected="selected">Selecione seu cargo</option>
-                                <option value="membro">Membro/Servidor (Quadro, Contratado, Requisitado)</option>
+                            <select name="cargo" id="cargo_id">
+                                <option selected="selected">Selecione para qual cargo</option>
                                 <option value="cedido">Servidor Cedido</option>
                                 <option value="provisorio">Servidor em Lotação Provisória fora do MPF</option>
                                 <option value="aposentado">Membro/Servidor Aposentado</option>
@@ -107,28 +108,69 @@
                                 <option value="inativo">Estagiário Inativo</option>
                             </select>
                         </div>
-                    </fieldset>
-
-                    <fieldset id="login">
-                        <legend>Login</legend>
-                        <div id="email">
-                            <label id="lab_titulo" for="email_id">E-mail* </label>
+    
+                        <div id="uf">
+                            <label id="lab_titulo" for="uf_id">UF</label>
                             <br><br>
-                            <input type="email" name="email" id="email_id" required placeholder="xxxxx@xxx.xx" onblur="validarEmail()">
+                            <select name="uf" id="uf_id">
+                                <option selected="selected">Estado</option>
+                                <option value="quarto">4° Concurso</option>
+                                <option value="quinto">5° Concurso</option>
+                                <option value="sexto">6° Concurso</option>
+                                <option value="setimo">7° Concurso</option>
+                                <option value="oitavo">8° Concurso</option>
+                                <option value="nono">9° Concurso</option>
+                                <option value="decimo">10° Concurso</option>
+                            </select>
                         </div>
-                        <div id="senha">
-                            <label id="lab_titulo" for="senha_id">Senha* </label>
-                            <br><br>
-                            <input type="password" name="senha" id="senha_id" required placeholder="senha1234_">
+                    </section>
+    
+                    <section class="candidato">
+                        <div id="filtrar_candidatos">
+                            <label id="lab_titulo" for="filtrar_candidatos_id">Filtrar Candidatos</label>
+                            <br>
+                            <!--<input type="radio" name="todos" id="todos_id">
+                            <label for="todos">Todos</label>
+                            <input type="radio" name="ac" id="ac_id">
+                            <label for="ac">AC</label>
+                            <input type="radio" name="cd" id="cd_id">
+                            <label for="cd">CD</label>
+                            <input type="radio" name="cn" id="cn_id">
+                            <label for="cn">CN</label> -->
+                            <button type="submit" id="btn_td">Todos</button>
+                            <button type="submit" id="btn_ac">AC</button>
+                            <button type="submit" id="btn_cd">CD</button>
+                            <button type="submit" id="btn_cn">CN</button>
                         </div>
-                    </fieldset>
-
-                    <button type="submit" id="entrar_horus">Entrar</button>
-                    <button type="reset" id="cancelar_horus">Cancelar</button>
+    
+                        <div id="nome">
+                            <input type="text" name="nome" id="nome_id" placeholder="Nome do candidato">
+                        </div>
+                    </section>
+    
+                    <section class="consulta">
+                        <div id="consultar">
+                            <label id="lab_titulo" for="consultar_id">Consultar</label>
+                            <br>
+                            <button type="submit" id="btn_todos">Todos</button>
+                            <button type="submit" id="btn_aprovados">Aprovados</button>
+                            <button type="submit" id="btn_nomeados">Nomeados</button>
+                        </div>
+                    </section>
+     
+                    <div id="btn_final">
+                        <button type="submit" id="pesquisar_quadro">Pesquisar</button>
+                        <button type="reset" id="voltar_quadro">Voltar</button>
+                    </div>
                 </form>
-            </article>
-        </section>
+            </section>
+        </article>
 
+         <!--Botão de contato-->
+         <a href="contato.html">
+            <button type="button" id="bnt_contato"> <img src="Image/contato.png" id="img_contato" /></button>
+        </a>
+        
         <!--Estrutura dos asides-->
         <aside>
             <div class="aside-menu">
@@ -171,7 +213,5 @@
             <hr class="footer_linha">
             <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
         </footer>
-
-        <script src="Js/horus.js"></script>
     </body>
 </html>
