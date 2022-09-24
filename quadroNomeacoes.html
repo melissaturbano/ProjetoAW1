@@ -80,10 +80,7 @@
                             <label id="lab_titulo" for="concurso_id">Concurso</label>
                             <br><br>
                             <select name="concurso" id="concurso_id">
-                                <option selected="selected">Selecione o concurso desejado</option>
-                                <option value="quarto">4° Concurso</option>
-                                <option value="quinto">5° Concurso</option>
-                                <option value="sexto">6° Concurso</option>
+                                <option value=" ">Selecione o concurso desejado</option>
                                 <option value="setimo">7° Concurso</option>
                                 <option value="oitavo">8° Concurso</option>
                                 <option value="nono">9° Concurso</option>
@@ -92,20 +89,14 @@
                         </div>
     
                         <div id="cargo">
-                            <label id="lab_titulo" for="profissao_id">Cargo</label>
+                            <label id="lab_titulo" for="cargo_id">Cargo</label>
                             <br><br>
                             <select name="cargo" id="cargo_id">
                                 <option selected="selected">Selecione para qual cargo</option>
-                                <option value="cedido">Servidor Cedido</option>
-                                <option value="provisorio">Servidor em Lotação Provisória fora do MPF</option>
-                                <option value="aposentado">Membro/Servidor Aposentado</option>
-                                <option value="pensionista">Pensionista</option>
-                                <option value="estagiario">Estagiário</option>
-                                <option value="exonerado">Exonerado</option>
-                                <option value="removido">Removido para MPT, MPM ou MPDFT</option>
-                                <option value="terceirizado">Terceirizado</option>
-                                <option value="voluntario">Voluntário</option>
-                                <option value="inativo">Estagiário Inativo</option>
+                                <option value="4">[AN020101] ANALISTA DO MPU/APOIO JURIDICO/DIREITO</option>
+                                <option value="2">[AN030101] ANALISTA DO MPU/DIREITO</option>
+                                <option value="1">[TC010101] TÉCNICO DO MPU/APOIO TÉCNICO-ADMINISTRATIVO/ADMINISTRAÇÃO</option>
+                                <option value="3">[TC020101] TÉCNICO DO MPU/ADMINISTRAÇÃO</option>
                             </select>
                         </div>
     
@@ -113,14 +104,43 @@
                             <label id="lab_titulo" for="uf_id">UF</label>
                             <br><br>
                             <select name="uf" id="uf_id">
-                                <option selected="selected">Estado</option>
-                                <option value="quarto">4° Concurso</option>
-                                <option value="quinto">5° Concurso</option>
-                                <option value="sexto">6° Concurso</option>
-                                <option value="setimo">7° Concurso</option>
-                                <option value="oitavo">8° Concurso</option>
-                                <option value="nono">9° Concurso</option>
-                                <option value="decimo">10° Concurso</option>
+                                <option value=" ">Estado</option>
+                                <optgroup label="Norte">
+                                    <option value="ac">Acre</option>
+                                    <option value="ap">Amapá</option>
+                                    <option value="am">Amazonas</option>
+                                    <option value="pa">Pará</option>
+                                    <option value="ro">Rondônia</option>
+                                    <option value="rr">Roraima</option>
+                                    <option value="to">Tocantins</option>
+                                </optgroup>
+                                <optgroup label="Nordeste">
+                                    <option value="al">Alagoas</option>
+                                    <option value="ba">Bahia</option>
+                                    <option value="ce">Ceará</option>
+                                    <option value="ma">Maranhão</option>
+                                    <option value="pb">Paraíba</option>
+                                    <option value="pe">Pernambuco</option>
+                                    <option value="pi">Piauí</option>
+                                    <option value="rn">Rio Grande do Norte</option>
+                                    <option value="se">Sergipe</option>
+                                </optgroup>
+                                <optgroup label="Centro-Oeste">
+                                    <option value="go">Goiás</option>
+                                    <option value="mt">Mato Grosso</option>
+                                    <option value="ms">Mato Grosso do Sul</option>
+                                </optgroup>
+                                <optgroup label="Sul">
+                                    <option value="pr">Paraná</option>
+                                    <option value="sc">Santa Catarina</option>
+                                    <option value="rs">Rio Grande do Sul</option>
+                                </optgroup>
+                                <optgroup label="Sudeste">
+                                    <option value="es">Espírito Santo</option>
+                                    <option value="mg">Minas Gerais</option>
+                                    <option value="rj">Rio de Janeiro</option>
+                                    <option value="sp">São Paulo</option>
+                                </optgroup>
                             </select>
                         </div>
                     </section>
@@ -170,7 +190,7 @@
          <a href="contato.html">
             <button type="button" id="bnt_contato"> <img src="Image/contato.png" id="img_contato" /></button>
         </a>
-        
+
         <!--Estrutura dos asides-->
         <aside>
             <div class="aside-menu">
@@ -213,5 +233,8 @@
             <hr class="footer_linha">
             <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
         </footer>
+
+        <!-- Usar função JavaScript-->
+        <script src="Js/filtrarCargoUF.js"></script>
     </body>
 </html>

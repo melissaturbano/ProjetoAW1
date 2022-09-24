@@ -61,6 +61,10 @@
     display: block;
 }
 
+#cargo_id {
+    width: 300px;
+}
+
 select, #nome_id {
     height: 2.5em;
     border: 1px solid #6e6767;
