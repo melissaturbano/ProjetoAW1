@@ -41,6 +41,30 @@
 }
 
 
+/*Botão de contato*/
+#bnt_contato {
+    border-radius: 25%;
+    width: 5%;
+    height: 7%;
+    background-color: white;
+    margin-left: 75%;
+    margin-bottom:3%;
+    cursor: pointer;
+}
+
+#img_contato {
+    border-radius: 18%;
+    width: 70%;
+    height: 65%;
+    
+}
+
+#bnt_contato:hover {
+    background-color: #fdf8cf;
+    border: 2.5px solid #b7ba5a;
+}
+
+
 
 
 
