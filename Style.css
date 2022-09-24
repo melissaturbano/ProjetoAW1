@@ -298,9 +298,9 @@ footer {
 }
 
 
-/* menu lateral (aside) */
+/* ASIDE - MENU*/
 .aside-menu{
-    margin-left: 60%;
+    margin-left: 65%;
 }
 
 .aside-menu ul li{
@@ -388,7 +388,7 @@ footer {
 
 /*ASIDE*/
 .aside{
-    margin-left: 60%;
+    margin-left: 65%;
     margin-top: 30px;
 }
 
