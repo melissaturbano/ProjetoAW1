@@ -285,8 +285,7 @@ footer {
     height: 40px;
     position: fixed;
     line-height: 20px;
-    font-size: 10px;
-    
+    font-size: 10px;  
 }
 
 .footer_linha {
@@ -431,5 +430,65 @@ footer {
     font-size: 20px;
 }
 
+
+/*Botão de contato
+#bnt_contato {
+    border-radius: 25%;
+    width: 5%;
+    height: 7%;
+    background-color: white;
+    margin-left: 94%;
+    margin-bottom:3%;
+    cursor: pointer;
+    position: absolute;
+
+
+    border-radius: 25%;
+    width: 5%;
+    height: 7%;
+    background-color: white;
+    margin-left: 32%;
+    margin-bottom: 3%;
+    cursor: pointer;
+   /* position: absolute;*/
+    /* margin: 10px;
+}
+
+
+#img_contato {
+    border-radius: 18%;
+    width: 70%;
+    height: 65%;
+    
+}
+
+#bnt_contato:hover {
+    background-color: #fdf8cf;
+    border: 2.5px solid #b7ba5a;
+}*/
+
+
+/*Botão de contato*/
+#bt_contato {
+    border-radius: 25%;
+    width: 5%;
+    height: 7%;
+    background-color: white;
+    margin-left: 32%;
+    margin-bottom:2%;
+    cursor: pointer;
+}
+
+#img_contato {
+    border-radius: 18%;
+    width: 70%;
+    height: 65%;
+    
+}
+
+#bt_contato:hover {
+    background-color: #fdf8cf;
+    border: 2.5px solid #b7ba5a;
+}
 
 

@@ -37,11 +37,6 @@ legend {
     border: 1px solid #6e6767;
 }
 
-#lab_titulo {
-    font-size: 20px;
-    font-weight: 600;
-}
-
 #nome {
     margin-left: 3em;
     float: left;
@@ -99,7 +94,7 @@ textarea {
     border: 2.5px solid #a90606;
 }
 
-
+/*Botão de contato*/
 #bnt_contato {
     border-radius: 25%;
     width: 5%;
