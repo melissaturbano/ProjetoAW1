@@ -1,17 +1,16 @@
-/* SECTION CONTATO - Melissa Turbano*/
-.contato {
+.enviar {
     margin: auto;
     height: 100px;
     width: 40%px; 
     margin-top: 100px;
 }
 
-#contato_titulo {
+#enviar_titulo {
     margin-left: 25%;
     font-size: 200%;
 }
 
-#contato_linha {
+#enviar_linha {
     height: 2px;
     width: 60%;
     float: left;
@@ -37,7 +36,7 @@ legend {
     border: 1px solid #6e6767;
 }
 
-#nome {
+#email {
     margin-left: 3em;
     float: left;
     display: block;
@@ -46,7 +45,7 @@ legend {
     font-weight: 600;
 }
 
-#sobrenome {
+#destinatario {
     margin-right: 3em;
     float: right;
     display: block;
@@ -64,7 +63,7 @@ textarea {
     max-width: 800px;
 }
 
-#nome_id, #sobrenome_id  {
+#email_id, #destinatario_id  {
     height: 2.5em;
     border: 1px solid #6e6767;
     background-color: rgb(236, 236, 236);
@@ -100,7 +99,7 @@ textarea {
     border: 2.5px solid #a90606;
 }
 
-/*Botão de contato*/
+/*Botão de enviar*/
 #bnt_contato {
     border-radius: 25%;
     width: 5%;

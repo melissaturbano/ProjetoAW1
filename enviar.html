@@ -8,14 +8,17 @@
         <meta name="author" content="Isabella Valerio, Melissa Turbano, Nicole Miguel">
         <meta name="description" content="Home - reestruturação do site MPU">
         <meta name="keywords" content="html, home, mpu, governo, seleção">
-        <link rel="stylesheet" type="text/css" href="Css/faq.css">
         <link rel="stylesheet" type="text/css" href="Style.css">
+        <link rel="stylesheet" type="text/css" href="Css/enviar.css">
         <link rel="shortcut icon" type="image/x-icon" href="Image/logo.png">
-        <title>FAQ</title>
+        <title>Compartilhar</title>
     </head>
+
+
 
     <body>
         <header>
+
             <!-- Inserção do logo e título da página-->
             <div class="logo">
                 <a href="home.html"><img id="logo_img" src="Image/logo.png" alt="Logo MPU"></a>
@@ -67,31 +70,45 @@
             </ul>
         </nav>
 
-        <!--Estrutura do FAQ - Melissa Turbano -->
-        <section class="faq">
-            <h1 id="faq_titulo">FAQ - DÚVIDAS FREQUENTES  </h1>
-            <hr id="faq_linha">
-            <h2 id="faq_subtitulo">Ministério Público (MP), um quarto poder?</h2>
-            <hr id="faq_sublinha">
-            <div id = "questao">
-                <p>Se Monstequieu tivesse escrito hoje o Espírito das Leis, por certo não seria tríplice, mas quádrupla, a divisão de...</p>
-            </div>
-            <h2 id="faq_subtitulo">MPU x MPE</h2>
-            <hr id="faq_sublinha">
-            <div id = "questao">
-                <p>O Ministério Público pode ser FEDERAL ou ESTADUAL. No primeiro, há os Procuradores da República que atuam junto aos Juizes Federais (Justiça Federal) e pertencem ao...</p>
-            </div>
-            <div id = "contato">
-                <p>Entre em <a href="contato.html">contato</a> e envie a sua dúvida. </p> 
-            </div>
-        </section>
+        <!--Estrutura de enviar (compartilhar) - Melissa Turbano -->
+        <section class="enviar">
+            <h1 id="enviar_titulo">ENVIAR</h1>
+            <hr id="enviar_linha">
+            <article class="formulario">
+                <form action=" " name="form_enviar" method="POST">
+                    <fieldset id="caixa">
+                        <legend>Endereço</legend>
+                        <div id="email">
+                            <label for="email_id">Seu e-mail* </label>
+                            <br><br>
+                            <input type="email" name="email" id="email_id" required placeholder="xxxxx@xxx.xx" >
+                        </div>
+                        <div id="destinatario">
+                            <label for="email_id">Destinatário* </label>
+                            <br><br>
+                            <input type="email" name="email" id="destinatario_id" required placeholder="xxxxx@xxx.xx">
+                        </div>
+                    </fieldset>
 
-        <!--Botão de contatos-->
+                    <fieldset id="caixa">
+                        <legend>Mensagem</legend>
+                        <div id="msg">
+                            <textarea placeholder="Comentário..."></textarea>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" id="enviar_id" onclick="validarEmail()">Enviar</button>
+                    <button type="reset" id="cancelar_id">Cancelar</button>
+                </form>
+            </article>
+        </section> 
+
+
+        <!--Botão de contato-->
         <a href="contato.html">
             <button type="button" id="bnt_contato"> <img src="Image/contato.png" id="img_contato" /></button>
         </a>
 
-        <!--Estrutura dos asides-->
         <aside>
             <div class="aside-menu">
                 <ul>
@@ -127,13 +144,14 @@
                 </ul>
             </div>
             
-        </aside> 
-
+        </aside>
 
         <footer>
             <p class="linha"> SAF Sul Quadra 4 Conjunto C - Brasília / DF - CEP 70050-900 - PABX: (61) 3105-5100</p>
             <hr class="footer_linha">
             <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
         </footer>
+
+        <script src="Js/enviar.js"></script>
     </body>
 </html>
