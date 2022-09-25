@@ -1,3 +1,4 @@
+/*Codificado por Nicole Miguel*/
 function validarEmail () {
     var email = document.getElementById("email_id");
 
