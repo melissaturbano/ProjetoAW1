@@ -1,3 +1,4 @@
+/*Recodificado por Isabella Valerio*/
 /* GERAL*/
 
 *{
@@ -227,12 +228,11 @@ header {
     text-transform: uppercase;
     margin-left: 0;
     height: 100px;
-    width: 40%px; 
+    width: 40%; 
 }
 
 #candidato_titulo {
     margin-left: 20px;
-    
 }
 
 #candidato_linha {
@@ -246,9 +246,7 @@ header {
     margin: 10px;
     margin-top: 60px;
     height: 100px;
-    width: 40%px;
-    
-    
+    width: 40%;  
 }
 
 .concursoRemocao > img, #candidato_pag > img {

@@ -1,3 +1,4 @@
+<!-- Codificado por Isabella Valerio-->
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -6,20 +7,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Isabella Valerio, Melissa Turbano, Nicole Miguel">
-        <meta name="description" content="Enviar - reestruturação do site MPU">
-        <meta name="keywords" content="html, enviar, mpu, governo, seleção">
+        <meta name="description" content="Histórico - reestruturação do site MPU">
+        <meta name="keywords" content="html, histórico, mpu, governo, seleção">
         <link rel="stylesheet" type="text/css" href="Style.css">
-        <link rel="stylesheet" type="text/css" href="Css/enviar.css">
+        <link rel="stylesheet" type="text/css" href="Css/historico.css">
         <link rel="shortcut icon" type="image/x-icon" href="Image/logo.png">
-        <title>Compartilhar</title>
+        <title>Histórico</title>
     </head>
 
     <body>
         <header>
-
             <!-- Inserção do logo e título da página-->
             <div class="logo">
-                <a href="home.html"><img id="logo_img" src="Image/logo.png" alt="Logo MPU"></a>
+                <a href="home.html"></a><img id="logo_img" src="Image/logo.png" alt="Logo MPU"></a>
                 <h2 id="logo_letra">MPU</h2>
                 <hr id="logo_linha">
                 <h1 id="logo_titulo">Ministério Público da União</h1>
@@ -68,49 +68,22 @@
             </ul>
         </nav>
 
-        <!--Estrutura de enviar (compartilhar) - Melissa Turbano -->
-        <section class="enviar">
-            <h1 id="enviar_titulo">ENVIAR</h1>
-            <hr id="enviar_linha">
-            <article class="formulario">
-                <form action=" " name="form_enviar" method="POST">
-                    <fieldset id="caixa">
-                        <legend>Endereço</legend>
-                        <div id="email">
-                            <label for="email_id">Seu e-mail* </label>
-                            <br><br>
-                            <input type="email" name="email" id="email_id" required placeholder="xxxxx@xxx.xx" >
-                        </div>
-                        <div id="destinatario">
-                            <label for="email_id">Destinatário* </label>
-                            <br><br>
-                            <input type="email" name="email" id="destinatario_id" required placeholder="xxxxx@xxx.xx">
-                        </div>
-                    </fieldset>
+        <section class="inicioHistorico">
+            <h1 id="historico_titulo">Início</h1>
+            <hr id="historico_linha">
+        </section>
 
-                    <fieldset id="caixa">
-                        <legend>Mensagem</legend>
-                        <div id="msg">
-                            <textarea placeholder="Comentário..."></textarea>
-                        </div>
-                    </fieldset>
-                    <button type="submit" id="enviar_id" onclick="validarEmail()">Enviar</button>
-                    <button type="reset" id="cancelar_id">Cancelar</button>
-                </form>
-            </article>
-        </section> 
-
-
-        <!--Botão de contato-->
+        <!--Botão de contatos-->
         <a href="contato.html">
-            <button type="button" id="bnt_contato"> <img src="Image/contato.png" id="img_contato" /></button>
-        </a>
+            <button type="button" id="bt_contato"> <img src="Image/contato.png" id="img_contato" /></button>
+        </a> 
 
         <!--Botão de envio-->
         <a href="enviar.html">
             <button type="button" id="bnt_enviar"> <img src="Image/enviar.png" id="img_enviar" /></button>
         </a>
 
+        <!--Estrutura dos asides-->
         <aside>
             <div class="aside-menu">
                 <ul>
@@ -144,15 +117,13 @@
                     <li><a href="#">Concursos MPU e MPF<a></li>
                     <li><a href="#">Transparência Ministério Público</a></li>
                 </ul>
-            </div>            
-        </aside>
+            </div>
+        </aside> 
 
         <footer>
             <p class="linha"> SAF Sul Quadra 4 Conjunto C - Brasília / DF - CEP 70050-900 - PABX: (61) 3105-5100</p>
             <hr class="footer_linha">
             <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
         </footer>
-
-        <script src="Js/enviar.js"></script>
     </body>
 </html>

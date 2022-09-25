@@ -1,0 +1,19 @@
+/* SECTION HISTÓRICO - Isabella Valerio */
+.inicioHistorico {
+    margin-top: 100px;
+    text-transform: uppercase;
+    margin-left: 0;
+    height: 100px;
+    width: 40%; 
+}
+
+#historico_titulo {
+    margin-left: 25%;
+}
+
+#historico_linha {
+    height: 2px;
+    width: 100%;
+    float: left;
+    margin-top: 0px;
+}
