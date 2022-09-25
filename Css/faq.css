@@ -9,8 +9,7 @@
     margin-left: 5%;
     /*font-size: 40px;*/
     font-size: 200%;
-    margin-left: 10%;
-    
+    margin-left: 10%;    
 }
 
 #faq_linha {
@@ -26,7 +25,6 @@
     /*font-size: 25px;*/
     font-size: 150%;
     margin-top: 30px;
-    
 }
 
 #faq_sublinha {
@@ -47,9 +45,7 @@
     font-size: 100%;
     text-transform: uppercase;
     margin-top: 20px;
-    margin-left: 5%;
-
-    
+    margin-left: 5%;    
 }
 
 #questao > p {
@@ -70,8 +66,7 @@
     margin-top: 1%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 
 
@@ -89,8 +84,7 @@
 #img_contato {
     border-radius: 18%;
     width: 70%;
-    height: 65%;
-    
+    height: 65%;    
 }
 
 #bnt_contato:hover {
@@ -113,13 +107,10 @@
 #img_enviar {
     border-radius: 18%;
     width: 70%;
-    height: 65%;
-    
+    height: 65%;    
 }
 
 #bnt_enviar:hover {
     background-color: #e2fcbb;
     border: 2.5px solid #87a061;
 }
-
-

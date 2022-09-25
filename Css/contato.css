@@ -51,8 +51,7 @@ legend {
     float: right;
     display: block;
     font-size: 20px;
-    font-weight: 600;
-    
+    font-weight: 600;    
 }
 
 textarea {
@@ -114,8 +113,7 @@ textarea {
 #img_contato {
     border-radius: 18%;
     width: 70%;
-    height: 65%;
-    
+    height: 65%;    
 }
 
 #bnt_contato:hover {
@@ -137,8 +135,7 @@ textarea {
 #img_enviar {
     border-radius: 18%;
     width: 70%;
-    height: 65%;
-    
+    height: 65%;    
 }
 
 #bnt_enviar:hover {

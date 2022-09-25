@@ -36,6 +36,7 @@
 .consulta {
     margin-top: 10%;
 }
+
 #filtrar_candidatos {
     display: block;
     float: left;
@@ -136,7 +137,6 @@ select, #nome_id {
     border-radius: 18%;
     width: 70%;
     height: 65%;
-    
 }
 
 #bnt_contato:hover {

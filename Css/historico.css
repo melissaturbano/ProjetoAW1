@@ -1,19 +1,101 @@
-/* SECTION HISTÓRICO - Isabella Valerio */
+/* HISTÓRICO - Isabella Valerio */
+
+/* SECTION */
+
 .inicioHistorico {
     margin-top: 100px;
-    text-transform: uppercase;
     margin-left: 0;
     height: 100px;
-    width: 40%; 
+    width: 40%;
+    line-height: 1.2;
 }
 
-#historico_titulo {
-    margin-left: 25%;
+/* SECTION - TÍTULO GERAL */
+
+#titulo_geral {
+    margin-left: 65%;
+    font-size: 170%;
+    text-transform: uppercase;
 }
 
-#historico_linha {
+#linha_titulo {
     height: 2px;
-    width: 100%;
+    width: 150%;
     float: left;
     margin-top: 0px;
+}
+
+/* SECTION - CAIXA */
+
+#caixa {
+    height: auto;
+    width: 145%;
+    background-color: rgb(236, 236, 236);
+    border: 1px solid #aeaeae;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+#caixa_texto {
+    text-transform: none;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+#texto_caixa {
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-top: 4%;
+    text-indent: 1.5em;
+}
+
+#texto_topico {
+    margin-left: 6%;
+    margin-right: 4%;
+    margin-bottom: 2%;
+}
+
+/* BOTÕES */
+/*Botão de contato*/
+#bnt_contato {
+    border-radius: 25%;
+    width: 5%;
+    height: 7%;
+    background-color: white;
+    margin-left: 71%;
+    margin-bottom:3%;
+    cursor: pointer;
+}
+
+#img_contato {
+    border-radius: 18%;
+    width: 70%;
+    height: 65%;
+}
+
+#bnt_contato:hover {
+    background-color: #fdf8cf;
+    border: 2.5px solid #b7ba5a;
+}
+
+/*Botão de enviar*/
+#bnt_enviar {
+    border-radius: 25%;
+    width: 5%;
+    height: 7%;
+    background-color: white;
+    margin-left: 3%;
+    margin-bottom:3%;
+    cursor: pointer;
+}
+
+#img_enviar {
+    border-radius: 18%;
+    width: 70%;
+    height: 65%;
+}
+
+#bnt_enviar:hover {
+    background-color: #e2fcbb;
+    border: 2.5px solid #87a061;
 }
