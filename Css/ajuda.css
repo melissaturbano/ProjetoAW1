@@ -1,11 +1,8 @@
-/* SECTION AJUDA - Melissa Turbano*/
+/*Codificado por Melissa Turbano*/
 .ajuda {
     margin: auto;
     height: 100px;
-    width: 40%px; 
-    margin-top: 100px;
-    
-    
+    margin-top: 100px;   
 }
 
 #ajuda_titulo {
@@ -30,9 +27,7 @@
     margin-left: 9%;
 }
 
-
-.ajuda_btn {
-    
+.ajuda_btn {    
     border: none;
     /* color: white; */
     text-align: center;
@@ -85,8 +80,7 @@
 #img_contato {
     border-radius: 18%;
     width: 70%;
-    height: 65%;
-    
+    height: 65%;    
 }
 
 #bnt_contato:hover {
@@ -108,8 +102,7 @@
 #img_enviar {
     border-radius: 18%;
     width: 70%;
-    height: 65%;
-    
+    height: 65%;    
 }
 
 #bnt_enviar:hover {

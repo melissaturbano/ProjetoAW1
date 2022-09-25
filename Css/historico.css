@@ -1,41 +1,64 @@
-/*Codificado por Melissa Turbano*/
-.sobre {
-    height: 100px;
+/* HISTÓRICO - Isabella Valerio */
+
+/* SECTION */
+
+.inicioHistorico {
     margin-top: 100px;
+    margin-left: 0;
+    height: 100px;
+    width: 40%;
+    line-height: 1.2;
 }
 
-#sobre_titulo {
-    margin-left: 5%;
-    /*font-size: 40px;*/
-    font-size: 200%;
-    margin-left: 20%;
-    margin-top: 3%;
+/* SECTION - TÍTULO GERAL */
+
+#titulo_geral {
+    margin-left: 65%;
+    font-size: 170%;
+    text-transform: uppercase;
 }
 
-#sobre_linha {
+#linha_titulo {
     height: 2px;
-    width: 60%;
+    width: 150%;
     float: left;
     margin-top: 0px;
-    background-color:black;
 }
 
-#div {
-    /*box-shadow: 3px 3px 10px 0 rgb(0 0 0 / 40%);*/
-    height: 160%;
-    width: 55%;
+/* SECTION - CAIXA */
+
+#caixa {
+    height: auto;
+    width: 145%;
     background-color: rgb(236, 236, 236);
     border: 1px solid #aeaeae;
-    font-size: 100%;
-    text-transform: uppercase;
     margin-top: 20px;
     margin-left: 5%;
 }
 
-#div > p {
-    margin: 2%;
+#caixa_texto {
+    text-transform: none;
+    text-align: justify;
+    margin-bottom: 0;
+    padding: 4%;
 }
 
+#texto_caixa {
+    margin-bottom: 2%;
+    text-indent: 1.5em;
+}
+
+#texto_topico {
+    margin-left: 3.5%;
+    margin-bottom: 1%;
+}
+
+#topico_quadrado {
+    list-style-type: square;
+    margin-left: 6%;
+}
+
+/* BOTÕES */
 /*Botão de contato*/
 #bnt_contato {
     border-radius: 25%;

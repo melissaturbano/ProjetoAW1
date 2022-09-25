@@ -1,3 +1,4 @@
+/*Recodificado por Isabella Valerio*/
 /* GERAL*/
 *{
     margin: 0;
@@ -7,10 +8,8 @@
 html, body {
     height: 100%;
     width: 100%;
-
     padding: 0px;
     margin: 0px;
-
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -198,6 +197,7 @@ header {
     display: flex;
     flex-direction: column;
 }
+
 /* ARTICLE */
 
 #MPU_sobre {
@@ -219,19 +219,18 @@ header {
 }
 
 
-/* SECTION */
+/* SECTION - CANDIDATO */
 
 .candidatoArea {
     margin-top: 30px;
     text-transform: uppercase;
     margin-left: 0;
     height: 100px;
-    width: 40%px; 
+    width: 40%; 
 }
 
 #candidato_titulo {
     margin-left: 20px;
-    
 }
 
 #candidato_linha {
@@ -245,9 +244,7 @@ header {
     margin: 10px;
     margin-top: 60px;
     height: 100px;
-    width: 40%px;
-    
-    
+    width: 40%;  
 }
 
 .concursoRemocao > img, #candidato_pag > img {
@@ -271,6 +268,173 @@ header {
     float: left;
 }
 
+/* ASIDE - MENU */
+
+.aside-menu {
+    margin-left: 65%;
+}
+
+.aside-menu ul li {
+    /*width: 350px;*/
+    width: 62%;
+    float: none;
+}
+        
+.aside-menu > ul {
+    list-style: none;	
+    position: relative;
+    margin-left: 50px;
+}
+
+/* Config de dentro do menu */
+.aside-menu ul li {
+    float: none;
+    align-items: center;
+    /*font-size: 18px;*/
+}
+
+.aside-menu a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    background-color: rgba(87, 145, 156);
+    text-align: center;
+    align-items: center;
+    color: #fff;    
+}
+
+.aside-menu ul ul {
+    list-style: none;
+    position: absolute;
+    visibility: hidden;
+}
+
+/* Menu sobre o mouse */
+.aside-menu ul li:hover ul {
+    visibility: visible;
+}
+        
+.aside-menu a:hover {
+    background-color: #a5a5a5;
+}
+
+/* Submenu */
+.aside-menu ul ul li {
+    float: none;
+    border-bottom: solid 1px rgb(255, 255, 255);
+    font-weight: 500px;
+    width: 100%;
+}
+
+.aside-menu ul ul li a {
+    background-color: #bdbaba;
+    height: 6%;
+    text-align: left;
+    text-indent: 2px;
+    text-align: center;    
+    color: rgb(0, 0, 0)
+}
+  
+.aside-menu ul ul {
+    position: static;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .4s;
+}
+
+.aside-menu ul li:hover ul {
+    height: auto;
+    max-height: 200px;
+    transition: all .4s;
+}
+
+/* ASIDE */
+
+.aside {
+    margin-left: 65%;
+    margin-top: 30px;
+}
+
+.aside ul li {
+   /*width: 350px;*/
+    float: none;
+    width: 62%;
+}
+        
+.aside > ul {
+    list-style: none;	
+    position: relative;
+    margin-left: 50px;
+}
+
+.aside a {
+    display: block;
+    text-decoration: none;
+    background-color: rgb(63, 105, 114);
+    text-align: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    line-height: 2.0;
+}
+
+/* Mouse */ 
+.aside ul li:hover {
+    visibility: visible;
+    background-color: #a5a5a5;
+}
+.aside a:hover {
+    background-color: #a5a5a5;
+}
+
+/* Config de dentro do aside */
+.aside ul li{
+    float: none;
+    align-items: center;
+}
+
+/* Botão de contato */
+#bt_contato {
+    border-radius: 25%;
+    width: 5%;
+    height: 7%;
+    background-color: white;
+    margin-left: 28%;
+    margin-bottom:2%;
+    cursor: pointer;
+}
+
+#img_contato {
+    border-radius: 18%;
+    width: 70%;
+    height: 65%;    
+}
+
+#bt_contato:hover {
+    background-color: #fdf8cf;
+    border: 2.5px solid #b7ba5a;
+}
+
+/*Botão de enviar*/
+#bnt_enviar {
+    border-radius: 25%;
+    width: 5%;
+    height: 7%;
+    background-color: white;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+#img_enviar {
+    border-radius: 18%;
+    width: 70%;
+    height: 65%;
+}
+
+#bnt_enviar:hover {
+    background-color: #e2fcbb;
+    border: 2.5px solid #87a061;
+}
 
 /* FOOTER */
 
@@ -293,185 +457,4 @@ footer {
     height: 1px;
     margin-right: 5%;
     margin-left: 5%;
-}
-
-
-/* ASIDE - MENU*/
-.aside-menu{
-    margin-left: 65%;
-}
-
-.aside-menu ul li{
-    /*width: 350px;*/
-    width: 62%;
-    float: none;
-    
-}
-        
-.aside-menu > ul{
-    list-style: none;	
-    position: relative;
-    margin-left: 50px;
-}
-
-/* config de dentro do menu */
-.aside-menu ul li{
-    float:none;
-    align-items: center;
-    font-family: 'Rubik', Helvetica, sans-serif;
-    /*font-size: 18px;*/
-    font-size: 100%;
-}
-
-.aside-menu a{
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    background-color: rgba(87, 145, 156);
-    text-align: center;
-    align-items: center;
-    color: #fff;
-    
-}
-
-.aside-menu ul ul{
-    list-style: none;
-    position: absolute;
-    visibility: hidden;
-}
-
-/* menu sobre o mouse */
-.aside-menu ul li:hover ul{
-    visibility: visible;
-}
-        
-.aside-menu a:hover{
-    background-color: #a5a5a5;
-}
-
-/* submenu */
-.aside-menu ul ul li{
-    float:none;
-    border-bottom: solid 1px rgb(255, 255, 255);
-    font-weight: 500px;
-
-
-    width: 100%;
-}
-
-.aside-menu ul ul li a{
-    background-color: #bdbaba;
-    height: 6%;
-    text-align: left;
-    text-indent: 2px;
-    text-align: center;
-    
-}
-  
-.aside-menu ul ul{
-    position: static;
-    overflow: hidden;
-    max-height: 0;
-    transition: all .4s;
-}
-
-.aside-menu ul li:hover ul{
-    height: auto;
-    max-height: 200px;
-    transition: all .4s;
-}
-
-
-
-
-/*ASIDE*/
-.aside{
-    margin-left: 65%;
-    margin-top: 30px;
-}
-
-.aside ul li{
-   /* width: 350px;*/
-    float: none;
-    width: 62%;
-    
-}
-        
-.aside > ul{
-    list-style: none;	
-    position: relative;
-    margin-left: 50px;
-}
-
-.aside a{
-    display: block;
-    text-decoration: none;
-    background-color: rgba(87, 145, 156);
-    text-align: center;
-    align-items: center;
-    color: #fff;
-}
-
-/* aside sobre o mouse*/ 
-.aside ul li:hover {
-    visibility: visible;
-    background-color: #a5a5a5;
-}
-.aside a:hover{
-    background-color: #a5a5a5;
-}
-
-/* config de dentro do aside */
-.aside ul li{
-    float:none;
-    align-items: center;
-    font-family: 'Rubik', Helvetica, sans-serif;
-    font-size: 20px;
-}
-
-
-/*Botão de contato*/
-#bt_contato {
-    border-radius: 25%;
-    width: 5%;
-    height: 7%;
-    background-color: white;
-    margin-left: 28%;
-    margin-bottom:2%;
-    cursor: pointer;
-}
-
-#img_contato {
-    border-radius: 18%;
-    width: 70%;
-    height: 65%;
-    
-}
-
-#bt_contato:hover {
-    background-color: #fdf8cf;
-    border: 2.5px solid #b7ba5a;
-}
-
-/*Botão de enviar*/
-#bnt_enviar {
-    border-radius: 25%;
-    width: 5%;
-    height: 7%;
-    background-color: white;
-    margin-left: 3%;
-    margin-bottom:3%;
-    cursor: pointer;
-}
-
-#img_enviar {
-    border-radius: 18%;
-    width: 70%;
-    height: 65%;
-    
-}
-
-#bnt_enviar:hover {
-    background-color: #e2fcbb;
-    border: 2.5px solid #87a061;
 }

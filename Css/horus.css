@@ -1,3 +1,4 @@
+/*Codificado por Nicole Miguel*/
 .horus {
     margin: auto;
     height: 100px;   
@@ -86,7 +87,3 @@ select, #email_id, #senha_id  {
 #cancelar_horus:hover {
     background-color: #f79c9c;
 }
-
-
-
-
