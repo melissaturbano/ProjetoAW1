@@ -1,3 +1,5 @@
+<!-- Codificado por Nicole Miguel-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -9,19 +11,18 @@
         <meta name="description" content="Home - reestruturação do site MPU">
         <meta name="keywords" content="html, home, mpu, governo, seleção">
         <link rel="stylesheet" type="text/css" href="Style.css">
-        <link rel="stylesheet" type="text/css" href="Css/enviar.css">
+        <link rel="stylesheet" type="text/css" href="Css/documentos.css">
         <link rel="shortcut icon" type="image/x-icon" href="Image/logo.png">
-        <title>Compartilhar</title>
+        <title>Documentos - Demonstrativos</title>
     </head>
 
 
 
     <body>
         <header>
-
             <!-- Inserção do logo e título da página-->
             <div class="logo">
-                <a href="home.html"><img id="logo_img" src="Image/logo.png" alt="Logo MPU"></a>
+                <a href="home.html"></a><img id="logo_img" src="Image/logo.png" alt="Logo MPU"></a>
                 <h2 id="logo_letra">MPU</h2>
                 <hr id="logo_linha">
                 <h1 id="logo_titulo">Ministério Público da União</h1>
@@ -57,7 +58,7 @@
                     <ul>
                         <li id="subMenu"><a href="#">Tabelas</a>
                         <li id="subMenu"><a href="demonstrativos.html">Demonstrativos</a>
-                        <li id="subMenu"><a href="#">Portaria Conjunta</a>
+                        <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
                     </ul>
                 </li>
                 <li><a href="#">Legislação</a></li>
@@ -70,48 +71,52 @@
             </ul>
         </nav>
 
-        <!--Estrutura de enviar (compartilhar) - Melissa Turbano -->
-        <section class="enviar">
-            <h1 id="enviar_titulo">ENVIAR</h1>
-            <hr id="enviar_linha">
-            <article class="formulario">
-                <form action=" " name="form_enviar" method="POST">
-                    <fieldset id="caixa">
-                        <legend>Endereço</legend>
-                        <div id="email">
-                            <label for="email_id">Seu e-mail* </label>
-                            <br><br>
-                            <input type="email" name="email" id="email_id" required placeholder="xxxxx@xxx.xx" >
-                        </div>
-                        <div id="destinatario">
-                            <label for="email_id">Destinatário* </label>
-                            <br><br>
-                            <input type="email" name="email" id="destinatario_id" required placeholder="xxxxx@xxx.xx">
-                        </div>
-                    </fieldset>
+       <article class="tabelas_docs">
+            <h1>Demonstrativos</h1>
+            <hr id="linha_demonstrativos">
 
-                    <fieldset id="caixa">
-                        <legend>Mensagem</legend>
-                        <div id="msg">
-                            <textarea placeholder="Comentário..."></textarea>
-                        </div>
-                    </fieldset>
-                    <button type="submit" id="enviar_id" onclick="validarEmail()">Enviar</button>
-                    <button type="reset" id="cancelar_id">Cancelar</button>
-                </form>
-            </article>
-        </section> 
+            <section class="demonstrativos">
+                <table id="table1">
+                    <tr>
+                        <th id="titulo" colspan="3">Demonstrativo Bimestral dos Montantes Aprovados e os Valores da Limitação de Empenho e Movimentação Financeira</th>
+                    </tr>
+                    <tr>
+                        <td id="subtitulo" colspan="3">2022</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/contingenciamento_1o_bimestre.pdf">1° bimestre</a></td>
+                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/contingenciamento_2o_bimestre.pdf">2° bimestre</a></td>
+                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/contingenciamento_-_portal_3o_bi_2022.pdf">3° bimestre</a></td>
+                    </tr>
+                </table>
 
+                <table id="table2">
+                    <tr>
+                        <th id="titulo">Demonstrativo da Execução e Cronograma Anual de Desembolso Mensal das Emendas Individuais de 2022</th>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/6-1-3-2-despesas-por-acao-orcamentaria-rp6-demais-ramos-mpf.pdf">MPF - não consta</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/6-1-3-2-despesas-por-acao-orcamentaria-rp6-demais-ramos-mpdft.pdf">MPDFT - não consta</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/6-1-3-2-despesas-por-acao-orcamentaria-rp6-demais-ramos-mpm.pdf">MPM - não consta</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/6-1-3-2-despesas-por-acao-orcamentaria-rp6-demais-ramos-mpt.pdf">MPT - não consta</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/6-1-3-2-despesas-por-acao-orcamentaria-rp6-demais-ramos-esmpu.pdf">ESMPU - não consta</a></td>
+                    </tr>
+                </table>
+            </section>
+       </article>
 
-        <!--Botão de contato-->
+        <!--Botão de contatos  -->
         <a href="contato.html">
-            <button type="button" id="bnt_contato"> <img src="Image/contato.png" id="img_contato" /></button>
-        </a>
-
-        <!--Botão de envio-->
-        <a href="enviar.html">
-            <button type="button" id="bnt_enviar"> <img src="Image/enviar.png" id="img_enviar" /></button>
-        </a>
+            <button type="button" id="bt_contato"> <img src="Image/contato.png" id="img_contato" /></button>
+        </a> 
 
         <aside>
             <div class="aside-menu">
@@ -155,7 +160,5 @@
             <hr class="footer_linha">
             <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
         </footer>
-
-        <script src="Js/enviar.js"></script>
     </body>
 </html>

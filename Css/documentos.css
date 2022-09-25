@@ -1,0 +1,88 @@
+.tabelas_docs {
+    height: 100px;   
+    margin-top: 100px;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.tabelas_docs h1 {
+    text-transform: uppercase;
+    margin-left: 20%;
+}
+
+#linha_demonstrativos, #linha_portaria {
+    height: 2px;
+    width: 55%;
+    float: left;
+}
+
+.demonstrativos, .portaria {
+    height: 50%;
+    width: 50%;
+    margin: 1em;
+    margin-top: 5%;
+}
+
+#table1, #table2, #table3, #table4 {
+    margin: 5%;
+    margin-left: 20%;
+    padding: 1em;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#table3 {
+    margin-top: 15%;
+}
+
+#table3, #table4 {
+    width: 600px;
+}
+
+th, td {
+    border: 1px solid #000000;
+}
+
+th {
+    height: 50px;
+}
+
+td {
+    height: 35px;
+}
+
+td a {
+    color: #000000;
+}
+
+#titulo {
+    background-color: #f8fa6b;
+}
+
+#subtitulo {
+    background-color: #f8fdb5;
+}
+
+
+/*Botão de contato */
+#bt_contato {
+    border-radius: 25%;
+    width: 5%;
+    height: 7%;
+    background-color: white;
+    margin-left: 75%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+#img_contato {
+    border-radius: 18%;
+    width: 70%;
+    height: 65%;
+    
+}
+
+#bt_contato:hover {
+    background-color: #fdf8cf;
+    border: 2.5px solid #b7ba5a;
+} 
