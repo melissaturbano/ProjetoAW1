@@ -1,3 +1,5 @@
+<!-- Codificado por Nicole Miguel -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -8,11 +10,12 @@
         <meta name="author" content="Isabella Valerio, Melissa Turbano, Nicole Miguel">
         <meta name="description" content="Home - reestruturação do site MPU">
         <meta name="keywords" content="html, home, mpu, governo, seleção">
-        <link rel="stylesheet" type="text/css" href="Css/ajuda.css">
         <link rel="stylesheet" type="text/css" href="Style.css">
+        <link rel="stylesheet" type="text/css" href="CSS/pesquisa.css">
         <link rel="shortcut icon" type="image/x-icon" href="Image/logo.png">
-        <title>Ajuda</title>
+        <title>Pesquisa</title>
     </head>
+
     <body>
         <header>
             <!-- Inserção do logo e título da página-->
@@ -30,7 +33,7 @@
                 <form id="caixa_pesquisa" action="pesquisa.html">
                     <img id="lupa_img" src="Image/search.png" alt="Lupa de pesquisa"/>
                     <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
-                    <button type="submit" id="ok_bt">OK</button>
+                    <button type="submit" id="ok_bt" >OK</button>
                 </form>
             </div>
         </header>
@@ -66,36 +69,24 @@
             </ul>
         </nav>
 
-        <!--Estrutura da parte de ajuda ao usuário - Melissa Turbano -->
-        <section class="ajuda">
-            <h1 id="ajuda_titulo">AJUDA</h1>
-            <hr id="ajuda_linha">
-            <a href="home.html"><button class="ajuda_btn"><span>Página Principal </span></button></a>
-            <hr id="ajuda_sublinha">
-            <a href="#"><button class="ajuda_btn"><span>Área do candidato </span></button></a>
-            <hr id="ajuda_sublinha">
-            <a href="#"><button class="ajuda_btn"><span>Página do candidato </span></button></a>
-            <hr id="ajuda_sublinha">
-            <a href="#"><button class="ajuda_btn"><span>Concurso de remoção </span></button></a>
-            <hr id="ajuda_sublinha">
-            <a href="#"><button class="ajuda_btn"><span>Institucional </span></button></a>
-            <hr id="ajuda_sublinha">
-            <a href="#"><button class="ajuda_btn"><span>Documentos </span></button></a>
-            <hr id="ajuda_sublinha">
-        </section> 
+        <section class="pesquisa">
+            <h1>Resultados da pesquisa</h1>
+            <hr id="linha_pesquisa">
+            <div id ="pesquisa_avancada">
+                <p>Não encontrou o que procurava? Experimente a <a href="#">Pesquisa Avançada</a> para opções de pesquisa mais precisas.</p>
+            </div>
 
-        <!--Botão de contatos-->
-        <a href="contato.html">
-            <button type="button" id="bnt_contato"> <img src="Image/contato.png" id="img_contato" /></button>
-        </a> 
+            <h1>X itens correspondem a sua pesquisa</h1>
+            <hr id="linha_pesquisa">
+            <div id ="resultados">
+                <p> - <a href="#">Concursos-Sevidores</a></p>
+                <p> - <a href="#">Portaria Resultado Preliminar 23° Concurso</a></p>
+                <p> - <a href="#">1 Edital Abertura Concurso de Remoção</a></p>
+                <p> - <a href="#">Em caso de dúvidas</a></p>
+            </div>
+        </section>
 
-        <!--Botão de envio-->
-        <a href="enviar.html">
-            <button type="button" id="bnt_enviar"> <img src="Image/enviar.png" id="img_enviar" /></button>
-        </a>
-
-    
-        <!--Estrutura dos asides - Melissa Turbano -->
+        <!--Estrutura dos asides-->
         <aside>
             <div class="aside-menu">
                 <ul>

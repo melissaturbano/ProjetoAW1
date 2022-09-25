@@ -1,0 +1,53 @@
+.pesquisa {
+    margin: auto;
+    height: 100px;   
+    margin-top: 100px;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.pesquisa h1 {
+    text-transform: uppercase;
+    margin-left: 20%;
+}
+
+#linha_pesquisa {
+    height: 2px;
+    width: 55%;
+    float: left;
+    margin-bottom: 2%;
+}
+
+#pesquisa_avancada, #resultados {
+    text-align: center;
+    width: 50%;
+    background-color: #ececec;
+    box-shadow: 5px 5px 5px 5px #cfcfcf;
+    border: 1px solid #aeaeae;
+    margin: 2%;
+    padding: 1em;
+    font-size: 18px;
+}
+
+#pesquisa_avancada  {
+    margin-bottom: 5%;
+    font-style: italic;
+}
+
+#pesquisa_avancada a {
+    color:#508a97;
+}
+
+
+
+#resultados p {
+    margin: 2%;
+}
+
+#resultados a {
+    color:#000000;
+} 
+
+
+
+
