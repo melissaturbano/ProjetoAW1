@@ -1,4 +1,6 @@
-/*Codificado por Nicole Miguel*/
+/* Codificado por Nicole Miguel */
+
+/* TABELAS DEMONSTRATIVOS E PORTARIA CONJUNTA */
 .tabelas_docs {
     height: 100px;   
     margin-top: 100px;
@@ -63,26 +65,3 @@ td a {
 #subtitulo {
     background-color: #f8fdb5;
 }
-
-
-/*Botão de contato */
-#bt_contato {
-    border-radius: 25%;
-    width: 5%;
-    height: 7%;
-    background-color: white;
-    margin-left: 75%;
-    margin-bottom: 3%;
-    cursor: pointer;
-}
-
-#img_contato {
-    border-radius: 18%;
-    width: 70%;
-    height: 65%;   
-}
-
-#bt_contato:hover {
-    background-color: #fdf8cf;
-    border: 2.5px solid #b7ba5a;
-} 
