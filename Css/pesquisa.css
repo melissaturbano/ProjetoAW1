@@ -1,3 +1,5 @@
+/* Codificado por Nicole Miguel */
+
 .pesquisa {
     margin: auto;
     height: 100px;   
@@ -6,9 +8,16 @@
     margin-top: 5%;
 }
 
-.pesquisa h1 {
+.pesquisa h1, h2 {
     text-transform: uppercase;
     margin-left: 20%;
+}
+
+.pesquisa h2 {
+    margin-top: 5%;
+    margin-right: 8%;
+    margin-left: 15%;
+    margin-bottom: 2%;
 }
 
 #linha_pesquisa {
@@ -19,7 +28,7 @@
     background-color: rgb(105, 155, 179);
 }
 
-#pesquisa_avancada, #resultados {
+#resultados {
     text-align: center;
     width: 50%;
     background-color: #ececec;
@@ -29,17 +38,6 @@
     padding: 1em;
     font-size: 18px;
 }
-
-#pesquisa_avancada  {
-    margin-bottom: 5%;
-    font-style: italic;
-}
-
-#pesquisa_avancada a {
-    color:#508a97;
-}
-
-
 
 #resultados p {
     margin: 2%;

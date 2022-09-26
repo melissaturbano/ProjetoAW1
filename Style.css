@@ -418,7 +418,7 @@ header {
 }
 
 /*Botão de enviar*/
-#bnt_enviar {
+#bt_enviar {
     border-radius: 25%;
     width: 5%;
     height: 7%;
@@ -434,7 +434,7 @@ header {
     height: 65%;
 }
 
-#bnt_enviar:hover {
+#bt_enviar:hover {
     background-color: #e2fcbb;
     border: 2.5px solid #87a061;
 }
