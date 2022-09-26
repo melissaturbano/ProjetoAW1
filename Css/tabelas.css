@@ -3,7 +3,7 @@
 /* SECTION - GERAL */
 
 .tabelasDocumentos {
-    margin-top: 100px;
+    margin-top: 8%;
     margin-left: 0;
     margin-bottom: 30%;
     height: 100px;
@@ -12,9 +12,11 @@
 }
 
 .dadosGerais {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 0;
     margin-bottom: 30%;
+    align-items: center;
+    width: 120%;
 }
 
 /* SECTION - TÍTULOS */
@@ -27,24 +29,52 @@
 
 #linha_titulo {
     height: 2px;
-    width: 150%;
+    width: 140%;
     float: left;
-    margin-top: 0px;
+    margin-top: 0;
     background-color: rgb(105, 155, 179);
 }
 
 /* Subtítulos */
 #titulo_dados {
-    margin-left: 10%;
+    margin-left: 9%;
     font-size: 140%;
     text-transform: capitalize;
+    font-weight: 700;
 }
 
-#linha_titulo {
+#linha_subtitulo {
     height: 1px;
-    width: 120%;
+    width: 100%;
     float: left;
-    margin-top: 0px;
+    margin-top: 0;
+}
+
+/* CAIXAS COM LINKS PARA TABELAS */
+
+.alinhamento_caixas {
+    float: left;
+}
+
+.tabela_caixa {
+    height: auto;
+    width: 80%;
+    background-color: rgb(224, 238, 245);
+    border: 1px solid rgb(194, 215, 224);
+    box-shadow: 6px 6px 16px 0 rgba(20, 20, 20, 0.1);
+    border-radius: 15%;
+    margin-top: 15%;
+    margin-left: 30%;
+}
+
+.tabela_caixa a {
+    text-decoration: none;
+}
+
+#texto_caixa {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 8%;
 }
 
 /* BOTÕES */
