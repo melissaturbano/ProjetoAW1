@@ -14,7 +14,15 @@
 .dadosGerais {
     margin-top: 50px;
     margin-left: 0;
-    margin-bottom: 30%;
+    margin-bottom: 50%;
+    align-items: center;
+    width: 120%;
+}
+
+.contingenciamento {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 10%;
     align-items: center;
     width: 120%;
 }
@@ -37,6 +45,13 @@
 
 /* Subtítulos */
 #titulo_dados {
+    margin-left: 9%;
+    font-size: 140%;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+#titulo_contingenciamento {
     margin-left: 9%;
     font-size: 140%;
     text-transform: capitalize;
