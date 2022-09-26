@@ -1,19 +1,47 @@
 /* HISTÓRICO - Isabella Valerio */
 
-/* SECTION */
+/* SECTION E ARTICLE */
 
 .inicioHistorico {
     margin-top: 100px;
+    margin-left: 0;
+    margin-bottom: 30%;
+    height: 100px;
+    width: 40%;
+    line-height: 1.2;
+}
+
+.constituicaoHistorico {
+    margin-top: 50px;
     margin-left: 0;
     height: 100px;
     width: 40%;
     line-height: 1.2;
 }
 
-/* SECTION - TÍTULO GERAL */
+.organogramaHistorico {
+    margin-top: 570px;
+    margin-left: 0;
+    height: 100px;
+    width: 40%;
+}
 
-#titulo_geral {
+/* SECTION - TÍTULOS */
+
+#titulo_inicio {
     margin-left: 65%;
+    font-size: 170%;
+    text-transform: uppercase;
+}
+
+#titulo_constituicoes {
+    margin-left: 55%;
+    font-size: 170%;
+    text-transform: uppercase;
+}
+
+#titulo_organograma {
+    margin-left: 55%;
     font-size: 170%;
     text-transform: uppercase;
 }
@@ -58,7 +86,20 @@
     margin-left: 6%;
 }
 
+/* ORGANOGRAMA IMG */
+
+#organograma_MPU {
+    height: 180px;
+    width: 30%;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 6px 6px 16px 0 rgba(0,0,0,0.4);
+    margin-left: 50%;
+    margin-top: 4%;
+}
+
 /* BOTÕES */
+
 /*Botão de contato*/
 #bnt_contato {
     border-radius: 25%;
