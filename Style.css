@@ -393,7 +393,7 @@ header {
 }
 
 /* Botão de contato */
-#bt_contato {
+#bnt_contato {
     border-radius: 25%;
     width: 5%;
     height: 7%;
@@ -409,7 +409,7 @@ header {
     height: 65%;    
 }
 
-#bt_contato:hover {
+#bnt_contato:hover {
     background-color: #fdf8cf;
     border: 2.5px solid #b7ba5a;
 }
