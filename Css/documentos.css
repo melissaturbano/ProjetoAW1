@@ -17,6 +17,7 @@
     height: 2px;
     width: 55%;
     float: left;
+    background-color: rgb(105, 155, 179);
 }
 
 .demonstrativos, .portaria {

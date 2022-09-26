@@ -16,6 +16,7 @@
     width: 55%;
     float: left;
     margin-bottom: 2%;
+    background-color: rgb(105, 155, 179);
 }
 
 #pesquisa_avancada, #resultados {
