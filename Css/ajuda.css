@@ -26,12 +26,11 @@
     margin-left: 9%;
 }
 
+/*Modelo dos botões de redirecionamento do usuário*/
 .ajuda_btn {    
     border: none;
-    /* color: white; */
     text-align: center;
     font-size: 130%;
-   /* padding: 20px; */
     cursor: pointer;
     margin-left: 9%;
     margin-top: 30px;

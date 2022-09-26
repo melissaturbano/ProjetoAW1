@@ -35,14 +35,15 @@
     margin-left: 5%;
 }
 
+/*Área de respostas*/
 #questao {
     
-    height: 150%;
+    height: auto;
     width: 50%;
     font-weight: lighter;
     background-color: rgb(236, 236, 236);
     border: 1px solid #717171;
-    font-size: 100%;
+    font-size: 1em;
     text-transform: uppercase;
     margin-top: 20px;
     margin-left: 5%;    
@@ -50,8 +51,12 @@
 
 #questao > p {
     margin: 2%;
+    text-indent: 1.5em;
+    text-transform: none;
+    text-align: justify;
 }
 
+/*Área de entre em contato*/
 #contato {
     border-radius: 15px;
     /*height: 50px;*/
@@ -68,7 +73,6 @@
     align-items: center;
     justify-content: center;    
 }
-
 
 /*Botão de contato*/
 #bnt_contato {
