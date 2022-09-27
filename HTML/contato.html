@@ -7,19 +7,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Isabella Valerio, Melissa Turbano, Nicole Miguel">
-        <meta name="description" content="Ajuda - reestruturação do site MPU">
-        <meta name="keywords" content="html, ajuda, mpu, governo, seleção">
-        <link rel="stylesheet" type="text/css" href="Css/ajuda.css">
-        <link rel="stylesheet" type="text/css" href="Style.css">
-        <link rel="shortcut icon" type="image/x-icon" href="Image/logo.png">
-        <title>Ajuda</title>
+        <meta name="description" content="Contato - reestruturação do site MPU">
+        <meta name="keywords" content="html, contato, mpu, governo, seleção">
+        <link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/contato.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../Image/logo.png">
+        <title>Contato</title>
     </head>
-    
+
     <body>
         <header>
             <!-- Inserção do logo e título da página-->
             <div class="logo">
-                <a href="home.html"><img id="logo_img" src="Image/logo.png" alt="Logo MPU"></a>
+                <a href="home.html"><img id="logo_img" src="../Image/logo.png" alt="Logo MPU"></a>
                 <h2 id="logo_letra">MPU</h2>
                 <hr id="logo_linha">
                 <h1 id="logo_titulo">Ministério Público da União</h1>
@@ -27,10 +27,10 @@
            
             <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
             <div class="botoes">
-                <a href="ajuda.html"><button id="help_bt"><img src="Image/help.jpg" id="help_img"></button></a>
-                <a href="faq.html"><button id="faq_bt"><img src="Image/faq.jpg" id="faq_img"></button></a>
+                <a href="ajuda.html"><button id="help_bt"><img src="../Image/help.jpg" id="help_img"></button></a>
+                <a href="faq.html"><button id="faq_bt"><img src="../Image/faq.jpg" id="faq_img"></button></a>
                 <form id="caixa_pesquisa" action="pesquisa.html">
-                    <img id="lupa_img" src="Image/search.png" alt="Lupa de pesquisa"/>
+                    <img id="lupa_img" src="../Image/search.png" alt="Lupa de pesquisa"/>
                     <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
                     <button type="submit" id="ok_bt">OK</button>
                 </form>
@@ -68,35 +68,49 @@
             </ul>
         </nav>
 
-        <!--Estrutura da parte de ajuda ao usuário - Melissa Turbano -->
-        <section class="ajuda">
-            <h1 id="ajuda_titulo">AJUDA</h1>
-            <hr id="ajuda_linha">
-            <a href="home.html"><button class="ajuda_btn"><span>Página Principal</span></button></a>
-            <hr id="ajuda_sublinha">
-            <a href="#"><button class="ajuda_btn"><span>Área do candidato</span></button></a>
-            <hr id="ajuda_sublinha">
-            <a href="#"><button class="ajuda_btn"><span>Página do candidato</span></button></a>
-            <hr id="ajuda_sublinha">
-            <a href="#"><button class="ajuda_btn"><span>Concurso de remoção</span></button></a>
-            <hr id="ajuda_sublinha">
-            <a href="#"><button class="ajuda_btn"><span>Institucional</span></button></a>
-            <hr id="ajuda_sublinha">
-            <a href="#"><button class="ajuda_btn"><span>Documentos</span></button></a>
-            <hr id="ajuda_sublinha">
+        <!--Estrutura da parte de contato -->
+        <section class="contato">
+            <h1 id="contato_titulo">CONTATO</h1>
+            <hr id="contato_linha">
+            <article class="formulario">
+                <form action=" " name="form_contato" method="POST">
+                    <fieldset id="caixa">
+                        <legend>Seus dados</legend>
+                        <div id="nome">
+                            <label for="nome_id">Nome* </label>
+                            <br><br>
+                            <input type="text" name="nome" id="nome_id" required placeholder="Ana Laura" >
+                        </div>
+
+                        <div id="sobrenome">
+                            <label for="sobrenome_id">Sobrenome* </label>
+                            <br><br>
+                            <input type="name" name="sobrenome" id="sobrenome_id" required placeholder="Messias">
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="caixa">
+                        <legend>Mensagem</legend>
+                        <div id="msg">
+                            <textarea placeholder="Comentário..."></textarea>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" id="enviar_id" onclick="Enviar()">Enviar</button>
+                    <button type="reset" id="cancelar_id">Cancelar</button>
+                </form>
+            </article>
         </section> 
 
-        <!--Botão de contatos-->
-        <a href="contato.html">
-            <button type="button" id="bnt_contato"> <img src="Image/contato.png" id="img_contato" /></button>
-        </a> 
 
-        <!--Botão de envio-->
-        <a href="enviar.html">
-            <button type="button" id="bnt_enviar"> <img src="Image/enviar.png" id="img_enviar" /></button>
+        <!--Botão de contato -->
+        <a href="contato.html">
+            <button type="button" id="bnt_contato"> <img src="../Image/contato.png" id="img_contato" /></button>
         </a>
 
-        <!--Estrutura dos asides -->
+        
+
+        <!-- Estrutura dos asides -->
         <aside>
             <div class="aside-menu">
                 <ul>
@@ -131,7 +145,7 @@
                     <li><a href="http://www.transparencia.mpf.mp.br/">Transparência Ministério Público</a></li>
                 </ul>
             </div>            
-        </aside> 
+        </aside>
 
         <!-- Inserção footer -->
         <footer>
@@ -139,5 +153,8 @@
             <hr class="footer_linha">
             <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
         </footer>
+
+        <!-- Utilização de código em JavaScript -->
+        <script src="Js/contato.js"></script>
     </body>
 </html>

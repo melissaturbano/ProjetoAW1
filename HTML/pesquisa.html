@@ -1,25 +1,25 @@
-<!-- Codificado por Nicole Miguel-->
+<!-- Codificado por Nicole Miguel -->
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <!-- Tags meta que auxiliam nos mecanismos de pesquisa-->
+        <!-- tags meta que auxiliam nos mecanismos de pesquisa-->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Isabella Valerio, Melissa Turbano, Nicole Miguel">
-        <meta name="description" content="Horus - reestruturação do site MPU">
-        <meta name="keywords" content="html, horus, mpu, governo, seleção">
-        <link rel="stylesheet" type="text/css" href="Style.css">
-        <link rel="stylesheet" type="text/css" href="Css/horus.css">
-        <link rel="shortcut icon" type="image/x-icon" href="Image/logo.png">
-        <title>Concurso de Remoção - Sistema Hórus</title>
+        <meta name="description" content="Home - reestruturação do site MPU">
+        <meta name="keywords" content="html, home, mpu, governo, seleção">
+        <link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/pesquisa.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../Image/logo.png">
+        <title>Pesquisa</title>
     </head>
 
     <body>
         <header>
             <!-- Inserção do logo e título da página-->
             <div class="logo">
-                <a href="home.html"><img id="logo_img" src="Image/logo.png" alt="Logo MPU"></a>
+                <a href="home.html"><img id="logo_img" src="../Image/logo.png" alt="Logo MPU"></a>
                 <h2 id="logo_letra">MPU</h2>
                 <hr id="logo_linha">
                 <h1 id="logo_titulo">Ministério Público da União</h1>
@@ -27,12 +27,12 @@
            
             <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
             <div class="botoes">
-                <a href="ajuda.html"><button id="help_bt"><img src="Image/help.jpg" id="help_img"></button></a>
-                <a href="faq.html"><button id="faq_bt"><img src="Image/faq.jpg" id="faq_img"></button></a>
+                <a href="ajuda.html"><button id="help_bt"><img src="../Image/help.jpg" id="help_img"></button></a>
+                <a href="faq.html"><button id="faq_bt"><img src="../Image/faq.jpg" id="faq_img"></button></a>
                 <form id="caixa_pesquisa" action="pesquisa.html">
-                    <img id="lupa_img" src="Image/search.png" alt="Lupa de pesquisa"/>
+                    <img id="lupa_img" src="../Image/search.png" alt="Lupa de pesquisa"/>
                     <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
-                    <button type="submit" id="ok_bt">OK</button>
+                    <button type="submit" id="ok_bt" >OK</button>
                 </form>
             </div>
         </header>
@@ -68,65 +68,18 @@
             </ul>
         </nav>
 
-        <!--Formulário horus -->
-        <section class="horus">
-            <h1>Sistema Hórus</h1>
-            <hr id="linha_horus">
-
-            <article class="formulario">
-                <form action=" " name="form_horus" method="POST">
-                    <fieldset id="ministerio">
-                        <legend>Ministério</legend>
-                        <div id="atuacao">
-                            <label id="lab_titulo" for="atuação_id">Atuação</label>
-                            <br><br>
-                            <select name="atuacao" id="atuacao_id">
-                                <option selected="selected">Selecione seu local de trabalho</option>
-                                <option value="mpf">MPF - Ministério Público Federal</option>
-                                <option value="mpt">MPT - Ministério Público do Trabalho</option>
-                                <option value="mpm">MPM - Ministério Público Militar</option>
-                                <option value="mpdft">MPDFT - Ministério Público do Distrito Federal e Territórios</option>
-                            </select>
-                        </div>
-
-                        <div id="profissao">
-                            <label id="lab_titulo" for="profissao_id">Profissão</label>
-                            <br><br>
-                            <select name="profissao" id="profissao_id">
-                                <option selected="selected">Selecione seu cargo</option>
-                                <option value="membro">Membro/Servidor (Quadro, Contratado, Requisitado)</option>
-                                <option value="cedido">Servidor Cedido</option>
-                                <option value="provisorio">Servidor em Lotação Provisória fora do MPF</option>
-                                <option value="aposentado">Membro/Servidor Aposentado</option>
-                                <option value="pensionista">Pensionista</option>
-                                <option value="estagiario">Estagiário</option>
-                                <option value="exonerado">Exonerado</option>
-                                <option value="removido">Removido para MPT, MPM ou MPDFT</option>
-                                <option value="terceirizado">Terceirizado</option>
-                                <option value="voluntario">Voluntário</option>
-                                <option value="inativo">Estagiário Inativo</option>
-                            </select>
-                        </div>
-                    </fieldset>
-
-                    <fieldset id="login">
-                        <legend>Login</legend>
-                        <div id="email">
-                            <label id="lab_titulo" for="email_id">E-mail* </label>
-                            <br><br>
-                            <input type="email" name="email" id="email_id" required placeholder="xxxxx@xxx.xx" onblur="validarEmail()">
-                        </div>
-                        <div id="senha">
-                            <label id="lab_titulo" for="senha_id">Senha* </label>
-                            <br><br>
-                            <input type="password" name="senha" id="senha_id" required placeholder="senha1234_">
-                        </div>
-                    </fieldset>
-
-                    <button type="submit" id="entrar_horus">Entrar</button>
-                    <button type="reset" id="cancelar_horus">Cancelar</button>
-                </form>
-            </article>
+        <!-- Resultado da pesquisa (itens encontrados) -->
+        <section class="pesquisa">
+            <h1>Resultados da pesquisa</h1>
+            <hr id="linha_pesquisa">
+          
+            <h2>X itens correspondem a sua pesquisa</h2>
+            <div id ="resultados">
+                <p> - <a href="#">Concursos-Sevidores</a></p>
+                <p> - <a href="#">Portaria Resultado Preliminar 23° Concurso</a></p>
+                <p> - <a href="#">1 Edital Abertura Concurso de Remoção</a></p>
+                <p> - <a href="#">Em caso de dúvidas</a></p>
+            </div>
         </section>
 
         <!-- Estrutura dos asides -->
@@ -172,8 +125,5 @@
             <hr class="footer_linha">
             <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
         </footer>
-
-        <!-- Utilização de código em JavaScript -->
-        <script src="Js/horus.js"></script>
     </body>
 </html>

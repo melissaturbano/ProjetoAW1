@@ -7,19 +7,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Isabella Valerio, Melissa Turbano, Nicole Miguel">
-        <meta name="description" content="Portaria Conjunta - reestruturação do site MPU">
-        <meta name="keywords" content="html, portaria conjunta, mpu, governo, seleção">
-        <link rel="stylesheet" type="text/css" href="Style.css">
-        <link rel="stylesheet" type="text/css" href="Css/documentos.css">
-        <link rel="shortcut icon" type="image/x-icon" href="Image/logo.png">
-        <title>Documentos - Portaria Conjunta</title>
+        <meta name="description" content="Horus - reestruturação do site MPU">
+        <meta name="keywords" content="html, horus, mpu, governo, seleção">
+        <link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/horus.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../Image/logo.png">
+        <title>Concurso de Remoção - Sistema Hórus</title>
     </head>
 
     <body>
         <header>
             <!-- Inserção do logo e título da página-->
             <div class="logo">
-                <a href="home.html"></a><img id="logo_img" src="Image/logo.png" alt="Logo MPU"></a>
+                <a href="home.html"><img id="logo_img" src="../Image/logo.png" alt="Logo MPU"></a>
                 <h2 id="logo_letra">MPU</h2>
                 <hr id="logo_linha">
                 <h1 id="logo_titulo">Ministério Público da União</h1>
@@ -27,10 +27,10 @@
            
             <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
             <div class="botoes">
-                <a href="ajuda.html"><button id="help_bt"><img src="Image/help.jpg" id="help_img"></button></a>
-                <a href="faq.html"><button id="faq_bt"><img src="Image/faq.jpg" id="faq_img"></button></a>
+                <a href="ajuda.html"><button id="help_bt"><img src="../Image/help.jpg" id="help_img"></button></a>
+                <a href="faq.html"><button id="faq_bt"><img src="../Image/faq.jpg" id="faq_img"></button></a>
                 <form id="caixa_pesquisa" action="pesquisa.html">
-                    <img id="lupa_img" src="Image/search.png" alt="Lupa de pesquisa"/>
+                    <img id="lupa_img" src="../Image/search.png" alt="Lupa de pesquisa"/>
                     <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
                     <button type="submit" id="ok_bt">OK</button>
                 </form>
@@ -68,48 +68,76 @@
             </ul>
         </nav>
 
-        <!-- Tabelas dos documentos da Portaria Conjunta -->
-       <article class="tabelas_docs">
-            <h1>Portaria Conjuta</h1>
-            <hr id="linha_portaria">
+        <!--Formulário horus -->
+        <section class="horus">
+            <h1>Sistema Hórus</h1>
+            <hr id="linha_horus">
 
-            <section class="portaria">
-                <table id="table3">
-                    <tr>
-                        <th id="titulo">SOF/SEGEP n° 5/2015 - MPU (Abril/2022)</th>
-                    </tr>
-                    <tr>
-                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/2tabela_1_1_mpu_abr.ods">Anexo I - Quantitativo Físico de Pessoal - Servidores</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/tabela_1_2_mpu_dez.ods">Anexo I - Quantitativo Físico de Pessoal - Membros</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/2tabela_2_1_mpu_abr_.ods">Anexo II - Remuneração/Subsídio de Cargo Efetivo - Servidores</a></td>
-                    </tr>
-                </table>
+            <article class="formulario">
+                <form action=" " name="form_horus" method="POST">
+                    <fieldset id="ministerio">
+                        <legend>Ministério</legend>
+                        <div id="atuacao">
+                            <label id="lab_titulo" for="atuação_id">Atuação</label>
+                            <br><br>
+                            <select name="atuacao" id="atuacao_id">
+                                <option selected="selected">Selecione seu local de trabalho</option>
+                                <option value="mpf">MPF - Ministério Público Federal</option>
+                                <option value="mpt">MPT - Ministério Público do Trabalho</option>
+                                <option value="mpm">MPM - Ministério Público Militar</option>
+                                <option value="mpdft">MPDFT - Ministério Público do Distrito Federal e Territórios</option>
+                            </select>
+                        </div>
 
-                <table id="table4">
-                    <tr>
-                        <th id="titulo">SOF/SEGEP n° 5/2015 - MPU (Dezembro/2022)</th>
-                    </tr>
-                    <tr>
-                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/3tabela_1_1_mpu_dez.ods">Anexo I - Quantitativo Físico de Pessoal - Servidores</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/tabela_1_2_mpu_dez.ods">Anexo I - Quantitativo Físico de Pessoal - Membros</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/tabela_2_1_mpu_dez.ods">Anexo II - Remuneração/Subsídio de Cargo Efetivo - Servidores</a></td>
-                    </tr>
-                </table>
-            </section>
-       </article>
+                        <div id="profissao">
+                            <label id="lab_titulo" for="profissao_id">Profissão</label>
+                            <br><br>
+                            <select name="profissao" id="profissao_id">
+                                <option selected="selected">Selecione seu cargo</option>
+                                <option value="membro">Membro/Servidor (Quadro, Contratado, Requisitado)</option>
+                                <option value="cedido">Servidor Cedido</option>
+                                <option value="provisorio">Servidor em Lotação Provisória fora do MPF</option>
+                                <option value="aposentado">Membro/Servidor Aposentado</option>
+                                <option value="pensionista">Pensionista</option>
+                                <option value="estagiario">Estagiário</option>
+                                <option value="exonerado">Exonerado</option>
+                                <option value="removido">Removido para MPT, MPM ou MPDFT</option>
+                                <option value="terceirizado">Terceirizado</option>
+                                <option value="voluntario">Voluntário</option>
+                                <option value="inativo">Estagiário Inativo</option>
+                            </select>
+                        </div>
+                    </fieldset>
 
-        <!--Botão de contatos  -->
+                    <fieldset id="login">
+                        <legend>Login</legend>
+                        <div id="email">
+                            <label id="lab_titulo" for="email_id">E-mail* </label>
+                            <br><br>
+                            <input type="email" name="email" id="email_id" required placeholder="xxxxx@xxx.xx" onblur="validarEmail()">
+                        </div>
+                        <div id="senha">
+                            <label id="lab_titulo" for="senha_id">Senha* </label>
+                            <br><br>
+                            <input type="password" name="senha" id="senha_id" required placeholder="senha1234_">
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" id="entrar_horus">Entrar</button>
+                    <button type="reset" id="cancelar_horus">Cancelar</button>
+                </form>
+            </article>
+        </section>
+
+        <!--Botão de contatos-->
         <a href="contato.html">
-            <button type="button" id="bnt_contato"> <img src="Image/contato.png" id="img_contato" /></button>
+            <button type="button" id="bnt_contato"> <img src="../Image/contato.png" id="img_contato" /></button>
         </a> 
+
+        <!--Botão de envio-->
+        <a href="enviar.html">
+            <button type="button" id="bnt_enviar"> <img src="../Image/enviar.png" id="img_enviar" /></button>
+        </a>
 
         <!-- Estrutura dos asides -->
         <aside>
@@ -146,7 +174,7 @@
                     <li><a href="http://www.transparencia.mpf.mp.br/">Transparência Ministério Público</a></li>
                 </ul>
             </div>            
-        </aside>
+        </aside> 
 
         <!-- Inserção do footer -->
         <footer>
@@ -154,5 +182,8 @@
             <hr class="footer_linha">
             <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
         </footer>
+
+        <!-- Utilização de código em JavaScript -->
+        <script src="Js/horus.js"></script>
     </body>
 </html>
