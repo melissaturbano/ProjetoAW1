@@ -312,7 +312,8 @@ header {
     visibility: hidden;
 }
 
-/* Menu sobre o mouse */
+
+/* Menu sob o mouse */
 .aside-menu ul li:hover ul {
     visibility: visible;
 }
@@ -320,6 +321,7 @@ header {
 .aside-menu a:hover {
     background-color: #a5a5a5;
 }
+
 
 /* Submenu */
 .aside-menu ul ul li {
