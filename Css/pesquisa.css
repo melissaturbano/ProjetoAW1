@@ -5,12 +5,20 @@
     height: 100px;   
     margin-top: 100px;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 100px;
+}
+
+.pesquisa h1 {
+    text-transform: uppercase;
+    margin-left: 20%;
+    font-size: 170%;
+    
 }
 
 .pesquisa h1, h2 {
     text-transform: uppercase;
     margin-left: 20%;
+    
 }
 
 .pesquisa h2 {

@@ -3,7 +3,7 @@
 /* SECTION - GERAL */
 
 .tabelasDocumentos {
-    margin-top: 8%;
+    margin-top: 100px;
     margin-left: 0;
     margin-bottom: 30%;
     height: 100px;
@@ -31,8 +31,8 @@
 
 #titulo_tabelas {
     margin-left: 50%;
-    font-size: 170%;
     text-transform: uppercase;
+    font-size: 170%;
 }
 
 #linha_titulo {
