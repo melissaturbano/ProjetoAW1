@@ -10,7 +10,7 @@
         <meta name="description" content="Legislação - reestruturação do site MPU">
         <meta name="keywords" content="html, legislação, mpu, governo, seleção">
         <link rel="stylesheet" type="text/css" href="Style.css">
-        <link rel="stylesheet" type="text/css" href="Css/documentos.css">
+        <link rel="stylesheet" type="text/css" href="Css/legislacao.css">
         <link rel="shortcut icon" type="image/x-icon" href="Image/logo.png">
         <title>Legislação</title>
     </head>
@@ -70,67 +70,34 @@
 
         <!-- Inserção tabela de legislações -->
         <section class="legislacoes">
-            <h1 id="titulo_legislacao">Legislações sobre o MPU</h1>
+            <h1 id="titulo_legislacao">Legislações MPU</h1>
             <hr id="linha_legislacao">
-
-            <!-- Inserção tabelas de dados gerais -->
-            <div class="dadosGerais">
-                <h1 id="titulo_dados">Dados Gerais</h1>
-                <hr id="linha_subtitulo">
-                <div class="alinhamento_caixas">
-                    <div class="tabela_caixa">
-                        <a href="#"><p id="texto_caixa">Tabela 1.1 MPU - dezembro</p></a>
-                    </div>
-                    <div class="tabela_caixa">
-                        <a href="#"><p id="texto_caixa">Tabela 1.2 MPU - dezembro</p></a>
-                    </div>
-                </div>
-                <div class="alinhamento_caixas">
-                    <div class="tabela_caixa">
-                        <a href="#"><p id="texto_caixa">Tabela 2.1 MPU - dezembro</p></a>
-                    </div>
-                    <div class="tabela_caixa">
-                        <a href="#"><p id="texto_caixa">Tabela 2.2 MPU - dezembro</p></a>
-                    </div>
-                </div>
-                <div class="alinhamento_caixas">
-                    <div class="tabela_caixa">
-                        <a href="#"><p id="texto_caixa">Tabela 3.0 MPU - dezembro</p></a>
-                    </div>
-                    <div class="tabela_caixa">
-                        <a href="#"><p id="texto_caixa">Tabela 4.0 MPU - dezembro</p></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Inserção tabelas de contingências -->
-            <div class="contingenciamento">
-                <h1 id="titulo_contingenciamento">Contingenciamento - Portal da Transparência</h1>
-                <hr id="linha_subtitulo">
-                <div class="alinhamento_caixas">
-                    <div class="tabela_caixa">
-                        <a href="#"><p id="texto_caixa">Tabela 1.1 MPU - agosto</p></a>
-                    </div>
-                    <div class="tabela_caixa">
-                        <a href="#"><p id="texto_caixa">Tabela 1.2 MPU - agosto</p></a>
-                    </div>
-                </div>
-                <div class="alinhamento_caixas">
-                    <div class="tabela_caixa">
-                        <a href="#"><p id="texto_caixa">Tabela 2.1 MPU - agosto</p></a>
-                    </div>
-                    <div class="tabela_caixa">
-                        <a href="#"><p id="texto_caixa">Tabela 2.2 MPU - agosto</p></a>
-                    </div>
-                </div>
-                <div class="alinhamento_caixas">
-                    <div class="tabela_caixa">
-                        <a href="#"><p id="texto_caixa">Tabela 3.0 MPU - agosto</p></a>
-                    </div>
-                    <div class="tabela_caixa">
-                        <a href="#"><p id="texto_caixa">Tabela 4.0 MPU - agosto</p></a>
-                    </div>
-                </div>
+            <div class="legislacaoTabelaConfig">
+                <table id="legislacao_tabela">
+                    <thead>
+                        <tr>
+                            <th id="titulo_tabela">Assunto</th>
+                            <th id="titulo_tabela">Documento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="conteudo_tabela_assunto">Dispõe sobre a organização, as atribuições e o estatuto do Ministério Público da União.</td>
+                            <td id="conteudo_tabela_doc"><a href="https://www.planalto.gov.br/ccivil_03/Leis/LCP/Lcp75.htm">Lei Complementar nº 75/93</a></td>
+                        </tr>
+                        <tr>
+                            <td id="conteudo_tabela_assunto">Dispõe sobre as carreiras dos servidores do Ministério Público da União, fixa os valores de sua remuneração; revoga a 
+                                <a href="https://www.planalto.gov.br/ccivil_03/Leis/L9953.htm">Lei no 9.953 - 4 de janeiro de 2000</a> e a 
+                                <a href="https://www.planalto.gov.br/ccivil_03/Leis/2002/L10476.htm">Lei no 10.476 - 27 de junho de 2002</a>, 
+                                e dá outras providências.</td>
+                            <td id="conteudo_tabela_doc"><a href="https://www.planalto.gov.br/ccivil_03/_Ato2004-2006/2006/Lei/L11415.htm">Lei nº 11.415/2006</a></td>
+                        </tr>
+                        <tr>
+                            <td id="conteudo_tabela_assunto">Regimento Interno do Ministério Público Federal.</td>
+                            <td id="conteudo_tabela_doc"><a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/http://www.mpu.mp.br/navegacao/legislacao/reg_internoMPF.pdf">Portaria Nº 358, de 02 de junho de 1998</a></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
