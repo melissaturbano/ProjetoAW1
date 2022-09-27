@@ -285,7 +285,7 @@ header {
         
 .aside-menu > ul {
     list-style: none;	
-    position: relative;
+    position: static;
     margin-left: 50px;
 }
 
@@ -368,7 +368,7 @@ header {
         
 .aside > ul {
     list-style: none;	
-    position: relative;
+    position: static;
     margin-left: 50px;
 }
 
