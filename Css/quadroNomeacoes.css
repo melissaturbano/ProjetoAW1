@@ -17,7 +17,7 @@
     height: 2px;
     width: 55%;
     float: left;
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
 }
 
 .formulario {
@@ -131,7 +131,7 @@ select, #nome_id {
     border-radius: 25%;
     width: 5%;
     height: 7%;
-    background-color: white;
+    background-color: #ffffff;
     margin-left: 55%;
     margin-bottom: 3%;
     cursor: pointer;
