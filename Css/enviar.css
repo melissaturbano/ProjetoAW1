@@ -9,7 +9,7 @@
 
 #enviar_titulo {
     margin-left: 25%;
-    font-size: 200%;
+    font-size: 170%;
 }
 
 #enviar_linha {
@@ -17,7 +17,7 @@
     width: 60%;
     float: left;
     margin-top: 0px;
-    background-color: rgb(105, 155, 179);
+    background-color: rgb(0, 0, 0);
 }
 
 .formulario {

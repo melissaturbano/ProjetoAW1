@@ -3,13 +3,12 @@
     margin: auto;
     height: 100px;   
     margin-top: 100px;
+    
 }
 
 #faq_titulo {
-    margin-left: 5%;
-    /*font-size: 40px;*/
-    font-size: 200%;
-    margin-left: 10%;    
+    margin-left: 15%;
+    font-size: 170%;    
 }
 
 #faq_linha {
@@ -17,7 +16,7 @@
     width: 55%;
     float: left;
     margin-top: 0px;
-    background-color: rgb(45, 45, 45);
+    background-color: rgb(0, 0, 0);
 }
 
 #faq_subtitulo {

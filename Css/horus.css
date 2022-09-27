@@ -4,19 +4,20 @@
     height: 100px;   
     margin-top: 100px;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 100px;
 }
 
 .horus h1 {
     text-transform: uppercase;
     margin-left: 20%;
+    font-size: 170%;
 }
 
 #linha_horus {
     height: 2px;
     width: 55%;
     float: left;
-    background-color: rgb(105, 155, 179);
+    background-color: rgb(0, 0, 0);
 }
 
 .formulario {
