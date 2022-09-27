@@ -1,0 +1,176 @@
+<!-- Codificado por Isabella Valerio-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Tags meta que auxiliam nos mecanismos de pesquisa-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Isabella Valerio, Melissa Turbano, Nicole Miguel">
+        <meta name="description" content="Página Candidato - reestruturação do site MPU">
+        <meta name="keywords" content="html, página do candidato, mpu, governo, seleção">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <link rel="stylesheet" type="text/css" href="Css/areaCandidato.css">
+        <link rel="shortcut icon" type="image/x-icon" href="Image/logo.png">
+        <title>Página do Candidato</title>
+    </head>
+
+    <body>
+        <header>
+            <!-- Inserção do logo e título da página -->
+            <div class="logo">
+                <a href="home.html"></a><img id="logo_img" src="Image/logo.png" alt="Logo MPU"></a>
+                <h2 id="logo_letra">MPU</h2>
+                <hr id="logo_linha">
+                <h1 id="logo_titulo">Ministério Público da União</h1>
+            </div>
+           
+            <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
+            <div class="botoes">
+                <a href="ajuda.html"><button id="help_bt"><img src="Image/help.jpg" id="help_img"></button></a>
+                <a href="faq.html"><button id="faq_bt"><img src="Image/faq.jpg" id="faq_img"></button></a>
+                <form id="caixa_pesquisa" action="pesquisa.html">
+                    <img id="lupa_img" src="Image/search.png" alt="Lupa de pesquisa"/>
+                    <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
+                    <button type="submit" id="ok_bt">OK</button>
+                </form>
+            </div>
+        </header>
+
+        <!-- Inserção de botão menu responsivo -->
+        <input type="checkbox" id="bt_menu">
+        <label for="bt_menu">&#9776;</label>
+
+        <!-- Inserção de estrutura do menu -->
+        <nav class="menu">
+            <ul>
+                <li><a href="home.html">Página Inicial</a></li>
+                <li><a href="#">Institucional</a>
+                    <ul>
+                        <li id="subMenu"><a href="sobreMPU.html">Sobre o MPU</a>
+                        <li id="subMenu"><a href="historico.html">Histórico</a>
+                    </ul>
+                </li>
+                <li><a href="#">Documentos</a>
+                    <ul>
+                        <li id="subMenu"><a href="tabelas.html">Tabelas</a>
+                        <li id="subMenu"><a href="demonstrativos.html">Demonstrativos</a>
+                        <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
+                    </ul>
+                </li>
+                <li><a href="legislacao.html">Legislação</a></li>
+                <li><a href="#">Órgãos</a>
+                    <ul>
+                        <li id="subMenu"><a href="#">AUDIN</a>
+                        <li id="subMenu"><a href="#">ESMPU</a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Inserção texto Página do Candidato -->
+        <section class="areaGeral">
+            <h1 id="titulo_intro">Página Candidato</h1>
+            <hr id="linha_titulo">
+
+            <!-- Inserção texto de introdução -->
+            <div class="caixa">
+                <div id="caixa_bloco">
+                    <ul id="topico_quadrado_intro">
+                        <li>Candidato(a) nomeado(a) para o MPU, o sistema de posse eletrônica disponibiliza o preenchimento eletrônico dos formulários necessários à posse e não dispensa a apresentação da documentação impressa e assinada na unidade de lotação para a qual foi nomeado(a);</li>
+                        <li>A senha para esse acesso será encaminhada para o e-mail cadastrado no ato de inscrição no concurso público. Caso não a receba, você deverá entrar em contato com a Procuradoria-Geral da República pelo endereço eletrônico: <strong>pgr-concurso@mpf.mp.br</strong>;</li>
+                        <li>Recomenda-se ao(à) candidato(a) o contato com a respectiva unidade para a qual foi nomeado(a), a fim de obter esclarecimentos quanto ao horário de funcionamento e informações sobre a apresentação da documentação para a posse.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Inserção índice -->
+            <div class="indice">
+                <h1 id="subtitulo">Índice</h1>
+                <hr id="linha_subtitulo">
+                <div class="caixa_subt">
+                    <div id="caixa_bloco">
+                        <ol id="topico_numeral">
+                            <li><a href="procedimentos"></a>Procedimentos Gerais</li>
+                            <li><a href="#"></a>Documentação Necessária</li>
+                            <li><a href="#"></a>Orientações Importantes</li>
+                            <li><a href="#"></a>Posse Eletrônica</li>
+                            <li><a href="#"></a>Contatos</li>
+                            <li><a href="#"></a>Em caso de dúvidas</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Botão de contatos-->
+        <a href="contato.html">
+            <button type="button" id="bnt_contato"> <img src="Image/contato.png" id="img_contato" /></button>
+        </a> 
+
+        <!--Botão de envio-->
+        <a href="enviar.html">
+            <button type="button" id="bnt_enviar"> <img src="Image/enviar.png" id="img_enviar" /></button>
+        </a>
+
+        <!--Estrutura dos asides-->
+        <aside>
+            <div class="aside-menu">
+                <ul>
+                    <li><a href="#">Concursos</a>
+                        <ul>
+                            <li><a href="#">10º Concurso</a>
+                            <li><a href="#">9º Concurso</a>
+                            <li><a href="#">8º Concurso</a>
+                            <li><a href="#">7º Concurso</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Órgãos Relacionados</a>
+                        <ul>
+                            <li><a href="#">CNMP</a>
+                            <li><a href="#">PGR</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Ramos do MPU</a>
+                        <ul>
+                            <li><a href="#">Ministério Público Federal (MPF)</a>
+                            <li><a href="#">Ministério Público do Trabalho (MPT)</a>
+                            <li><a href="#">Ministério Público do DF</a>
+                            <li><a href="#">Ministério Público Militar (MPM)</a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="aside">
+                <ul>
+                    <li><a href="#">Concursos MPU e MPF<a></li>
+                    <li><a href="#">Transparência Ministério Público</a></li>
+                </ul>
+            </div>
+        </aside> 
+
+        <article class="areaGeral">
+            <div class="procedimentos">
+                <h1 id="subtitulo">Procedimentos Gerais</h1>
+                <hr id="linha_subtitulo">
+                <div class="caixa_subt">
+                    <div id="caixa_bloco">
+                        <ul id="topico_quadrado">
+                            <li>Confira a sua classificação: <a href="https://www.cebraspe.org.br/concursos/MPU_18">CEBRASPE</a>;</li>
+                            <li><a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/http://www.mpu.mp.br/concurso/pagina-do-candidato/1_-_requerimento_desistencia.pdf">Requerimento de Desistência</a> - Caso não tenha interesse na nomeação;</li>
+                            <li><a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/http://www.mpu.mp.br/concurso/pagina-do-candidato/3_-_requerimento_de_alteracao_de_dados.pdf">Requerimento de Alteração de Dados</a> - Para alteração dos seus dados cadastrais após a homologação do resultado final.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Inserção footer -->
+        <footer>
+            <p class="linha"> SAF Sul Quadra 4 Conjunto C - Brasília / DF - CEP 70050-900 - PABX: (61) 3105-5100</p>
+            <hr class="footer_linha">
+            <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
+        </footer>
+    </body>
+</html>

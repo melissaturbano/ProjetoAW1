@@ -1,8 +1,8 @@
-/* HISTÓRICO - Isabella Valerio */
+/* ÁREA DO CANDIDATO - Isabella Valerio */
 
-/* SECTION E ARTICLE */
+/* SECTION */
 
-.inicioHistorico {
+.areaGeral {
     margin-top: 8%;
     margin-left: 0;
     margin-bottom: 30%;
@@ -11,37 +11,25 @@
     line-height: 1.2;
 }
 
-.constituicaoHistorico {
-    margin-top: 50px;
+.indice {
+    margin-top: 13%;
     margin-left: 0;
-    height: 20%;
-    width: 40%;
-    line-height: 1.2;
+    margin-bottom: 50%;
+    align-items: center;
+    width: 120%;
 }
 
-.organogramaHistorico {
-    margin-top: 570px;
+.procedimentos {
     margin-left: 0;
-    height: 20%;
-    width: 40%;
+    margin-bottom: 50%;
+    align-items: center;
+    width: 120%;
 }
 
 /* SECTION - TÍTULOS */
 
-#titulo_inicio {
-    margin-left: 65%;
-    font-size: 170%;
-    text-transform: uppercase;
-}
-
-#titulo_constituicoes {
-    margin-left: 55%;
-    font-size: 170%;
-    text-transform: uppercase;
-}
-
-#titulo_organograma {
-    margin-left: 55%;
+#titulo_intro {
+    margin-left: 45%;
     font-size: 170%;
     text-transform: uppercase;
 }
@@ -54,50 +42,72 @@
     background-color: rgb(0, 0, 0);
 }
 
+/* Subtítulos */
+#subtitulo {
+    margin-left: 9%;
+    font-size: 140%;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+#linha_subtitulo {
+    height: 1px;
+    width: 107%;
+    float: left;
+    margin-top: 0;
+}
+
 /* SECTION - CAIXA */
 
-#caixa {
+.caixa {
     height: auto;
     width: 145%;
     background-color: rgb(236, 236, 236);
     border: 1px solid #aeaeae;
     margin-top: 8%;
-    margin-left: 5%;
+    margin-left: 7%;
 }
 
-#caixa_texto {
+.caixa_subt {
+    height: auto;
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    border: 1px solid #aeaeae;
+    margin-top: 6%;
+    margin-left: 7%;
+}
+
+#caixa_bloco {
     text-transform: none;
     text-align: justify;
     margin-bottom: 0;
     padding: 4%;
 }
 
-#texto_caixa {
+#caixa_texto {
     margin-bottom: 2%;
     text-indent: 1.5em;
 }
 
 /* Tópicos */
-#texto_topico {
-    margin-left: 3.5%;
-    margin-bottom: 1%;
+#topico_quadrado_intro {
+    list-style-type: square;
+    margin-left: 3%;
 }
 
 #topico_quadrado {
     list-style-type: square;
-    margin-left: 6%;
+    margin-left: 3%;
 }
 
-/* ORGANOGRAMA IMG */
+#topico_quadrado a {
+    font-style: italic;
+    color: #000000;
+}
 
-#organograma_MPU {
-    height: 260%;
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 6px 6px 16px 0 rgba(0,0,0,0.4);
-    margin-top: 8%;
-    margin-left: 25%;
-    margin-bottom: 15%;
+#topico_numeral {
+    list-style: decimal-leading-zero;
+    margin-left: 3%;
 }
 
 /* BOTÕES */
@@ -131,7 +141,7 @@
     height: 7%;
     background-color: white;
     margin-left: 3%;
-    margin-bottom:3%;
+    margin-bottom: 3%;
     cursor: pointer;
 }
 
