@@ -285,7 +285,7 @@ header {
         
 .aside-menu > ul {
     list-style: none;	
-    position: relative;
+    position: static;
     margin-left: 50px;
 }
 
@@ -368,7 +368,7 @@ header {
         
 .aside > ul {
     list-style: none;	
-    position: relative;
+    position: static;
     margin-left: 50px;
 }
 
@@ -380,6 +380,32 @@ header {
     align-items: center;
     color: rgb(255, 255, 255);
     line-height: 2.0;
+}
+
+/*Detalhe do aside*/
+.detalhe span {
+    position: relative;
+    transition: 0.5s;
+}
+
+.detalhe span:after {
+    content: "\21D2";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    /*right: -5%;*/
+    left:100%;
+    transition: 0.5s;
+    margin-top: -3%;
+}
+
+.detalhe:hover span {
+    padding-right: 5%;
+}
+
+.detalhe:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 /* Mouse */ 
