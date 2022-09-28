@@ -839,12 +839,23 @@ footer {
     text-align: center;
 }
 
-#conteudo_tabela_assunto a {
-    font-style: italic;
-}
 
+/*Links*/
 #conteudo_tabela_assunto a, #conteudo_tabela_doc a {
-    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+#conteudo_tabela_assunto a:link, #conteudo_tabela_doc a:link {
+    color: #0086d3;
+}
+#conteudo_tabela_assunto a:visited, #conteudo_tabela_doc a:visited{
+    color: #9700d3;
+}
+#conteudo_tabela_assunto a:hover, #conteudo_tabela_doc a:hover {
+    color: #014e7a;
+}
+#conteudo_tabela_assunto a:active, #conteudo_tabela_doc a:active {
+    color: #002941;
 }
 
 
