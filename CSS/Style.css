@@ -1567,6 +1567,59 @@ select, #email_id, #senha_id  {
     background-color: #f79c9c;
 }
 
-/* ----------------------------------------------------------------- */
+/* PESQUISA */
 
-/**/
+/*Geral*/
+
+.pesquisa {
+    margin: auto;
+    height: 100px;   
+    margin-top: 100px;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/*Título*/
+.pesquisa h1 {
+    text-transform: uppercase;
+    margin-left: 10%;
+    font-size: 170%;
+}
+
+.pesquisa h2 {
+    margin-top: 5%;
+    margin-right: 8%;
+    margin-left: 10%;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#linha_pesquisa {
+    height: 2px;
+    width: 55%;
+    float: left;
+    margin-bottom: 2%;
+    background-color: #000000;
+}
+
+/*Resultados*/
+#resultados {
+    text-align: center;
+    width: 50%;
+    background-color: #ececec;
+    box-shadow: 5px 5px 5px 0 #cfcfcf;
+    border: 1px solid #aeaeae;
+    margin: 2%;
+    padding: 1em;
+    font-size: 18px;
+}
+
+#resultados p {
+    margin: 2%;
+    text-align: justify;
+    margin-left: 10%;
+}
+
+#resultados a {
+    color:#000000;
+} 
