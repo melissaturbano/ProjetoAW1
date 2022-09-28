@@ -490,11 +490,8 @@ footer {
     margin-left: 5%;
 }
 
-<<<<<<< HEAD
-/* ----------------------------------------------------------------- */
-=======
+
 /* ------- ISABELLA VALERIO -------- */
->>>>>>> 3f576fa6cc81da2bba514c4e2f8a8c9dc4fdf55a
 
 /* TÓPICOS E LINKS */
 
@@ -511,7 +508,7 @@ footer {
 #topico_quadrado_areaCand a:link, #topico_quadrado_intro a:link, #contato_link a:link {
     color: #0086d3;
 }
-#topico_quadrado_areaCand a:visited, #topico_quadrado_intro a:visited, #contato_link a:visited {
+#topico_quadrado_areaCand a:visited, #topico_quadrado_intro a:visited{
     color: #9700d3;
 }
 #topico_quadrado_areaCand a:hover, #topico_quadrado_intro a:hover, #contato_link a:hover {
@@ -537,8 +534,6 @@ footer {
     font-size: 17px;
     text-shadow: 1.5px 1.5px #1414141a;
 }
-
-/* ----------------------------------------------------------------- */
 
 
 /* SECTION */
@@ -577,11 +572,8 @@ footer {
     width: 120%;
 }
 
-<<<<<<< HEAD
-/* ----------------------------------------------------------------- */
-=======
+
 /* SECTION - TÍTULOS */
->>>>>>> 3f576fa6cc81da2bba514c4e2f8a8c9dc4fdf55a
 
 /* Títulos */
 #titulo_intro {
@@ -875,13 +867,7 @@ footer {
     right: 0;
 }
 
-<<<<<<< HEAD
-/* ----------------------------------------------------------------- */
-
-/*PÁGINA FAQ - Melissa Turbano*/
-=======
 /*PÁGINA FAQ */
->>>>>>> 3f576fa6cc81da2bba514c4e2f8a8c9dc4fdf55a
 
 .faq {
     margin: auto;
@@ -1262,6 +1248,20 @@ textarea {
     width: 80%;
 }
 
+#table3 a, #table4 a {
+    text-decoration: none;
+    font-weight: bold;
+}
+#table3 a, #table4 a:link {
+    color: #0086d3;
+}
+#table3 a, #table4 a:hover {
+    color: #014e7a;
+}
+#table3 a:active, #table4 a:active {
+    color: #002941;
+}
+
 th, td {
     border: 1px solid #000000;
 }
@@ -1288,9 +1288,8 @@ td a {
 }
 
 
-/* ----------------------------------------------------------------- */
+/*PÁGINA HORUS */
 
-/*PÁGINA HORUS - Nicole Miguel*/
 .horus {
     margin: auto;
     height: 100px;   
