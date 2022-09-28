@@ -1249,17 +1249,18 @@ textarea {
     width: 80%;
 }
 
-#table3 a, #table4 a {
+/* Links - Isabella Valerio*/
+#table1 a, #table2 a, #table3 a, #table4 a {
     text-decoration: none;
     font-weight: bold;
 }
-#table3 a, #table4 a:link {
+#table1 a:link, #table2 a:link, #table3 a:link, #table4 a:link {
     color: #0086d3;
 }
-#table3 a, #table4 a:hover {
+#table1 a:hover, #table2 a:hover, #table3 a:hover, #table4 a:hover {
     color: #014e7a;
 }
-#table3 a:active, #table4 a:active {
+#table1 a:active, #table2 a:active, #table3 a:active, #table4 a:active {
     color: #002941;
 }
 
@@ -1280,11 +1281,11 @@ td a {
 }
 
 /*Títulos*/
-#titulo {
+#titulo_tab {
     background-color: #f8fa6b;
 }
 
-#subtitulo {
+#subtitulo_tab {
     background-color: #f8fdb5;
 }
 
