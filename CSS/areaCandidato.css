@@ -2,36 +2,7 @@
 
 /* SECTION */
 
-.areaGeral {
-    margin-top: 8%;
-    margin-left: 0;
-    height: 20%;
-    width: 40%;
-    line-height: 1.2;
-}
 
-.conteudoGeral {
-    margin-top: 15%;
-    margin-left: 0;
-    margin-bottom: 30%;
-    height: 20%;
-    width: 40%;
-    line-height: 1.2;
-}
-
-.indice {
-    margin-top: 7%;
-    margin-left: 0;
-    align-items: center;
-    width: 120%;
-}
-
-#procedimentos, #documentacao, #orientacoes, #posse, #contatos, #duvidas, #criterios {
-    margin-left: 0;
-    margin-bottom: 10%;
-    align-items: center;
-    width: 120%;
-}
 
 /* SECTION - TÍTULOS */
 
@@ -122,38 +93,6 @@
 #caixa_texto {
     margin-bottom: 2%;
     text-indent: 1.5em;
-}
-
-/* Tópicos */
-#topico_quadrado_intro {
-    list-style-type: square;
-    margin-left: 3%;
-}
-
-#topico_quadrado {
-    list-style-type: square;
-    margin-left: 3%;
-}
-
-#topico_quadrado a {
-    font-style: italic;
-    color: #000000;
-}
-
-#topico_numeral {
-    list-style: decimal-leading-zero;
-    margin-left: 12%;
-}
-
-#topico_numeral a {
-    color: #000000;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#topico_numeral a:hover {
-    font-size: 17px;
-    text-shadow: 1.5px 1.5px #1414141a;
 }
 
 /* BOTÕES */
