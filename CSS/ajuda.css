@@ -1,5 +1,5 @@
 /*Codificado por Melissa Turbano*/
-.ajuda {
+/*.ajuda {
     margin: auto;
     height: 100px;
     margin-top: 100px;   
@@ -27,7 +27,7 @@
     margin-left: 9%;
 }
 
-/*Modelo dos botões de redirecionamento do usuário*/
+/*Modelo dos botões de redirecionamento do usuário
 .ajuda_btn {    
     border: none;
     text-align: center;
@@ -65,7 +65,7 @@
     right: 0;
 }
 
-/*Botão de contato*/
+/*Botão de contato
 #bnt_contato {
     border-radius: 25%;
     width: 5%;
@@ -87,7 +87,7 @@
     border: 2.5px solid #b7ba5a;
 }
 
-/*Botão de enviar*/
+/*Botão de enviar
 #bnt_enviar {
     border-radius: 25%;
     width: 5%;
@@ -107,4 +107,4 @@
 #bnt_enviar:hover {
     background-color: #e2fcbb;
     border: 2.5px solid #87a061;
-}
+}*/
