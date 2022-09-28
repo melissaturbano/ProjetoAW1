@@ -1,4 +1,4 @@
-/*Codificado por Melissa Turbano*/
+/*Codificado por Melissa Turbano
 .faq {
     margin: auto;
     height: 100px;   
@@ -21,7 +21,7 @@
 
 #faq_subtitulo {
     margin-left: 7%;
-    /*font-size: 25px;*/
+    /*font-size: 25px;
     font-size: 150%;
     margin-top: 30px;
 }
@@ -34,7 +34,7 @@
     margin-left: 5%;
 }
 
-/*Área de respostas*/
+/*Área de respostas
 #questao {
     
     height: auto;
@@ -55,10 +55,10 @@
     text-align: justify;
 }
 
-/*Área de entre em contato*/
+/*Área de entre em contato
 #contato {
     border-radius: 15px;
-    /*height: 50px;*/
+    /*height: 50px;
     height: 50%;
     width: 50%;
     font-weight: lighter;
@@ -73,7 +73,7 @@
     justify-content: center;    
 }
 
-/*Botão de contato*/
+/*Botão de contato
 #bnt_contato {
     border-radius: 25%;
     width: 5%;
@@ -96,7 +96,7 @@
 }
 
 
-/*Botão de enviar*/
+/*Botão de enviar
 #bnt_enviar {
     border-radius: 25%;
     width: 5%;
@@ -116,4 +116,4 @@
 #bnt_enviar:hover {
     background-color: #e2fcbb;
     border: 2.5px solid #87a061;
-}
+}*/
