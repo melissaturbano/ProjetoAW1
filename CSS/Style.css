@@ -768,7 +768,7 @@ footer {
 }
 
 
-/* LEGISLAÇÃO - Isabella Valerio */
+/* LEGISLAÇÃO */
 
 /* SECTION - GERAL */
 
@@ -845,6 +845,101 @@ footer {
 
 #conteudo_tabela_assunto a, #conteudo_tabela_doc a {
     color: #000000;
+}
+
+
+/* TABELAS */
+
+/* SECTION - GERAL */
+
+.tabelasDocumentos {
+    margin-top: 8%;
+    margin-left: 0;
+    margin-bottom: 30%;
+    height: 20%;
+    width: 45%;
+    line-height: 1.2;
+}
+
+.dadosGerais {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 50%;
+    align-items: center;
+    width: 120%;
+}
+
+.contingenciamento {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 10%;
+    align-items: center;
+    width: 120%;
+}
+
+/* SECTION - TÍTULOS */
+
+#titulo_tabelas {
+    margin-left: 50%;
+    text-transform: uppercase;
+    font-size: 170%;
+}
+
+#linha_titulo {
+    height: 2px;
+    width: 140%;
+    float: left;
+    margin-top: 0;
+    background-color: #000000;
+}
+
+/* Subtítulos */
+#titulo_dados {
+    margin-left: 9%;
+    font-size: 140%;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+#titulo_contingenciamento {
+    margin-left: 9%;
+    font-size: 140%;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+#linha_subtitulo {
+    height: 1px;
+    width: 100%;
+    float: left;
+    margin-top: 0;
+}
+
+/* CAIXAS COM LINKS PARA TABELAS */
+
+.alinhamento_caixas {
+    float: left;
+}
+
+.tabela_caixa {
+    height: auto;
+    width: 80%;
+    background-color: #e0eef5;
+    border: 1px solid #c2d7e0;
+    box-shadow: 6px 6px 16px 0 #1414141a;
+    border-radius: 30px;
+    margin-top: 15%;
+    margin-left: 30%;
+}
+
+.tabela_caixa a {
+    text-decoration: none;
+}
+
+#texto_caixa {
+    text-align: center;
+    color: #000000;
+    padding: 8%;
 }
 
 
@@ -1127,7 +1222,6 @@ footer {
     justify-content: center;    
 }
 
-/* ----------------------------------------------------------------- */
 
 /*PÁGINA ENVIAR */
 
@@ -1279,7 +1373,6 @@ textarea {
     border: 2.5px solid #87a061;
 }
 
-/* ----------------------------------------------------------------- */
 
 /* PÁGINA CONTATO */
 .contato {
@@ -1387,7 +1480,6 @@ textarea {
     border: 2.5px solid #a90606;
 }
 
-/* ----------------------------------------------------------------- */
 
 /* ------- NICOLE MIGUEL -------- */
 
@@ -1649,7 +1741,7 @@ select, #email_id, #senha_id  {
 }
 
 /* Formulário */
-.formulario_quadro {
+.formulario {
     height: 50%;
     width: 50%;
     margin: 1em;
