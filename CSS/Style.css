@@ -665,6 +665,108 @@ footer {
     text-indent: 1.5em;
 }
 
+/* HISTÓRICO */
+
+/* SECTION E ARTICLE */
+
+.inicioHistorico {
+    margin-top: 8%;
+    margin-left: 0;
+    margin-bottom: 30%;
+    height: 20%;
+    width: 40%;
+    line-height: 1.2;
+}
+
+.constituicaoHistorico {
+    margin-top: 50px;
+    margin-left: 0;
+    height: 20%;
+    width: 40%;
+    line-height: 1.2;
+}
+
+.organogramaHistorico {
+    margin-top: 570px;
+    margin-left: 0;
+    height: 20%;
+    width: 40%;
+}
+
+/* SECTION - TÍTULOS */
+
+#titulo_inicio {
+    margin-left: 65%;
+    font-size: 170%;
+    text-transform: uppercase;
+}
+
+#titulo_constituicoes {
+    margin-left: 55%;
+    font-size: 170%;
+    text-transform: uppercase;
+}
+
+#titulo_organograma {
+    margin-left: 55%;
+    font-size: 170%;
+    text-transform: uppercase;
+}
+
+#linha_titulo {
+    height: 2px;
+    width: 150%;
+    float: left;
+    margin-top: 0px;
+    background-color: #000000;
+}
+
+/* SECTION - CAIXA */
+
+#caixa {
+    height: auto;
+    width: 145%;
+    background-color: #ececec;
+    border: 1px solid #aeaeae;
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+#caixa_texto {
+    text-transform: none;
+    text-align: justify;
+    margin-bottom: 0;
+    padding: 4%;
+}
+
+#texto_caixa {
+    margin-bottom: 2%;
+    text-indent: 1.5em;
+}
+
+/* Tópicos */
+#texto_topico {
+    margin-left: 3.5%;
+    margin-bottom: 1%;
+}
+
+#topico_quadrado {
+    list-style-type: square;
+    margin-left: 6%;
+}
+
+/* ORGANOGRAMA IMG */
+
+#organograma_MPU {
+    height: 260%;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 6px 6px 16px 0 #00000066;
+    margin-top: 8%;
+    margin-left: 25%;
+    margin-bottom: 15%;
+}
+
 
 /* ------- MELISSA TURBANO -------- */
 
