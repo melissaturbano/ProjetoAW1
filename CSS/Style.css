@@ -1019,5 +1019,71 @@ textarea {
 }
 
 
+/* TABELAS DEMONSTRATIVOS E PORTARIA CONJUNTA - Nicole Miguel*/
+.tabelas_docs {
+    height: 100px;   
+    margin-top: 100px;
+    align-items: center;
+    margin-top: 100px;
+}
 
+.tabelas_docs h1 {
+    text-transform: uppercase;
+    margin-left: 20%;
+    font-size: 170%;
+}
+
+#linha_demonstrativos, #linha_portaria {
+    height: 2px;
+    width: 55%;
+    float: left;
+    background-color: #000000;
+}
+
+.demonstrativos, .portaria {
+    height: 50%;
+    width: 50%;
+    margin: 1em;
+    margin-top: 5%;
+}
+
+#table1, #table2, #table3, #table4 {
+    margin: 5%;
+    margin-left: 20%;
+    padding: 1em;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#table3 {
+    margin-top: 15%;
+}
+
+#table3, #table4 {
+    width: 600px;
+}
+
+th, td {
+    border: 1px solid #000000;
+}
+
+th {
+    height: 50px;
+}
+
+td {
+    height: 35px;
+}
+
+td a {
+    color: #000000;
+}
+
+#titulo {
+    background-color: #f8fa6b;
+}
+
+#subtitulo {
+    background-color: #f8fdb5;
+}
 
