@@ -2,36 +2,7 @@
 
 /* SECTION */
 
-.areaGeral {
-    margin-top: 8%;
-    margin-left: 0;
-    height: 20%;
-    width: 40%;
-    line-height: 1.2;
-}
 
-.conteudoGeral {
-    margin-top: 15%;
-    margin-left: 0;
-    margin-bottom: 30%;
-    height: 20%;
-    width: 40%;
-    line-height: 1.2;
-}
-
-.indice {
-    margin-top: 7%;
-    margin-left: 0;
-    align-items: center;
-    width: 120%;
-}
-
-#procedimentos, #documentacao, #orientacoes, #posse, #contatos, #duvidas, #criterios {
-    margin-left: 0;
-    margin-bottom: 10%;
-    align-items: center;
-    width: 120%;
-}
 
 /* SECTION - TÍTULOS */
 

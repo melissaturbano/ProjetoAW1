@@ -18,7 +18,6 @@ html, body {
 /* HEADER */
 
 /* Estilizando a fonte, cor de fundo e definindo posição fixa do header (cabeçalho) */
-
 header {
     background-color: #012229;
     color: #ffffff;
@@ -29,7 +28,6 @@ header {
 
 
 /* Posicionando logo */
-
 .logo {
     align-items: center;
     display: flex;
@@ -38,7 +36,6 @@ header {
 
 
 /* Configuração da logo */
-
 #logo_letra {
     margin-left: 15px;
     font-size: large;
@@ -281,7 +278,7 @@ header {
     height: 7%;
     background-color: #ffffff;
     margin-left: 19%;
-    margin-bottom:3%;
+    margin-bottom: 3%;
     cursor: pointer;
 }
 
@@ -321,12 +318,13 @@ header {
 /* ASIDE - MENU */
 
 .aside-menu {
+    display: flex;
     margin-left: 65%;
 }
 
 .aside-menu ul li {
     /*width: 350px;*/
-    width: 62%;
+    width: 100%;
     float: none;
 }
         
@@ -405,12 +403,13 @@ header {
 .aside {
     margin-left: 65%;
     margin-top: 30px;
+    display: flex;
 }
 
 .aside ul li {
    /*width: 350px;*/
     float: none;
-    width: 62%;
+    width: 125%;
 }
         
 .aside > ul {
@@ -582,7 +581,45 @@ footer {
 }
 
 
+/* SECTION - Isabella Valerio */
+
+/* Área Candidato */
+
+/* Geral */
+.areaGeral {
+    margin-top: 8%;
+    margin-left: 0;
+    height: 20%;
+    width: 40%;
+    line-height: 1.2;
+}
+
+.conteudoGeral {
+    margin-top: 10%;
+    margin-left: 0;
+    margin-bottom: 20%;
+    height: 20%;
+    width: 40%;
+    line-height: 1.2;
+}
+
+.indice {
+    margin-top: 7%;
+    margin-left: 0;
+    align-items: center;
+    width: 120%;
+}
+
+#procedimentos, #documentacao, #orientacoes, #posse, #contatos, #duvidas, #criterios {
+    margin-left: 0;
+    margin-bottom: 10%;
+    align-items: center;
+    width: 120%;
+}
+
+
 /* PÁGINA AJUDA - Melissa Turbano */
+
 .ajuda {
     margin: auto;
     height: 100px;
