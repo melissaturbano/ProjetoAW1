@@ -125,26 +125,3 @@ select, #nome_id {
 #voltar_quadro:hover {
     background-color: #f79c9c;
 }
-
-/*Botão de contato*/
-#bnt_contato {
-    border-radius: 25%;
-    width: 5%;
-    height: 7%;
-    background-color: #ffffff;
-    margin-left: 55%;
-    margin-bottom: 3%;
-    cursor: pointer;
-}
-
-#img_contato {
-    border-radius: 18%;
-    width: 70%;
-    height: 65%;
-}
-
-#bnt_contato:hover {
-    background-color: #fdf8cf;
-    border: 2.5px solid #b7ba5a;
-}
-

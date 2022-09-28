@@ -19,7 +19,7 @@
     float: left;
     background-color: #000000;
 }
-
+ /*Formulário*/
 .formulario {
     height: 50%;
     width: 50%;
@@ -42,21 +42,25 @@ legend {
     box-shadow: 3px 3px #062927af;
 }
 
+/*Campos*/
 #lab_titulo {
     font-size: 20px;
     font-weight: 600;
+    margin-top: 0;
 }
 
-#atuacao, #email {
+#atuacao, #email, #profissao {
     margin-left: 3em;
     float: left;
     display: block;
+    margin-top: 3%;
 }
 
-#profissao, #senha {
+#senha {
     margin-right: 3em;
     float: right;
     display: block;
+    margin-top: 3%;
 }
 
 select, #email_id, #senha_id  {
@@ -71,6 +75,7 @@ select, #email_id, #senha_id  {
     text-align: center;
 }
 
+/*Botões*/
 #entrar_horus, #cancelar_horus{
     border: 1.5px solid #6e6767;
     background-color: #e2e0e0;
@@ -80,6 +85,7 @@ select, #email_id, #senha_id  {
     border-radius: 5px;
     box-shadow: 3px 3px #062927af;
     width: 80px;
+    margin-bottom: 10%;
 }
 
 #entrar_horus:hover {
