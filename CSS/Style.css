@@ -873,7 +873,7 @@ textarea {
     width: 5%;
     height: 7%;
     background-color: #ffffff;
-    margin-left: 71%;
+    margin-left: 73%;
     margin-bottom:3%;
     cursor: pointer;
 }
@@ -896,7 +896,7 @@ textarea {
     width: 5%;
     height: 7%;
     background-color: #ffffff;
-    margin-left: 3%;
+    margin-left: 2%;
     margin-bottom:3%;
     cursor: pointer;
 }
@@ -912,3 +912,112 @@ textarea {
     background-color: #e2fcbb;
     border: 2.5px solid #87a061;
 }
+
+
+/*PÁGINA CONTATO - Melissa Turbano*/
+.contato {
+    margin: auto;
+    height: 100px;
+    width: 40%px; 
+    margin-top: 100px;
+}
+
+#contato_titulo {
+    margin-left: 25%;
+    font-size: 170%;
+}
+
+#contato_linha {
+    height: 2px;
+    width: 60%;
+    float: left;
+    margin-top: 0px;
+    background-color: #000000;
+}
+
+.formulario {
+    margin: 1em;
+}
+
+#caixa {
+    margin: 3%;
+    padding: 1em;
+    justify-content: space-between;
+    width: 55%;
+}
+
+/*Rótulo das caixas*/
+legend {
+    padding: 5px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border: 1px solid #6e6767;
+}
+
+#nome {
+    margin-left: 3em;
+    float: left;
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#sobrenome {
+    margin-right: 3em;
+    float: right;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;    
+}
+
+/* Area de mensagem-comentário */
+textarea {
+    width: 100%;
+    height: 120px;
+    line-height: 20px;
+    border: 1px solid #6e6767;
+    background-color: #ececec;
+    max-width: 800px;
+}
+
+#nome_id, #sobrenome_id  {
+    height: 2.5em;
+    border: 1px solid #6e6767;
+    background-color: #ececec;
+    width: 20em;
+    text-align: center;
+    font-size: 15px;
+}
+
+::placeholder {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/*Botões da enviar e cancelar*/
+#enviar_id, #cancelar_id{
+    border: 1.5px solid #6e6767;
+    background-color: #ececec;
+    margin-left: 3%;
+    justify-content:space-between;
+    padding: 1em;
+    border-radius: 20px;
+    width: 90px;
+    height: 60px;
+    font-weight: 550;
+}
+
+#enviar_id:hover {
+    background-color: #9adb9a;
+    border: 2.5px solid #49d289;
+}
+
+#cancelar_id:hover {
+    background-color: #f79c9c;
+    border: 2.5px solid #a90606;
+}
+
+
+
+
