@@ -1316,21 +1316,20 @@ td a {
 /*Formulário*/
 .formulario {
     height: 50%;
-    width: 60%;
+    width: 50%;
     margin: 1em;
 }
 
 #ministerio, #login {
-    margin: 3%;
+    margin: 5%;
     padding: 1em;
-    padding-top: 0;
     border-radius: 10px;
     justify-content: space-between;
 }
 
 /*Campos*/
 legend {
-    padding: 1%;
+    padding: 5px;
     font-size: 1.2em;
     font-weight: 600;
     border: 1px solid #6e6767;
@@ -1343,18 +1342,16 @@ legend {
     font-weight: 600;
 }
 
-#atuacao, #email, #profissao {
+#atuacao, #email {
     margin-left: 3em;
     float: left;
     display: block;
-    margin-top: 3%;
 }
 
-#senha {
+#profissao, #senha {
     margin-right: 3em;
     float: right;
     display: block;
-    margin-top: 3%;
 }
 
 select, #email_id, #senha_id  {
