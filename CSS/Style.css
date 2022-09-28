@@ -490,11 +490,7 @@ footer {
     margin-left: 5%;
 }
 
-<<<<<<< HEAD
 /* ----------------------------------------------------------------- */
-=======
-/* ------- ISABELLA VALERIO -------- */
->>>>>>> 3f576fa6cc81da2bba514c4e2f8a8c9dc4fdf55a
 
 /* TÓPICOS */
 
@@ -577,11 +573,7 @@ footer {
     width: 120%;
 }
 
-<<<<<<< HEAD
 /* ----------------------------------------------------------------- */
-=======
-/* SECTION - TÍTULOS */
->>>>>>> 3f576fa6cc81da2bba514c4e2f8a8c9dc4fdf55a
 
 /* Títulos */
 #titulo_intro {
@@ -741,7 +733,7 @@ footer {
     border: 2.5px solid #b7ba5a;
 }
 
-/*Botão de enviar*/
+/*Botão de enviar
 #bnt_enviar {
     border-radius: 25%;
     width: 5%;
@@ -761,7 +753,7 @@ footer {
 #bnt_enviar:hover {
     background-color: #e2fcbb;
     border: 2.5px solid #87a061;
-}
+}*/
 
 /* PÁGINA AJUDA */
 
@@ -875,13 +867,9 @@ footer {
     right: 0;
 }
 
-<<<<<<< HEAD
 /* ----------------------------------------------------------------- */
 
 /*PÁGINA FAQ - Melissa Turbano*/
-=======
-/*PÁGINA FAQ */
->>>>>>> 3f576fa6cc81da2bba514c4e2f8a8c9dc4fdf55a
 
 .faq {
     margin: auto;
