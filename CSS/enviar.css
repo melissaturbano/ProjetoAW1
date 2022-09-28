@@ -1,4 +1,4 @@
-/* Codificado por Melissa Turbano */
+/* Codificado por Melissa Turbano 
 
 .enviar {
     margin: auto;
@@ -101,8 +101,8 @@ textarea {
     border: 2.5px solid #a90606;
 }
 
-/*Botão de contato*/
-#bnt_contato {
+/*Botão de contato
+#btt_contato {
     border-radius: 25%;
     width: 5%;
     height: 7%;
@@ -119,13 +119,13 @@ textarea {
     
 }
 
-#bnt_contato:hover {
+#btt_contato:hover {
     background-color: #fdf8cf;
     border: 2.5px solid #b7ba5a;
 }
 
-/*Botão de enviar*/
-#bnt_enviar {
+/*Botão de enviar
+#btt_enviar {
     border-radius: 25%;
     width: 5%;
     height: 7%;
@@ -142,7 +142,8 @@ textarea {
     
 }
 
-#bnt_enviar:hover {
+#btt_enviar:hover {
     background-color: #e2fcbb;
     border: 2.5px solid #87a061;
 }
+*/
