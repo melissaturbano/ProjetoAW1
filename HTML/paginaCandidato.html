@@ -9,8 +9,9 @@
         <meta name="author" content="Isabella Valerio, Melissa Turbano, Nicole Miguel">
         <meta name="description" content="Página Candidato - reestruturação do site MPU">
         <meta name="keywords" content="html, página do candidato, mpu, governo, seleção">
-        <link rel="stylesheet" type="text/css" href="../CSS/Style.css">
-        <link rel="shortcut icon" type="image/x-icon" href="../Image/logo.png">
+        <link rel="stylesheet" type="text/css" href="../css/Style.css">
+        <link rel="stylesheet" type="text/css" href="../css/areaCandidato.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../image/logo.png">
         <title>Página do Candidato</title>
     </head>
 
@@ -18,7 +19,7 @@
         <header>
             <!-- Inserção do logo e título da página -->
             <div class="logo">
-                <a href="home.html"></a><img id="logo_img" src="../Image/logo.png" alt="Logo MPU"></a>
+                <a href="../html/home.html"></a><img id="logo_img" src="../image/logo.png" alt="Logo MPU"></a>
                 <h2 id="logo_letra">MPU</h2>
                 <hr id="logo_linha">
                 <h1 id="logo_titulo">Ministério Público da União</h1>
@@ -26,10 +27,10 @@
            
             <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
             <div class="botoes">
-                <a href="ajuda.html"><button id="help_bt"><img src="../Image/help.jpg" id="help_img"></button></a>
-                <a href="faq.html"><button id="faq_bt"><img src="../Image/faq.jpg" id="faq_img"></button></a>
-                <form id="caixa_pesquisa" action="pesquisa.html">
-                    <img id="lupa_img" src="../Image/search.png" alt="Lupa de pesquisa"/>
+                <a href="../html/ajuda.html"><button id="help_bt"><img src="../image/help.jpg" id="help_img"></button></a>
+                <a href="../html/faq.html"><button id="faq_bt"><img src="../image/faq.jpg" id="faq_img"></button></a>
+                <form id="caixa_pesquisa" action="../html/pesquisa.html">
+                    <img id="lupa_img" src="../image/search.png" alt="Lupa de pesquisa"/>
                     <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
                     <button type="submit" id="ok_bt">OK</button>
                 </form>
@@ -43,21 +44,21 @@
         <!-- Inserção de estrutura do menu -->
         <nav class="menu">
             <ul>
-                <li><a href="home.html">Página Inicial</a></li>
+                <li><a href="../html/home.html">Página Inicial</a></li>
                 <li><a href="#">Institucional</a>
                     <ul>
-                        <li id="subMenu"><a href="sobreMPU.html">Sobre o MPU</a>
-                        <li id="subMenu"><a href="historico.html">Histórico</a>
+                        <li id="subMenu"><a href="../html/sobreMPU.html">Sobre o MPU</a>
+                        <li id="subMenu"><a href="../html/historico.html">Histórico</a>
                     </ul>
                 </li>
                 <li><a href="#">Documentos</a>
                     <ul>
-                        <li id="subMenu"><a href="tabelas.html">Tabelas</a>
-                        <li id="subMenu"><a href="demonstrativos.html">Demonstrativos</a>
-                        <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
+                        <li id="subMenu"><a href="../html/tabelas.html">Tabelas</a>
+                        <li id="subMenu"><a href="../html/demonstrativos.html">Demonstrativos</a>
+                        <li id="subMenu"><a href="../html/portariaConjunta.html">Portaria Conjunta</a>
                     </ul>
                 </li>
-                <li><a href="legislacao.html">Legislação</a></li>
+                <li><a href="../html/legislacao.html">Legislação</a></li>
                 <li><a href="#">Órgãos</a>
                     <ul>
                         <li id="subMenu"><a href="https://auditoria.mpu.mp.br/">AUDIN</a>
@@ -103,13 +104,13 @@
         </section>
 
         <!--Botão de contatos-->
-        <a href="contato.html">
-            <button type="button" id="bnt_contato"> <img src="../Image/contato.png" id="img_contato" /></button>
+        <a href="../html/contato.html">
+            <button type="button" id="bnt_contato"> <img src="../image/contato.png" id="img_contato" /></button>
         </a> 
 
         <!--Botão de envio-->
-        <a href="enviar.html">
-            <button type="button" id="bnt_enviar"> <img src="../Image/enviar.png" id="img_enviar" /></button>
+        <a href="../html/enviar.html">
+            <button type="button" id="bnt_enviar"> <img src="../image/enviar.png" id="img_enviar" /></button>
         </a>
 
         <!--Estrutura dos asides-->
@@ -159,8 +160,8 @@
                     <div id="caixa_bloco">
                         <ul id="topico_quadrado_areaCand">
                             <li>Confira a sua classificação: <a href="https://www.cebraspe.org.br/concursos/MPU_18">CEBRASPE</a>;</li>
-                            <li><a href="../DocsRedirecionamento/PáginaCandidato/requerimento_desistencia.pdf">Requerimento de Desistência</a> - Caso não tenha interesse na nomeação  (PDF);</li>
-                            <li><a href="../DocsRedirecionamento/PáginaCandidato/requerimento_alteracao_dados.pdf">Requerimento de Alteração de Dados</a> - Para alteração dos seus dados cadastrais após a homologação do resultado final (PDF).</li>
+                            <li><a href="../docs_redirecionamento/PáginaCandidato/requerimento_desistencia.pdf">Requerimento de Desistência</a> - Caso não tenha interesse na nomeação  (PDF);</li>
+                            <li><a href="../docs_redirecionamento/PáginaCandidato/requerimento_alteracao_dados.pdf">Requerimento de Alteração de Dados</a> - Para alteração dos seus dados cadastrais após a homologação do resultado final (PDF).</li>
                         </ul>
                     </div>
                 </div>
@@ -173,11 +174,11 @@
                 <div class="caixa_subt">
                     <div id="caixa_bloco">
                         <ul id="topico_quadrado_areaCand">
-                            <li>Documentos para a posse (PDF) - <a href="../DocsRedirecionamento/PáginaCandidato/relacao_de_documentos.pdf">aqui</a>;</li>
-                            <li>Lista de exames médicos (PDF) - <a href="../DocsRedirecionamento/PáginaCandidato/exames_medicos.pdf">aqui</a>;</li>
-                            <li>Laudo/Atestado de Aptidão Física-Mental (PDF) <a href="../DocsRedirecionamento/PáginaCandidato/laudo_atestado_medico.pdf">aqui</a>;</li>
-                            <li>Formulário de Autorização de Acesso (PDF) - <a href="../DocsRedirecionamento/PáginaCandidato/formulario_autorizacao_acesso.pdf"></a>;</li>
-                            <li>Cartilha do Participante Funpresp-JUD (PDF) - <a href="../DocsRedirecionamento/PáginaCandidato/cartilha.pdf">aqui</a>.</li>
+                            <li>Documentos para a posse (PDF) - <a href="../docs_redirecionamento/PáginaCandidato/relacao_de_documentos.pdf">aqui</a>;</li>
+                            <li>Lista de exames médicos (PDF) - <a href="../docs_redirecionamento/PáginaCandidato/exames_medicos.pdf">aqui</a>;</li>
+                            <li>Laudo/Atestado de Aptidão Física-Mental (PDF) <a href="../docs_redirecionamento/PáginaCandidato/laudo_atestado_medico.pdf">aqui</a>;</li>
+                            <li>Formulário de Autorização de Acesso (PDF) - <a href="../docs_redirecionamento/PáginaCandidato/formulario_autorizacao_acesso.pdf"></a>;</li>
+                            <li>Cartilha do Participante Funpresp-JUD (PDF) - <a href="../docs_redirecionamento/PáginaCandidato/cartilha.pdf">aqui</a>.</li>
                         </ul>
                     </div>
                 </div>
@@ -190,10 +191,10 @@
                 <div class="caixa_subt">
                     <div id="caixa_bloco">
                         <ul id="topico_quadrado_areaCand">
-                            <li><a href="quadroNomeacoes.html">Acesse </a>o <b>Quadro de Nomeações</b>;</li>
-                            <li>Orientações aos candidatos nomeados (PDF) - <a href="../DocsRedirecionamento/PáginaCandidato/orientacoes_importantes.pdf">aqui</a>;</li>
-                            <li>Formulário de Prorrogação de Posse (PDF) - <a href="../DocsRedirecionamento/PáginaCandidato/formulario_prorrogacao_posse.pdf">aqui</a>;</li>
-                            <li>Esclarecimentos sobre a nomeação nacional (PDF) - <a href="../DocsRedirecionamento/PáginaCandidato/esclarecimentos_nomeacao_nacional.pdf">aqui</a>.</li>
+                            <li><a href="../html/quadroNomeacoes.html">Acesse </a>o <b>Quadro de Nomeações</b>;</li>
+                            <li>Orientações aos candidatos nomeados (PDF) - <a href="../docs_redirecionamento/PáginaCandidato/orientacoes_importantes.pdf">aqui</a>;</li>
+                            <li>Formulário de Prorrogação de Posse (PDF) - <a href="../docs_redirecionamento/PáginaCandidato/formulario_prorrogacao_posse.pdf">aqui</a>;</li>
+                            <li>Esclarecimentos sobre a nomeação nacional (PDF) - <a href="../docs_redirecionamento/PáginaCandidato/esclarecimentos_nomeacao_nacional.pdf">aqui</a>.</li>
                         </ul>
                     </div>
                 </div>
@@ -237,8 +238,8 @@
                         <ul id="topico_quadrado_areaCand">
                             <li>Lei nº 13.316/2016 - Carreira dos Servidores do MPU - <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/L13316.htm">aqui</a>;</li>
                             <li>Estrutura Remuneratória - <a href="https://www.transparencia.mpf.mp.br/conteudo/gestao-de-pessoas/plano-de-carreira">aqui</a>;</li>
-                            <li><a href="concursoRemocao.html">Acesse </a>o <b>Concurso de Remoção de Servidores do MPU</b>;</li>
-                            <li>Bancos conveniados (PDF) - <a href="../DocsRedirecionamento/PáginaCandidato/bancos.pdf">aqui</a>.</li>
+                            <li><a href="../html/concursoRemocao.html">Acesse </a>o <b>Concurso de Remoção de Servidores do MPU</b>;</li>
+                            <li>Bancos conveniados (PDF) - <a href="../docs_redirecionamento/PáginaCandidato/bancos.pdf">aqui</a>.</li>
                         </ul>
                     </div>
                 </div>

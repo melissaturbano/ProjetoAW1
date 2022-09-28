@@ -1209,9 +1209,8 @@ textarea {
 
 .tabelas_docs {
     height: 100px;   
-    margin-top: 100px;
+    margin-top: 8%;
     align-items: center;
-    margin-top: 100px;
 }
 
 .tabelas_docs h1 {
@@ -1232,23 +1231,18 @@ textarea {
     height: 50%;
     width: 50%;
     margin: 1em;
-    margin-top: 5%;
 }
 
 #table1, #table2, #table3, #table4 {
     margin: 5%;
-    margin-left: 20%;
+    margin-left: 15%;
     padding: 1em;
     text-align: center;
     border-collapse: collapse;
 }
 
-#table3 {
-    margin-top: 15%;
-}
-
 #table3, #table4 {
-    width: 600px;
+    width: 80%;
 }
 
 th, td {

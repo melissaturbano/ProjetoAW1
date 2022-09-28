@@ -9,8 +9,9 @@
         <meta name="author" content="Isabella Valerio, Melissa Turbano, Nicole Miguel">
         <meta name="description" content="Concurso de Remoção - reestruturação do site MPU">
         <meta name="keywords" content="html, concurso de remoção, mpu, governo, seleção">
-        <link rel="stylesheet" type="text/css" href="../CSS/Style.css">
-        <link rel="shortcut icon" type="image/x-icon" href="../Image/logo.png">
+        <link rel="stylesheet" type="text/css" href="../css/Style.css">
+        <link rel="stylesheet" type="text/css" href="../css/areaCandidato.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../image/logo.png">
         <title>Concurso de Remoção</title>
     </head>
 
@@ -18,7 +19,7 @@
         <header>
             <!-- Inserção do logo e título da página -->
             <div class="logo">
-                <a href="home.html"></a><img id="logo_img" src="../Image/logo.png" alt="Logo MPU"></a>
+                <a href="../html/home.html"></a><img id="logo_img" src="../image/logo.png" alt="Logo MPU"></a>
                 <h2 id="logo_letra">MPU</h2>
                 <hr id="logo_linha">
                 <h1 id="logo_titulo">Ministério Público da União</h1>
@@ -26,10 +27,10 @@
            
             <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
             <div class="botoes">
-                <a href="ajuda.html"><button id="help_bt"><img src="../Image/help.jpg" id="help_img"></button></a>
-                <a href="faq.html"><button id="faq_bt"><img src="../Image/faq.jpg" id="faq_img"></button></a>
-                <form id="caixa_pesquisa" action="pesquisa.html">
-                    <img id="lupa_img" src="../Image/search.png" alt="Lupa de pesquisa"/>
+                <a href="../html/ajuda.html"><button id="help_bt"><img src="../image/help.jpg" id="help_img"></button></a>
+                <a href="../html/faq.html"><button id="faq_bt"><img src="../image/faq.jpg" id="faq_img"></button></a>
+                <form id="caixa_pesquisa" action="../html/pesquisa.html">
+                    <img id="lupa_img" src="../image/search.png" alt="Lupa de pesquisa"/>
                     <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
                     <button type="submit" id="ok_bt">OK</button>
                 </form>
@@ -43,21 +44,21 @@
         <!-- Inserção de estrutura do menu -->
         <nav class="menu">
             <ul>
-                <li><a href="home.html">Página Inicial</a></li>
+                <li><a href="../html/home.html">Página Inicial</a></li>
                 <li><a href="#">Institucional</a>
                     <ul>
-                        <li id="subMenu"><a href="sobreMPU.html">Sobre o MPU</a>
-                        <li id="subMenu"><a href="historico.html">Histórico</a>
+                        <li id="subMenu"><a href="../html/sobreMPU.html">Sobre o MPU</a>
+                        <li id="subMenu"><a href="../html/historico.html">Histórico</a>
                     </ul>
                 </li>
                 <li><a href="#">Documentos</a>
                     <ul>
-                        <li id="subMenu"><a href="tabelas.html">Tabelas</a>
-                        <li id="subMenu"><a href="demonstrativos.html">Demonstrativos</a>
-                        <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
+                        <li id="subMenu"><a href="../html/tabelas.html">Tabelas</a>
+                        <li id="subMenu"><a href="../html/demonstrativos.html">Demonstrativos</a>
+                        <li id="subMenu"><a href="../html/portariaConjunta.html">Portaria Conjunta</a>
                     </ul>
                 </li>
-                <li><a href="legislacao.html">Legislação</a></li>
+                <li><a href="../html/legislacao.html">Legislação</a></li>
                 <li><a href="#">Órgãos</a>
                     <ul>
                         <li id="subMenu"><a href="https://auditoria.mpu.mp.br/">AUDIN</a>
@@ -69,21 +70,21 @@
 
         <!-- Inserção texto Página do Candidato -->
         <section class="areaGeral">
-            <h1 id="titulo_intro">Concurso Remoção</h1>
+            <h1 id="titulo_intro">Concurso de Remoção</h1>
             <hr id="linha_titulo">
 
             <!-- Inserção texto de introdução -->
             <div class="caixa">
                 <div id="caixa_bloco">
                     <ul id="topico_quadrado_intro">
-                        <li>Confira o Edital de Abertura nº 25/2022 - <a href="../DocsRedirecionamento/ConcursoRemocao/edital_abertura_25-2022.pdf">aqui</a>;</li>
-                        <li>Quadro de vagas ofertadas - <a href="../DocsRedirecionamento/ConcursoRemocao/quadro_vagas.pdf">aqui</a>;</li>
-                        <li>Confira o Resultado Preliminar - <a href="../DocsRedirecionamento/ConcursoRemocao/resultado_preliminar_27-05-2022_.pdf">aqui</a>;</li>
-                        <li>Confira os Dados Classificatórios Preliminar - <a href="../DocsRedirecionamento/ConcursoRemocao/dados_classificatorios_preliminar_27-05-2022_.pdf">aqui</a>;</li>
-                        <li>Confira o Resultado Final - <a href="../DocsRedirecionamento/ConcursoRemocao/resultado_final_06_2022.pdf">aqui</a>;</li>
-                        <li>Confira os Dados Classificatórios Finais - <a href="../DocsRedirecionamento/ConcursoRemocao/dados_classificatorios_final_06_2022.pdf">aqui</a>;</li>
-                        <li>Confira o Edital de Distribuição de Vagas - <a href="../DocsRedirecionamento/ConcursoRemocao/edital_distribuicao_vagas_06_2022.pdf">aqui</a>;</li>
-                        <li>Retificação do Edital de Distribuição de Vagas - <a href="../DocsRedirecionamento/ConcursoRemocao/retificacao_edital_distribuicao_vagas.pdf">aqui</a>.</li>
+                        <li>Confira o Edital de Abertura nº 25/2022 - <a href="../docs_redirecionamento/ConcursoRemocao/edital_abertura_25-2022.pdf">aqui</a>;</li>
+                        <li>Quadro de vagas ofertadas - <a href="../docs_redirecionamento/ConcursoRemocao/quadro_vagas.pdf">aqui</a>;</li>
+                        <li>Confira o Resultado Preliminar - <a href="../docs_redirecionamento/ConcursoRemocao/resultado_preliminar_27-05-2022_.pdf">aqui</a>;</li>
+                        <li>Confira os Dados Classificatórios Preliminar - <a href="../docs_redirecionamento/ConcursoRemocao/dados_classificatorios_preliminar_27-05-2022_.pdf">aqui</a>;</li>
+                        <li>Confira o Resultado Final - <a href="../docs_redirecionamento/ConcursoRemocao/resultado_final_06_2022.pdf">aqui</a>;</li>
+                        <li>Confira os Dados Classificatórios Finais - <a href="../docs_redirecionamento/ConcursoRemocao/dados_classificatorios_final_06_2022.pdf">aqui</a>;</li>
+                        <li>Confira o Edital de Distribuição de Vagas - <a href="../docs_redirecionamento/ConcursoRemocao/edital_distribuicao_vagas_06_2022.pdf">aqui</a>;</li>
+                        <li>Retificação do Edital de Distribuição de Vagas - <a href="../docs_redirecionamento/ConcursoRemocao/retificacao_edital_distribuicao_vagas.pdf">aqui</a>.</li>
                     </ul>
                 </div>
             </div>
@@ -104,13 +105,13 @@
         </section>
 
         <!--Botão de contatos-->
-        <a href="contato.html">
-            <button type="button" id="bnt_contato"> <img src="../Image/contato.png" id="img_contato" /></button>
+        <a href="../html/contato.html">
+            <button type="button" id="bnt_contato"> <img src="../image/contato.png" id="img_contato" /></button>
         </a> 
 
         <!--Botão de envio-->
-        <a href="enviar.html">
-            <button type="button" id="bnt_enviar"> <img src="../Image/enviar.png" id="img_enviar" /></button>
+        <a href="../html/enviar.html">
+            <button type="button" id="bnt_enviar"> <img src="../image/enviar.png" id="img_enviar" /></button>
         </a>
 
         <!--Estrutura dos asides-->
@@ -159,9 +160,9 @@
                 <div class="caixa_subt">
                     <div id="caixa_bloco">
                         <ul id="topico_quadrado_areaCand">
-                            <li><a href="horus.html">Acesse</a> o Sistema Hórus para participar de Concurso de Remoção;</li>
+                            <li><a href="../html/horus.html">Acesse</a> o Sistema Hórus para participar de Concurso de Remoção;</li>
                             <li>Registre suas intenções de unidade a qualquer momento. Não há limite de opções;</li>
-                            <li>Conforme <a href="../DocsRedirecionamento/ConcursoRemocao/portaria_424-2013.pdf">Portaria nº 424/2013</a>, não haverá prazo de inscrição após a publicação do Edital;</li>
+                            <li>Conforme <a href="../docs_redirecionamento/ConcursoRemocao/portaria_424-2013.pdf">Portaria nº 424/2013</a>, não haverá prazo de inscrição após a publicação do Edital;</li>
                             <li><strong>Fique atento(a) aos prazos publicados no edital.</strong></li>
                         </ul>
                     </div>
@@ -176,7 +177,7 @@
                     <div id="caixa_bloco">
                         <ul id="topico_quadrado_areaCand">
                             <li>Tenha entrado em exercício até <strong>06/06/2021</strong>;</li>
-                            <li>Não tenha sido removido(a) há pelo menos 1 ano, por meio de concurso de remoção ou permuta, contados a partir da publicação da portaria de remoção. <a href="../Docs redirecionamento/ConcursoRemocao/portaria_remocao_383-2019.pdf">(PGR/MPU nº 424 de 5/7/2013)</a>;</li>
+                            <li>Não tenha sido removido(a) há pelo menos 1 ano, por meio de concurso de remoção ou permuta, contados a partir da publicação da portaria de remoção. <a href="../docs_redirecionamento/ConcursoRemocao/portaria_remocao_383-2019.pdf">(PGR/MPU nº 424 de 5/7/2013)</a>;</li>
                             <li>Estiver com a inscrição válida no Hórus até <strong>26/05/2022</strong>.</li>
                         </ul>
                     </div>
@@ -191,7 +192,7 @@
                     <div id="caixa_bloco">
                         <ul id="topico_quadrado_areaCand">
                             <li>O período de trânsito será de 15 dias, devendo o deslocamento ser iniciado após decorridos 5 dias úteis de exercício do novo servidor;</li>
-                            <li>Passo a Passo - Acesso ao Hórus - <a href="../DocsRedirecionamento/ConcursoRemocao/acesso_horus_mpf.pdf">MPF</a>;</li>
+                            <li>Passo a Passo - Acesso ao Hórus - <a href="../docs_redirecionamento/ConcursoRemocao/acesso_horus_mpf.pdf">MPF</a>;</li>
                             <li>Passo a Passo - Acesso ao Hórus - <a href="">MPDFT, MPM e MPT</a></li>
                             <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores-remocao">Acesse</a> Concursos de Remoção Anteriores.</li>
                         </ul>
