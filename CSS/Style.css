@@ -538,28 +538,28 @@ footer {
 
 /* ------- ISABELLA VALERIO -------- */
 
-/* TÓPICOS */
+/* TÓPICOS E LINKS */
 
-/* Caixa texto - Área Candidato */
+/* Caixa texto - Área Candidato e FAQ */
 #topico_quadrado_intro, #topico_quadrado_areaCand {
     list-style-type: square;
     margin-left: 3%;
 }
 
-#topico_quadrado_areaCand a, #topico_quadrado_intro a {
+#topico_quadrado_areaCand a, #topico_quadrado_intro a, #contato_link a {
     text-decoration: none;
     font-weight: bold;
 }
-#topico_quadrado_areaCand a:link, #topico_quadrado_intro a:link {
+#topico_quadrado_areaCand a:link, #topico_quadrado_intro a:link, #contato_link a:link {
     color: #0086d3;
 }
-#topico_quadrado_areaCand a:visited, #topico_quadrado_intro a:visited {
+#topico_quadrado_areaCand a:visited, #topico_quadrado_intro a:visited, #contato_link a:visited {
     color: #9700d3;
 }
-#topico_quadrado_areaCand a:hover, #topico_quadrado_intro a:hover {
+#topico_quadrado_areaCand a:hover, #topico_quadrado_intro a:hover, #contato_link a:hover {
     color: #014e7a;
 }
-#topico_quadrado_areaCand a:active, #topico_quadrado_intro a:active {
+#topico_quadrado_areaCand a:active, #topico_quadrado_intro a:active, #contato_link a:active {
     color: #002941;
 }
 
@@ -926,25 +926,26 @@ footer {
 }
 
 /*Área de entre em contato*/
-#contato {
+#contato_link {
     border-radius: 15px;
     /*height: 50px;*/
     height: 50%;
-    width: 50%;
+    width: 35%;
     font-weight: lighter;
     background-color: #ffff7a96;
     border: 3px solid #ffff00;
     font-size: 18px;
     text-transform: uppercase;
-    margin-left: 5%;
-    margin-top: 1%;
+    margin-left: 12%;
+    margin-top: 2%;
+    margin-bottom: 3%;
     display: flex;
     align-items: center;
     justify-content: center;    
 }
 
 
-/*PÁGINA ENVIAR - Melissa Turbano*/
+/*PÁGINA ENVIAR */
 
 .enviar {
     margin: auto;
@@ -966,6 +967,7 @@ footer {
     background-color: #000000;
 }
 
+/*Formulário*/
 .formulario {
     margin: 1em;
 }
@@ -977,6 +979,7 @@ footer {
     width: 55%;
 }
 
+/*Campos*/
 legend {
     padding: 5px;
     font-size: 1.2em;
@@ -999,7 +1002,6 @@ legend {
     display: block;
     font-size: 20px;
     font-weight: 600;
-    
 }
 
 textarea {
@@ -1094,7 +1096,7 @@ textarea {
 }
 
 
-/*PÁGINA CONTATO - Melissa Turbano*/
+/* PÁGINA CONTATO */
 .contato {
     margin: auto;
     height: 100px;
@@ -1115,6 +1117,7 @@ textarea {
     background-color: #000000;
 }
 
+/*Formulário*/
 .formulario {
     margin: 1em;
 }
@@ -1151,7 +1154,7 @@ legend {
     font-weight: 600;    
 }
 
-/* Area de mensagem-comentário */
+/* Área de mensagem-comentário */
 textarea {
     width: 100%;
     height: 120px;
@@ -1186,6 +1189,7 @@ textarea {
     width: 90px;
     height: 60px;
     font-weight: 550;
+    margin-bottom: 8%;
 }
 
 #enviar_id:hover {
@@ -1199,7 +1203,10 @@ textarea {
 }
 
 
-/* TABELAS DEMONSTRATIVOS E PORTARIA CONJUNTA - Nicole Miguel*/
+/* ------- NICOLE MIGUEL -------- */
+
+/* TABELAS DEMONSTRATIVOS E PORTARIA CONJUNTA */
+
 .tabelas_docs {
     height: 100px;   
     margin-top: 100px;
@@ -1220,6 +1227,7 @@ textarea {
     background-color: #000000;
 }
 
+/*Tabelas*/
 .demonstrativos, .portaria {
     height: 50%;
     width: 50%;
@@ -1259,6 +1267,7 @@ td a {
     color: #000000;
 }
 
+/*Títulos*/
 #titulo {
     background-color: #f8fa6b;
 }
