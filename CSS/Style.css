@@ -490,7 +490,7 @@ footer {
     margin-left: 5%;
 }
 
-/*PÁGINA AJUDA*/
+/*PÁGINA AJUDA - Melissa Turbano*/
 .ajuda {
     margin: auto;
     height: 100px;
@@ -600,3 +600,80 @@ footer {
     background-color: #e2fcbb;
     border: 2.5px solid #87a061;
 }
+
+/*PÁGINA FAQ - Melissa Turbano*/
+
+.faq {
+    margin: auto;
+    height: 100px;   
+    margin-top: 100px;
+    
+}
+
+#faq_titulo {
+    margin-left: 15%;
+    font-size: 170%;    
+}
+
+#faq_linha {
+    height: 2px;
+    width: 55%;
+    float: left;
+    margin-top: 0px;
+    background-color: #000000;
+}
+
+#faq_subtitulo {
+    margin-left: 7%;
+    /*font-size: 25px;*/
+    font-size: 150%;
+    margin-top: 30px;
+}
+
+#faq_sublinha {
+    height: 2px;
+    width: 50%;
+    float: left;
+    margin-top: 0px;
+    margin-left: 5%;
+}
+
+/*Área de respostas*/
+#questao {
+    
+    height: auto;
+    width: 50%;
+    font-weight: lighter;
+    background-color: #ececec;
+    border: 1px solid #717171;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 5%;    
+}
+
+#questao > p {
+    margin: 2%;
+    text-indent: 1.5em;
+    text-transform: none;
+    text-align: justify;
+}
+
+/*Área de entre em contato*/
+#contato {
+    border-radius: 15px;
+    /*height: 50px;*/
+    height: 50%;
+    width: 50%;
+    font-weight: lighter;
+    background-color: #ffff7a96;
+    border: 3px solid #ffff00;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 5%;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
