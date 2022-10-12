@@ -1,4 +1,4 @@
-/*Recodificado por Isabella Valerio*/
+/* Recodificado e unificado por Isabella Valerio */
 
 /* GERAL */
 *{
@@ -27,13 +27,13 @@ header {
 }
 
 
-/* Posicionando logo */
+/* Logo */
+
 .logo {
     align-items: center;
     display: flex;
     float: left;
 }
-
 
 /* Configuração da logo */
 #logo_letra {
@@ -61,20 +61,23 @@ header {
     font-size: x-large;
 }
 
+
+/* Botões */
+
 .botoes {
     margin: 15px 20px 0 18px;
     display: flex;
     float: right;
 }
 
-#help_bt, #faq_bt {
+#help_btn, #faq_btn {
     cursor: pointer;
     border: none;
     background-color: #012229;
     margin-left: 15px;
 }
 
-#help_img {
+#help_imgn {
     width: 28px;
     height: 28px;
     margin-top: 5px;
@@ -85,6 +88,9 @@ header {
     height: 30px;
     margin-top: 2px;
 }
+
+
+/* Pesquisa */
 
 #lupa {
     color: #ffffff;
@@ -102,7 +108,7 @@ header {
     padding: 0;
 }
 
-#ok_bt {
+#ok_btn {
     background-color: #508a97;
     border: #508a97;
     color: #000000;
@@ -111,7 +117,7 @@ header {
     height: 25px;
 }
 
-#ok_bt:hover {
+#ok_btn:hover {
     background: #9fc7cc;
     color: #000000;
 }
@@ -170,6 +176,9 @@ header {
     padding: 0px;
 }
 
+
+/* Submenu */
+
 .menu ul ul {
     display: none;
     background-color: #508a97;
@@ -196,88 +205,18 @@ header {
     flex-direction: column;
 }
 
-/* ARTICLE */
 
-#MPU_sobre {
-    margin-top: 100px;
-    margin-left: 8%;
-    margin-right: 8%;
-    text-align: justify;
-    text-indent: 1.5em;
-    line-height: 1.2;
-    font-size: large;
-}
-
-#MPU_img {
-    height: 40%;
-    width: 50%;
-    border-radius: 12px;
-    box-shadow: 6px 6px 16px 0 rgba(0,0,0,0.4);
-    align-items: center;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    margin-left: 25%;
-}
-
-
-/* SECTION - CANDIDATO */
-
-.candidatoArea {
-    margin-top: 30px;
-    text-transform: uppercase;
-    margin-left: 0;
-    height: 100px;
-    width: 40%; 
-}
-
-#candidato_titulo {
-    margin-left: 20px;
-}
-
-#candidato_linha {
-    height: 2px;
-    width: 50%;
-    float: left;
-    margin-top: 0px;
-}
-
-.concursoRemocao, #candidato_pag {
-    margin: 10px;
-    margin-top: 60px;
-    height: 100px;
-    width: 245%;  
-}
-
-.concursoRemocao > img, #candidato_pag > img {
-    border: none;
-    width: 110px;
-    height: 110px;
-    float: left;
-}
-
-#candidato_btn, #concurso_btn {
-    cursor: pointer;
-    border-radius: 15px;
-    box-shadow: 3px 3px 10px 0 #00000066;
-    height: 100px;
-    width: 35%;
-    font-weight: 700;
-    background-color: #ffff7a;
-    border: 2px solid #fcfc7e;
-    font-size: 18px;
-    text-transform: uppercase;
-    float: left;
-}
-
-/* ASIDE - MENU - Melissa Turbano */
+/* ASIDE COM MENU - Melissa Turbano */
 
 .aside-menu {
     display: flex;
     margin-left: 65%;
+    position: fixed;
+    margin-top: 15%;
+    margin-bottom: 5%;
 }
 
 .aside-menu ul li {
-    /*width: 350px;*/
     width: 100%;
     float: none;
 }
@@ -292,7 +231,6 @@ header {
 .aside-menu ul li {
     float: none;
     align-items: center;
-    /*font-size: 18px;*/
 }
 
 .aside-menu a {
@@ -311,18 +249,22 @@ header {
     visibility: hidden;
 }
 
-
 /* Menu sob o mouse */
 .aside-menu ul li:hover ul {
     visibility: visible;
 }
         
 .aside-menu a:hover {
-    background-color: #a5a5a5;
+    background-color: #127e96;
+}
+
+#aside-menu_menu:hover {
+    background-color: #999999;
 }
 
 
 /* Submenu */
+
 .aside-menu ul ul li {
     float: none;
     border-bottom: solid 1px #ffffff;
@@ -352,16 +294,18 @@ header {
     transition: all .4s;
 }
 
-/* ASIDE - Melissa Turbano */
+
+/* ASIDE SEM MENU - Melissa Turbano */
 
 .aside {
     margin-left: 65%;
-    margin-top: 30px;
     display: flex;
+    position: fixed;
+    margin-top: 36%;
+    margin-bottom: 5%;
 }
 
 .aside ul li {
-   /*width: 350px;*/
     float: none;
     width: 125%;
 }
@@ -382,7 +326,9 @@ header {
     line-height: 2.0;
 }
 
-/*Detalhe do aside*/
+
+/* Seta animação do aside */
+
 .detalhe span {
     position: relative;
     transition: 0.5s;
@@ -393,7 +339,6 @@ header {
     position: absolute;
     opacity: 0;
     top: 0;
-    /*right: -5%;*/
     left:100%;
     transition: 0.5s;
     margin-top: -3%;
@@ -408,64 +353,78 @@ header {
     right: 0;
 }
 
-/* Mouse */ 
+
+/* Aside sob o mouse */
+
 .aside ul li:hover {
     visibility: visible;
-    background-color: #a6a6a6;
 }
 .aside a:hover {
-    background-color: #a5a5a5;
+    background-color: #2c4d55;
 }
 
+
 /* Config de dentro do aside */
+
 .aside ul li{
     float: none;
     align-items: center;
 }
 
-/* Botão de contato */
-#bt_contato {
+
+/* BOTÕES ASIDE */
+
+/* Contato */
+
+#contato_btn {
     border-radius: 25%;
     width: 5%;
     height: 7%;
     background-color: #ffffff;
-    margin-left: 28%;
-    margin-bottom:2%;
+    margin-top: 10%;
+    margin-left: 82%;
+    margin-bottom: 2%;
     cursor: pointer;
+    position: fixed;
 }
 
-#img_contato {
+#contato_img {
     border-radius: 18%;
     width: 70%;
     height: 65%;    
 }
 
-#bt_contato:hover {
+#contato_btn:hover {
     background-color: #fdf8cf;
     border: 2.5px solid #b7ba5a;
 }
 
-/*Botão de enviar*/
-#bt_enviar {
+
+/* Compartilhar */
+
+#compartilhar_btn {
     border-radius: 25%;
     width: 5%;
     height: 7%;
     background-color: #ffffff;
-    margin-left: 3%;
+    margin-top: 10%;
+    margin-left: 72%;
     margin-bottom: 3%;
     cursor: pointer;
+    position: fixed;
 }
 
-#img_enviar {
+#compartilhar_img {
     border-radius: 18%;
     width: 70%;
     height: 65%;
 }
 
-#bt_enviar:hover {
+#compartilhar_btn:hover {
     background-color: #e2fcbb;
     border: 2.5px solid #87a061;
 }
+
 
 /* FOOTER */
 
@@ -488,1374 +447,4 @@ footer {
     height: 1px;
     margin-right: 5%;
     margin-left: 5%;
-}
-
-
-/* ------- ISABELLA VALERIO -------- */
-
-/* TÓPICOS E LINKS */
-
-/* Caixa texto - Área Candidato e FAQ */
-#topico_quadrado_intro, #topico_quadrado_areaCand {
-    list-style-type: square;
-    margin-left: 3%;
-}
-
-#topico_quadrado_areaCand a, #topico_quadrado_intro a, #contato_link a {
-    text-decoration: none;
-    font-weight: bold;
-}
-#topico_quadrado_areaCand a:link, #topico_quadrado_intro a:link, #contato_link a:link {
-    color: #0086d3;
-}
-#topico_quadrado_areaCand a:visited, #topico_quadrado_intro a:visited{
-    color: #9700d3;
-}
-#topico_quadrado_areaCand a:hover, #topico_quadrado_intro a:hover, #contato_link a:hover {
-    color: #014e7a;
-}
-#topico_quadrado_areaCand a:active, #topico_quadrado_intro a:active, #contato_link a:active {
-    color: #002941;
-}
-
-/* Índice - Área Candidato */
-#topico_numeral {
-    list-style: decimal-leading-zero;
-    margin-left: 12%;
-}
-
-#topico_numeral a {
-    color: #000000;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#topico_numeral a:hover {
-    font-size: 17px;
-    text-shadow: 1.5px 1.5px #1414141a;
-}
-
-
-/* SECTION */
-
-/* Área Candidato */
-
-/* Geral */
-.areaGeral {
-    margin-top: 8%;
-    margin-left: 0;
-    height: 20%;
-    width: 40%;
-    line-height: 1.2;
-}
-
-.conteudoGeral {
-    margin-top: 10%;
-    margin-left: 0;
-    margin-bottom: 20%;
-    height: 20%;
-    width: 40%;
-    line-height: 1.2;
-}
-
-.indice {
-    margin-top: 7%;
-    margin-left: 0;
-    align-items: center;
-    width: 120%;
-}
-
-#procedimentos, #documentacao, #orientacoes, #posse, #contatos, #duvidas, #criterios {
-    margin-left: 0;
-    margin-bottom: 10%;
-    align-items: center;
-    width: 120%;
-}
-
-
-/* SECTION - TÍTULOS */
-
-/* Títulos */
-#titulo_intro {
-    margin-left: 40%;
-    font-size: 170%;
-    text-transform: uppercase;
-}
-
-#linha_titulo {
-    height: 2px;
-    width: 150%;
-    float: left;
-    margin-top: 0px;
-    background-color: #000000;
-}
-
-/* Subtítulos */
-#subtitulo {
-    margin-left: 9%;
-    font-size: 140%;
-    text-transform: capitalize;
-    font-weight: 700;
-}
-
-#linha_subtitulo {
-    height: 1px;
-    width: 107%;
-    float: left;
-    margin-top: 0;
-}
-
-/* SECTION - CAIXA */
-
-.caixa {
-    height: auto;
-    width: 145%;
-    background-color: #ececec;
-    border: 1px solid #aeaeae;
-    margin-top: 8%;
-    margin-left: 7%;
-}
-
-.caixa_ind {
-    height: auto;
-    width: auto;
-    background-color: #e0eef5;
-    border: 1px solid #c2d7e0;
-    box-shadow: 10px 10px 16px 0 #14141433;
-    border-radius: 40px;
-    margin-left: 35%;
-}
-
-.caixa_subt {
-    height: auto;
-    width: 100%;
-    background-color: #ececec;
-    border: 1px solid #aeaeae;
-    margin-top: 6%;
-    margin-left: 7%;
-}
-
-.caixa_atencao {
-    height: auto;
-    width: 100%;
-    background-color: #ffa4a4;
-    border: 1px solid #ff2a2a;
-    margin-top: 6%;
-    margin-left: 7%;
-}
-
-.caixa_info {
-    height: auto;
-    width: 100%;
-    background-color: #feffa6;
-    border: 1px solid #f7fa63;
-    margin-top: 6%;
-    margin-left: 7%;
-}
-
-#caixa_bloco {
-    text-transform: none;
-    text-align: justify;
-    margin-bottom: 0;
-    padding: 4%;
-}
-
-#caixa_texto {
-    margin-bottom: 2%;
-    text-indent: 1.5em;
-}
-
-/* HISTÓRICO */
-
-/* SECTION E ARTICLE */
-
-.inicioHistorico {
-    margin-top: 8%;
-    margin-left: 0;
-    margin-bottom: 30%;
-    height: 20%;
-    width: 40%;
-    line-height: 1.2;
-}
-
-.constituicaoHistorico {
-    margin-top: 50px;
-    margin-left: 0;
-    height: 20%;
-    width: 40%;
-    line-height: 1.2;
-}
-
-.organogramaHistorico {
-    margin-top: 570px;
-    margin-left: 0;
-    height: 20%;
-    width: 40%;
-}
-
-/* SECTION - TÍTULOS */
-
-#titulo_inicio {
-    margin-left: 65%;
-    font-size: 170%;
-    text-transform: uppercase;
-}
-
-#titulo_constituicoes {
-    margin-left: 55%;
-    font-size: 170%;
-    text-transform: uppercase;
-}
-
-#titulo_organograma {
-    margin-left: 55%;
-    font-size: 170%;
-    text-transform: uppercase;
-}
-
-#linha_titulo {
-    height: 2px;
-    width: 150%;
-    float: left;
-    margin-top: 0px;
-    background-color: #000000;
-}
-
-/* SECTION - CAIXA */
-
-#caixa {
-    height: auto;
-    width: 145%;
-    background-color: #ececec;
-    border: 1px solid #aeaeae;
-    margin-top: 8%;
-    margin-left: 5%;
-}
-
-#caixa_texto {
-    text-transform: none;
-    text-align: justify;
-    margin-bottom: 0;
-    padding: 4%;
-}
-
-#texto_caixa {
-    margin-bottom: 2%;
-    text-indent: 1.5em;
-}
-
-/* Tópicos */
-#texto_topico {
-    margin-left: 3.5%;
-    margin-bottom: 1%;
-}
-
-#topico_quadrado {
-    list-style-type: square;
-    margin-left: 6%;
-}
-
-/* ORGANOGRAMA IMG */
-
-#organograma_MPU {
-    height: 260%;
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 6px 6px 16px 0 #00000066;
-    margin-top: 8%;
-    margin-left: 25%;
-    margin-bottom: 15%;
-}
-
-
-/* LEGISLAÇÃO */
-
-/* SECTION - GERAL */
-
-.legislacoes {
-    margin-top: 8%;
-    margin-left: 0;
-    height: 20%;
-    width: 40%;
-    line-height: 1.2;
-}
-
-.legislacaoTabelaConfig {
-    margin-top: 50px;
-    margin-left: 0;
-    margin-bottom: 50%;
-    align-items: center;
-    width: 120%;
-}
-
-/* SECTION - TÍTULOS */
-
-#titulo_legislacao {
-    margin-left: 50%;
-    font-size: 170%;
-    text-transform: uppercase;
-}
-
-#linha_legislacao {
-    height: 2px;
-    width: 140%;
-    float: left;
-    margin-top: 0;
-    background-color: #000000;
-}
-
-/* SECTION - TABELA */
-
-/* Estrutura */
-#legislacao_tabela {
-    margin-left: 17%;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-#titulo_tabela, #conteudo_tabela_assunto, #conteudo_tabela_doc {
-    border: 1px solid #000000;
-}
-
-#titulo_tabela {
-    background-color: #fdff7c;
-}
-
-#conteudo_tabela_assunto, #conteudo_tabela_doc {
-    padding: 1.3%;
-}
-
-/* Conteúdo */
-#titulo_tabela {
-    line-height: 2.0;
-}
-
-#conteudo_tabela_assunto {
-    text-align: justify;
-    text-indent: 1.5em;
-}
-
-#conteudo_tabela_doc {
-    text-align: center;
-}
-
-
-/*Links*/
-#conteudo_tabela_assunto a, #conteudo_tabela_doc a {
-    text-decoration: none;
-    font-weight: bold;
-}
-#conteudo_tabela_assunto a:link, #conteudo_tabela_doc a:link {
-    color: #0086d3;
-}
-#conteudo_tabela_assunto a:visited, #conteudo_tabela_doc a:visited{
-    color: #9700d3;
-}
-#conteudo_tabela_assunto a:hover, #conteudo_tabela_doc a:hover {
-    color: #014e7a;
-}
-#conteudo_tabela_assunto a:active, #conteudo_tabela_doc a:active {
-    color: #002941;
-}
-
-
-/* TABELAS */
-
-/* SECTION - GERAL */
-
-.tabelasDocumentos {
-    margin-top: 8%;
-    margin-left: 0;
-    margin-bottom: 30%;
-    height: 20%;
-    width: 45%;
-    line-height: 1.2;
-}
-
-.dadosGerais {
-    margin-top: 50px;
-    margin-left: 0;
-    margin-bottom: 50%;
-    align-items: center;
-    width: 120%;
-}
-
-.contingenciamento {
-    margin-top: 50px;
-    margin-left: 0;
-    margin-bottom: 10%;
-    align-items: center;
-    width: 120%;
-}
-
-/* SECTION - TÍTULOS */
-
-#titulo_tabelas {
-    margin-left: 50%;
-    text-transform: uppercase;
-    font-size: 170%;
-}
-
-#linha_titulo {
-    height: 2px;
-    width: 140%;
-    float: left;
-    margin-top: 0;
-    background-color: #000000;
-}
-
-/* Subtítulos */
-#titulo_dados {
-    margin-left: 9%;
-    font-size: 140%;
-    text-transform: capitalize;
-    font-weight: 700;
-}
-
-#titulo_contingenciamento {
-    margin-left: 9%;
-    font-size: 140%;
-    text-transform: capitalize;
-    font-weight: 700;
-}
-
-#linha_subtitulo {
-    height: 1px;
-    width: 100%;
-    float: left;
-    margin-top: 0;
-}
-
-/* CAIXAS COM LINKS PARA TABELAS */
-
-.alinhamento_caixas {
-    float: left;
-}
-
-.tabela_caixa {
-    height: auto;
-    width: 80%;
-    background-color: #e0eef5;
-    border: 1px solid #c2d7e0;
-    box-shadow: 6px 6px 16px 0 #1414141a;
-    border-radius: 30px;
-    margin-top: 15%;
-    margin-left: 30%;
-}
-
-.tabela_caixa a {
-    text-decoration: none;
-}
-
-#texto_caixa {
-    text-align: center;
-    color: #000000;
-    padding: 8%;
-}
-
-
-/* ------- MELISSA TURBANO -------- */
-
-/* SOBRE MPU */
-
-/* Geral */
-.sobre {
-    height: 100px;
-    margin-top: 100px;
-}
-
-#sobre_titulo {
-    font-size: 170%;
-    margin-left: 23%;
-    margin-top: 3%;
-}
-
-#sobre_linha {
-    height: 2px;
-    width: 60%;
-    float: left;
-    margin-top: 0px;
-    background-color: #000000;
-}
-
-/*Caixa cinza com as explicações de cada tema*/
-#div {
-    height: auto;
-    width: 55%;
-    background-color: #ececec;
-    border: 1px solid #aeaeae;
-    font-size: 0.9em;
-    margin-top: 20px;
-    margin-left: 5%;
-}
-#div > ol, #div > p  {
-    margin: 3%;
-    /*text-indent: 1.5em;*/
-    text-transform: none;
-    text-align: justify;
-}
-
-#div > ol > li {
-    margin: 2%;
-}
-
-/*Botão de contato*/
-#bnt_contato {
-    border-radius: 25%;
-    width: 5%;
-    height: 7%;
-    background-color: #ffffff;
-    margin-left: 71%;
-    margin-bottom:3%;
-    cursor: pointer;
-}
-
-#img_contato {
-    border-radius: 18%;
-    width: 70%;
-    height: 65%;
-}
-
-#bnt_contato:hover {
-    background-color: #fdf8cf;
-    border: 2.5px solid #b7ba5a;
-}
-
-/*Botão de enviar
-#bnt_enviar {
-    border-radius: 25%;
-    width: 5%;
-    height: 7%;
-    background-color: #ffffff;
-    margin-left: 3%;
-    margin-bottom:3%;
-    cursor: pointer;
-}
-
-#img_enviar {
-    border-radius: 18%;
-    width: 70%;
-    height: 65%;
-}
-
-#bnt_enviar:hover {
-    background-color: #e2fcbb;
-    border: 2.5px solid #87a061;
-}*/
-
-/* PÁGINA AJUDA */
-
-.ajuda {
-    margin: auto;
-    height: 100px;
-    margin-top: 100px;   
-    align-items: center;
-}
-
-#ajuda_titulo {
-    margin-left: 25%;
-    font-size: 170%;
-}
-
-#ajuda_linha {
-    height: 2px;
-    width: 60%;
-    float: left;
-    margin-top: 0px;
-    background-color: #000000;
-}
-
-#ajuda_sublinha {
-    height: 2px;
-    width: 43%;
-    float: left;
-    margin-top: 0px;
-    margin-left: 9%;
-}
-
-/*Botão de contato*/
-#bnt_contato {
-    border-radius: 25%;
-    width: 5%;
-    height: 7%;
-    background-color: #ffffff;
-    margin-left: 19%;
-    margin-bottom: 3%;
-    cursor: pointer;
-}
-
-#img_contato {
-    border-radius: 18%;
-    width: 70%;
-    height: 65%;    
-}
-
-#bnt_contato:hover {
-    background-color: #fdf8cf;
-    border: 2.5px solid #b7ba5a;
-}
-
-/*Botão de enviar*/
-#bnt_enviar {
-    border-radius: 25%;
-    width: 5%;
-    height: 7%;
-    background-color: #ffffff;
-    margin-left: 3%;
-    margin-bottom:3%;
-    cursor: pointer;
-}
-
-#img_enviar {
-    border-radius: 18%;
-    width: 70%;
-    height: 65%;    
-}
-
-#bnt_enviar:hover {
-    background-color: #e2fcbb;
-    border: 2.5px solid #87a061;
-}
-
-/*Modelo dos botões de redirecionamento do usuário*/
-.ajuda_btn {    
-    border: none;
-    text-align: center;
-    font-size: 130%;
-    cursor: pointer;
-    margin-left: 9%;
-    margin-top: 30px;
-    width: 43%;
-    height: 40%;
-    text-transform: uppercase;   
-    background-color: #ececec;
-    font-weight: bold;
-}
-
-.ajuda_btn span {
-    position: relative;
-    transition: 0.5s;
-}
-
-.ajuda_btn span:after {
-    content: "\00bb";
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -7%;
-    transition: 0.5s;
-}
-
-.ajuda_btn:hover span {
-    padding-right: 7%;
-}
-
-.ajuda_btn:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-
-
-/*PÁGINA FAQ */
-
-.faq {
-    margin: auto;
-    height: 100px;   
-    margin-top: 100px;
-    
-}
-
-#faq_titulo {
-    margin-left: 15%;
-    font-size: 170%;    
-}
-
-#faq_linha {
-    height: 2px;
-    width: 55%;
-    float: left;
-    margin-top: 0px;
-    background-color: #000000;
-}
-
-#faq_subtitulo {
-    margin-left: 7%;
-    /*font-size: 25px;*/
-    font-size: 150%;
-    margin-top: 30px;
-}
-
-#faq_sublinha {
-    height: 2px;
-    width: 50%;
-    float: left;
-    margin-top: 0px;
-    margin-left: 5%;
-}
-
-/*Área de respostas*/
-#questao {
-    
-    height: auto;
-    width: 50%;
-    font-weight: lighter;
-    background-color: #ececec;
-    border: 1px solid #717171;
-    font-size: 1em;
-    text-transform: uppercase;
-    margin-top: 20px;
-    margin-left: 5%;    
-}
-
-#questao > p {
-    margin: 2%;
-    text-indent: 1.5em;
-    text-transform: none;
-    text-align: justify;
-}
-
-/*Área de entre em contato*/
-#contato_link {
-    border-radius: 15px;
-    /*height: 50px;*/
-    height: 50%;
-    width: 35%;
-    font-weight: lighter;
-    background-color: #ffff7a96;
-    border: 3px solid #ffff00;
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-left: 12%;
-    margin-top: 2%;
-    margin-bottom: 3%;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-}
-
-
-/*PÁGINA ENVIAR */
-
-.enviar {
-    margin: auto;
-    height: 100px;
-    width: 40%px; 
-    margin-top: 100px;
-}
-
-#enviar_titulo {
-    margin-left: 25%;
-    font-size: 170%;
-}
-
-#enviar_linha {
-    height: 2px;
-    width: 60%;
-    float: left;
-    margin-top: 0px;
-    background-color: #000000;
-}
-
-/*Formulário*/
-.formulario {
-    margin: 1em;
-}
-
-#caixa {
-    margin: 3%;
-    padding: 1em;
-    justify-content: space-between;
-    width: 55%;
-}
-
-/*Campos*/
-legend {
-    padding: 5px;
-    font-size: 1.2em;
-    font-weight: 600;
-    border: 1px solid #6e6767;
-}
-
-#email {
-    margin-left: 3em;
-    float: left;
-    display: block;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-#destinatario {
-    margin-right: 3em;
-    float: right;
-    display: block;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-textarea {
-    width: 100%;
-    height: 120px;
-    line-height: 20px;
-    border: 1px solid #6e6767;
-    background-color: #ececec;
-    max-width: 800px;
-}
-
-#email_id, #destinatario_id  {
-    height: 2.5em;
-    border: 1px solid #6e6767;
-    background-color: #ececec;
-    width: 20em;
-    text-align: center;
-    font-size: 15px;
-}
-
-::placeholder {
-    font-size: 1.2em;
-    text-align: center;
-}
-
-#enviar_id, #cancelar_id{
-    border: 1.5px solid #6e6767;
-    background-color: #ececec;
-    margin-left: 3%;
-    justify-content:space-between;
-    padding: 1em;
-    border-radius: 20px;
-    width: 90px;
-    height: 60px;
-    font-weight: 550;
-}
-
-#enviar_id:hover {
-    background-color: #9adb9a;
-    border: 2.5px solid #49d289;
-}
-
-#cancelar_id:hover {
-    background-color: #f79c9c;
-    border: 2.5px solid #a90606;
-}
-
-/*Botão de contato*/
-#btt_contato {
-    border-radius: 25%;
-    width: 5%;
-    height: 7%;
-    background-color: #ffffff;
-    margin-left: 73%;
-    margin-bottom:3%;
-    cursor: pointer;
-}
-
-#img_contato {
-    border-radius: 18%;
-    width: 70%;
-    height: 65%;
-    
-}
-
-#btt_contato:hover {
-    background-color: #fdf8cf;
-    border: 2.5px solid #b7ba5a;
-}
-
-/*Botão de enviar*/
-#btt_enviar {
-    border-radius: 25%;
-    width: 5%;
-    height: 7%;
-    background-color: #ffffff;
-    margin-left: 2%;
-    margin-bottom:3%;
-    cursor: pointer;
-}
-
-#img_enviar {
-    border-radius: 18%;
-    width: 70%;
-    height: 65%;
-    
-}
-
-#btt_enviar:hover {
-    background-color: #e2fcbb;
-    border: 2.5px solid #87a061;
-}
-
-
-/* PÁGINA CONTATO */
-.contato {
-    margin: auto;
-    height: 100px;
-    width: 40%px; 
-    margin-top: 100px;
-}
-
-#contato_titulo {
-    margin-left: 25%;
-    font-size: 170%;
-}
-
-#contato_linha {
-    height: 2px;
-    width: 60%;
-    float: left;
-    margin-top: 0px;
-    background-color: #000000;
-}
-
-/*Formulário*/
-.formulario {
-    margin: 1em;
-}
-
-#caixa {
-    margin: 3%;
-    padding: 1em;
-    justify-content: space-between;
-    width: 55%;
-}
-
-/*Rótulo das caixas*/
-legend {
-    padding: 5px;
-    font-size: 1.2em;
-    font-weight: 600;
-    border: 1px solid #6e6767;
-}
-
-#nome {
-    margin-left: 3em;
-    float: left;
-    display: block;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-#sobrenome {
-    margin-right: 3em;
-    float: right;
-    display: block;
-    font-size: 20px;
-    font-weight: 600;    
-}
-
-/* Área de mensagem-comentário */
-textarea {
-    width: 100%;
-    height: 120px;
-    line-height: 20px;
-    border: 1px solid #6e6767;
-    background-color: #ececec;
-    max-width: 800px;
-}
-
-#nome_id, #sobrenome_id  {
-    height: 2.5em;
-    border: 1px solid #6e6767;
-    background-color: #ececec;
-    width: 20em;
-    text-align: center;
-    font-size: 15px;
-}
-
-::placeholder {
-    font-size: 1.2em;
-    text-align: center;
-}
-
-/*Botões da enviar e cancelar*/
-#enviar_id, #cancelar_id{
-    border: 1.5px solid #6e6767;
-    background-color: #ececec;
-    margin-left: 3%;
-    justify-content:space-between;
-    padding: 1em;
-    border-radius: 20px;
-    width: 90px;
-    height: 60px;
-    font-weight: 550;
-    margin-bottom: 8%;
-}
-
-#enviar_id:hover {
-    background-color: #9adb9a;
-    border: 2.5px solid #49d289;
-}
-
-#cancelar_id:hover {
-    background-color: #f79c9c;
-    border: 2.5px solid #a90606;
-}
-
-
-/* ------- NICOLE MIGUEL -------- */
-
-/* TABELAS DEMONSTRATIVOS E PORTARIA CONJUNTA */
-
-.tabelas_docs {
-    height: 100px;   
-    margin-top: 8%;
-    align-items: center;
-}
-
-.tabelas_docs h1 {
-    text-transform: uppercase;
-    margin-left: 20%;
-    font-size: 170%;
-}
-
-#linha_demonstrativos, #linha_portaria {
-    height: 2px;
-    width: 55%;
-    float: left;
-    background-color: #000000;
-}
-
-/*Tabelas*/
-.demonstrativos, .portaria {
-    height: 50%;
-    width: 50%;
-    margin: 1em;
-}
-
-#table1, #table2, #table3, #table4 {
-    margin: 5%;
-    margin-left: 15%;
-    padding: 1em;
-    text-align: center;
-    border-collapse: collapse;
-}
-
-#table3, #table4 {
-    width: 80%;
-}
-
-/* Links - Isabella Valerio*/
-#table1 a, #table2 a, #table3 a, #table4 a {
-    text-decoration: none;
-    font-weight: bold;
-}
-#table1 a:link, #table2 a:link, #table3 a:link, #table4 a:link {
-    color: #0086d3;
-}
-#table1 a:hover, #table2 a:hover, #table3 a:hover, #table4 a:hover {
-    color: #014e7a;
-}
-#table1 a:active, #table2 a:active, #table3 a:active, #table4 a:active {
-    color: #002941;
-}
-
-th, td {
-    border: 1px solid #000000;
-}
-
-th {
-    height: 50px;
-}
-
-td {
-    height: 35px;
-}
-
-td a {
-    color: #000000;
-}
-
-/*Títulos*/
-#titulo_tab {
-    background-color: #f8fa6b;
-}
-
-#subtitulo_tab {
-    background-color: #f8fdb5;
-}
-
-
-/*PÁGINA HORUS */
-
-.horus {
-    margin: auto;
-    height: 100px;   
-    margin-top: 100px;
-    align-items: center;
-    margin-top: 100px;
-}
-
-.horus h1 {
-    text-transform: uppercase;
-    margin-left: 20%;
-    font-size: 170%;
-}
-
-#linha_horus {
-    height: 2px;
-    width: 55%;
-    float: left;
-    background-color: #000000;
-}
-
-/*Formulário*/
-.formulario {
-    height: 50%;
-    width: 50%;
-    margin: 1em;
-}
-
-#ministerio, #login {
-    margin: 5%;
-    padding: 1em;
-    border-radius: 10px;
-    justify-content: space-between;
-}
-
-/*Campos*/
-legend {
-    padding: 5px;
-    font-size: 1.2em;
-    font-weight: 600;
-    border: 1px solid #6e6767;
-    border-radius: 5px;
-    box-shadow: 3px 3px #062927af;
-}
-
-#lab_titulo {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-#atuacao, #email {
-    margin-left: 3em;
-    float: left;
-    display: block;
-}
-
-#profissao, #senha {
-    margin-right: 3em;
-    float: right;
-    display: block;
-}
-
-select, #email_id, #senha_id  {
-    height: 2.5em;
-    border: 1px solid #6e6767;
-    border-radius: 5px;
-    background-color: #e2e0e0;
-}
-
-::placeholder {
-    font-size: 1.2em;
-    text-align: center;
-}
-
-#entrar_horus, #cancelar_horus{
-    border: 1.5px solid #6e6767;
-    background-color: #e2e0e0;
-    margin-left: 25%;
-    justify-content:space-between;
-    padding: 1em;
-    border-radius: 5px;
-    box-shadow: 3px 3px #062927af;
-    width: 80px;
-}
-
-#entrar_horus:hover {
-    background-color: #9adb9a;
-}
-
-#cancelar_horus:hover {
-    background-color: #f79c9c;
-}
-
-/* PESQUISA */
-
-/*Geral*/
-
-.pesquisa {
-    margin: auto;
-    height: 100px;   
-    margin-top: 100px;
-    align-items: center;
-    margin-top: 100px;
-}
-
-/*Título*/
-.pesquisa h1 {
-    text-transform: uppercase;
-    margin-left: 10%;
-    font-size: 170%;
-}
-
-.pesquisa h2 {
-    margin-top: 5%;
-    margin-right: 8%;
-    margin-left: 10%;
-    font-weight: normal;
-    text-transform: uppercase;
-}
-
-#linha_pesquisa {
-    height: 2px;
-    width: 55%;
-    float: left;
-    margin-bottom: 2%;
-    background-color: #000000;
-}
-
-/*Resultados*/
-#resultados {
-    text-align: center;
-    width: 50%;
-    background-color: #ececec;
-    box-shadow: 5px 5px 5px 0 #cfcfcf;
-    border: 1px solid #aeaeae;
-    margin: 2%;
-    padding: 1em;
-    font-size: 18px;
-}
-
-#resultados p {
-    margin: 2%;
-    text-align: justify;
-    margin-left: 10%;
-}
-
-#resultados a {
-    color:#000000;
-} 
-
-
-/* QUADRO NOMEAÇÕES */
-
-/*Geral e Títulos*/
-.quadroNomeacoes {
-    height: 100px;   
-    margin-top: 100px;
-    align-items: center;
-    margin-top: 100px;
-}
-
-.quadroNomeacoes h1 {
-    text-transform: uppercase;
-    margin-left: 20%;
-    font-size: 170%;
-}
-
-#linha_quadroNomeacoes {
-    height: 2px;
-    width: 55%;
-    float: left;
-    background-color: #000000;
-}
-
-/* Formulário */
-.formulario {
-    height: 50%;
-    width: 50%;
-    margin: 1em;
-}
-
-.selects, .candidato, .consulta{
-    margin: 5%;
-    padding: 1em;
-    border-radius: 10px;
-    justify-content: space-between;
-}
-
-.candidato {
-    margin-top: 15%;
-}
-
-.consulta {
-    margin-top: 10%;
-}
-
-/*Filtros e Campos*/
-#filtrar_candidatos {
-    display: block;
-    float: left;
-}
-
-#nome {
-    margin-top: 5%;
-    margin-left: 50%;
-}
-
-#nome_id {
-    width: 80%;
-}
-
-#lab_titulo {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-#concurso, #cargo, #uf {
-    margin-left: 3em;
-    float: left;
-    display: block;
-}
-
-#cargo_id {
-    width: 300px;
-}
-
-select, #nome_id {
-    height: 2.5em;
-    border: 1px solid #6e6767;
-    border-radius: 5px;
-    background-color: #e2e0e0;
-}
-
-::placeholder {
-    font-size: 1.2em;
-    text-align: center;
-}
-
-/*Botões finais*/
-#btn_td, #btn_ac, #btn_cd, #btn_cn, #btn_todos, #btn_aprovados, #btn_nomeados, #voltar_quadro, #pesquisar_quadro {
-    border: 1.5px solid #6e6767;
-    background-color: #e2e0e0;
-    justify-content:space-between;
-    padding: 1em;
-    box-shadow: 3px 3px #062927af;
-}
-
-#btn_td, #btn_ac, #btn_cd, #btn_cn {
-    margin-top: 5%;
-    width: 80px;
-}
-
-#btn_todos, #btn_aprovados, #btn_nomeados {
-    margin: 3%;
-    width: 150px;
-    border-radius: 10px;
-}
-
-#voltar_quadro, #pesquisar_quadro{
-    margin-top: 5%;
-    margin-left: 5%;
-    width: 85px;
-    border-radius: 5px;
-}
-
-#btn_final {
-    margin-left: 35%;
-}
-
-#btn_td:hover, #btn_ac:hover, #btn_cd:hover, #btn_cn:hover, #btn_todos:hover, #btn_aprovados:hover, #btn_nomeados:hover {
-    border: 1.5px solid #6e6767;
-    background-color: #6e6767;
-    color: #e2e0e0;
-}
-
-#pesquisar_quadro:hover {
-    background-color: #9adb9a;
-}
-
-#voltar_quadro:hover {
-    background-color: #f79c9c;
 }
