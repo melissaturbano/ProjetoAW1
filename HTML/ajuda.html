@@ -9,8 +9,8 @@
         <meta name="author" content="Isabella Valerio, Melissa Turbano, Nicole Miguel">
         <meta name="description" content="Ajuda - reestruturação do site MPU">
         <meta name="keywords" content="html, ajuda, mpu, governo, seleção">
-        <link rel="stylesheet" type="text/css" href="../css/Style.css">
-        <link rel="shortcut icon" type="image/x-icon" href="../image/logo.png">
+        <link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../Image/logo.png">
         <title>Ajuda</title>
     </head>
     
@@ -18,7 +18,7 @@
         <header>
             <!-- Inserção do logo e título da página-->
             <div class="logo">
-                <a href="home.html"><img id="logo_img" src="../image/logo.png" alt="Logo MPU"></a>
+                <a href="index.html"><img src="../Image/logo.png" id="logo_img" alt="Logo MPU"></a>
                 <h2 id="logo_letra">MPU</h2>
                 <hr id="logo_linha">
                 <h1 id="logo_titulo">Ministério Público da União</h1>
@@ -26,24 +26,20 @@
            
             <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
             <div class="botoes">
-                <a href="ajuda.html"><button id="help_bt"><img src="../image/help.jpg" id="help_img"></button></a>
-                <a href="faq.html"><button id="faq_bt"><img src="../image/faq.jpg" id="faq_img"></button></a>
-                <form id="caixa_pesquisa" action="pesquisa.html">
-                    <img id="lupa_img" src="../image/search.png" alt="Lupa de pesquisa"/>
+                <a href="ajuda.html"><button id="help_btn"><img src="../Image/help.jpg" id="help_img" alt="Ponto de interrogação de ajuda"></button></a>
+                <a href="faq.html"><button id="faq_btn"><img src="../Image/faq.jpg" id="faq_img" alt="Sigla FAQ"></button></a>
+                <form action="pesquisa.html" id="caixa_pesquisa">
+                    <img src="../Image/search.png" id="lupa_img" alt="Lupa de pesquisa"/>
                     <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
-                    <button type="submit" id="ok_bt">OK</button>
+                    <button type="submit" id="ok_btn">OK</button>
                 </form>
             </div>
         </header>
 
-        <!-- Inserção de botão menu responsivo -->
-        <input type="checkbox" id="bt_menu">
-        <label for="bt_menu">&#9776;</label>
-
         <!-- Inserção de estrutura do menu -->
         <nav class="menu">
             <ul>
-                <li><a href="home.html">Página Inicial</a></li>
+                <li><a href="index.html">Página Inicial</a></li>
                 <li><a href="#">Institucional</a>
                     <ul>
                         <li id="subMenu"><a href="sobreMPU.html">Sobre o MPU</a>
@@ -57,7 +53,7 @@
                         <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
                     </ul>
                 </li>
-                <li><a href="../html/legislacao.html">Legislação</a></li>
+                <li><a href="legislacao.html">Legislação</a></li>
                 <li><a href="#">Órgãos</a>
                     <ul>
                         <li id="subMenu"><a href="https://auditoria.mpu.mp.br/">AUDIN</a>
@@ -71,7 +67,7 @@
         <section class="ajuda">
             <h1 id="ajuda_titulo">AJUDA</h1>
             <hr id="ajuda_linha">
-            <a href="home.html"><button class="ajuda_btn"><span>Página Principal</span></button></a>
+            <a href="index.html"><button class="ajuda_btn"><span>Página Principal</span></button></a>
             <hr id="ajuda_sublinha">
             <a href="paginaCandidato.html"><button class="ajuda_btn"><span>Página do candidato</span></button></a>
             <hr id="ajuda_sublinha">
@@ -91,12 +87,12 @@
 
         <!--Botão de contatos-->
         <a href="contato.html">
-            <button type="button" id="bnt_contato"> <img src="../image/contato.png" id="img_contato" /></button>
+            <button type="button" id="contato_btn"><img src="../Image/contato.png" id="contato_img" alt="Envelope para contato" /></button>
         </a> 
 
         <!--Botão de envio-->
         <a href="enviar.html">
-            <button type="button" id="bnt_enviar"> <img src="../image/enviar.png" id="img_enviar" /></button>
+            <button type="button" id="compartilhar_btn"><img src="../Image/compartilhar.png" id="compartilhar_img" alt="Símbolo de compartilhamento" /></button>
         </a>
 
         <!--Estrutura dos asides -->
@@ -130,7 +126,7 @@
             
             <div class="aside">
                 <ul>
-                    <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores" class="detalhe"><span>Concursos MPU e MPF</span><a></li>
+                    <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores" class="detalhe"><span>Concursos MPU e MPF</span></a></li>
                     <li><a href="http://www.transparencia.mpf.mp.br/" class="detalhe"><span>Transparência Ministério Público</span></a></li>
                 </ul>
             </div>               
