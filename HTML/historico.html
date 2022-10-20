@@ -15,10 +15,10 @@
     </head>
 
     <body>
-        <header>
+        <header class="header">
             <!-- Inserção do logo e título da página -->
             <div class="logo">
-                <a href="home.html"></a><img id="logo_img" src="../image/logo.png" alt="Logo MPU"></a>
+                <a href="home.html"></a><img id="logo_img" src="../Image/logo.png" alt="Logo MPU"></a>
                 <h2 id="logo_letra">MPU</h2>
                 <hr id="logo_linha">
                 <h1 id="logo_titulo">Ministério Público da União</h1>
@@ -26,53 +26,49 @@
            
             <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
             <div class="botoes">
-                <a href="ajuda.html"><button id="help_bt"><img src="../image/help.jpg" id="help_img"></button></a>
-                <a href="faq.html"><button id="faq_bt"><img src="../image/faq.jpg" id="faq_img"></button></a>
-                <form id="caixa_pesquisa" action="../html/pesquisa.html">
-                    <img id="lupa_img" src="../image/search.png" alt="Lupa de pesquisa"/>
+                <a href="ajuda.html"><button id="help_btn"><img src="../Image/help.jpg" id="help_img"></button></a>
+                <a href="faq.html"><button id="faq_btn"><img src="../Image/faq.jpg" id="faq_img"></button></a>
+                <form id="caixa_pesquisa" action="pesquisa.html">
+                    <img id="lupa_img" src="../Image/search.png" alt="Lupa de pesquisa"/>
                     <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
                     <button type="submit" id="ok_bt">OK</button>
                 </form>
             </div>
+
+            <!-- Inserção de estrutura do menu -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="home.html">Página Inicial</a></li>
+                    <li><a href="#">Institucional</a>
+                        <ul>
+                            <li id="subMenu"><a href="sobreMPU.html">Sobre o MPU</a>
+                            <li id="subMenu"><a href="historico.html">Histórico</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Documentos</a>
+                        <ul>
+                            <li id="subMenu"><a href="tabelas.html">Tabelas</a>
+                            <li id="subMenu"><a href="demonstrativos.html">Demonstrativos</a>
+                            <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
+                        </ul>
+                    </li>
+                    <li><a href="legislacao.html">Legislação</a></li>
+                    <li><a href="#">Órgãos</a>
+                        <ul>
+                            <li id="subMenu"><a href="https://auditoria.mpu.mp.br/">AUDIN</a>
+                            <li id="subMenu"><a href="https://escola.mpu.mp.br/">ESMPU</a>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
-        <!-- Inserção de botão menu responsivo -->
-        <input type="checkbox" id="bt_menu">
-        <label for="bt_menu">&#9776;</label>
-
-        <!-- Inserção de estrutura do menu -->
-        <nav class="menu">
-            <ul>
-                <li><a href="home.html">Página Inicial</a></li>
-                <li><a href="#">Institucional</a>
-                    <ul>
-                        <li id="subMenu"><a href="sobreMPU.html">Sobre o MPU</a>
-                        <li id="subMenu"><a href="historico.html">Histórico</a>
-                    </ul>
-                </li>
-                <li><a href="#">Documentos</a>
-                    <ul>
-                        <li id="subMenu"><a href="tabelas.html">Tabelas</a>
-                        <li id="subMenu"><a href="demonstrativos.html">Demonstrativos</a>
-                        <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
-                    </ul>
-                </li>
-                <li><a href="legislacao.html">Legislação</a></li>
-                <li><a href="#">Órgãos</a>
-                    <ul>
-                        <li id="subMenu"><a href="https://auditoria.mpu.mp.br/">AUDIN</a>
-                        <li id="subMenu"><a href="https://escola.mpu.mp.br/">ESMPU</a>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
         <!-- Inserção texto de início do histórico de MPU -->
-        <section class="inicioHistorico">
-            <h1 id="titulo_inicio">Início</h1>
-            <hr id="linha_titulo">
+        <section class="introducao">
+            <h1 id="titulo">Início</h1>
+            <hr id="titulo_linha">
             <div id="caixa">
-                <div id="caixa_texto">
+                <div id="caixa_bloco">
                     <p id="texto_caixa">O Ministério Público é fruto do desenvolvimento do estado brasileiro e da democracia. A sua história é marcada por dois grandes processos que culminaram na formalização do Parquet como instituição e na ampliação de sua área de atuação.</p>
                     <p id="texto_caixa">No período colonial, o Brasil foi orientado pelo direito lusitano. Não havia o Ministério Público como instituição. Mas as Ordenações Manuelinas de 1521 e as Ordenações Filipinas de 1603 já faziam menção aos promotores de justiça, atribuindo a eles o papel de fiscalizar a lei e de promover a acusação criminal. Existiam ainda o cargo de procurador dos feitos da Coroa (defensor da Coroa) e o de procurador da Fazenda (defensor do fisco).</p>
                     <p id="texto_caixa">Só no Império, em 1832, com o Código de Processo Penal do Império, iniciou-se a sistematização das ações do Ministério Público.</p>
@@ -137,7 +133,7 @@
         </aside> 
 
         <!-- Inserção texto de constituições do histórico de MPU -->
-        <article class="constituicaoHistorico">
+        <article class="conteudo">
             <h1 id="titulo_constituicoes">Constituições</h1>
             <hr id="linha_titulo">
             <div id="caixa">

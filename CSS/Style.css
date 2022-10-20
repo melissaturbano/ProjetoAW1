@@ -1,6 +1,9 @@
 /* Recodificado e unificado por Isabella Valerio */
 
+/*-------------------- ESTRUTURAS GERAIS --------------------*/
+
 /* GERAL */
+
 *{
     margin: 0;
     padding: 0;
@@ -15,15 +18,21 @@ html, body {
 }
 
 
-/* HEADER */
+/* HEADER - Nicole Miguel */
+
+.acima {
+    display: flex;
+}
 
 /* Estilizando a fonte, cor de fundo e definindo posição fixa do header (cabeçalho) */
 header {
     background-color: #012229;
     color: #ffffff;
-    position: fixed;
+    position: fixed !important;
     align-items: center;
     width: 100%;
+    margin: 0;
+    height: 66px;
 }
 
 
@@ -35,7 +44,7 @@ header {
     float: left;
 }
 
-/* Configuração da logo */
+/* Configuração */
 #logo_letra {
     margin-left: 15px;
     font-size: large;
@@ -70,14 +79,14 @@ header {
     float: right;
 }
 
-#help_btn, #faq_btn {
+#help_bt, #faq_bt {
     cursor: pointer;
     border: none;
     background-color: #012229;
     margin-left: 15px;
 }
 
-#help_imgn {
+#help_img {
     width: 28px;
     height: 28px;
     margin-top: 5px;
@@ -93,7 +102,7 @@ header {
 /* Pesquisa */
 
 #lupa {
-    color: #ffffff;
+    color: #000000;
     font-style: italic;
     font-size: 12px;
     border: none;
@@ -108,7 +117,14 @@ header {
     padding: 0;
 }
 
-#ok_btn {
+#lupa_img {
+    float: left;
+    width: 45px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+#ok_bt {
     background-color: #508a97;
     border: #508a97;
     color: #000000;
@@ -117,26 +133,19 @@ header {
     height: 25px;
 }
 
-#ok_btn:hover {
+#ok_bt:hover {
     background: #9fc7cc;
     color: #000000;
 }
 
-#lupa_img {
-    float: left;
-    width: 45px;
-    height: 40px;
-    margin-left: 15px;
-}
 
-
-/* MENU */
+/* MENU - Melissa Turbano */
 
 .menu {
     background-color: #a5a4a4;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
     width: 100%;
-    margin-top: 40px;
+    margin-top: 66px;
     height: 28px;
     align-items: center;
     text-align: center;
@@ -155,7 +164,6 @@ header {
     color: #000000;
     font-size: larger;
     display: block;
-    padding: 0 30px 0 15px;
     font-size: 14px;
     font-weight: 500;
 }
@@ -176,9 +184,6 @@ header {
     padding: 0px;
 }
 
-
-/* Submenu */
-
 .menu ul ul {
     display: none;
     background-color: #508a97;
@@ -198,6 +203,7 @@ header {
 .menu ul ul li a {
     color: #ffffff;
     font-weight: normal;
+    padding: 0 30px 0 15px;
 }
 
 #subMenu {
@@ -206,17 +212,65 @@ header {
 }
 
 
+/* BOTÕES ASIDE - Melissa Turbano */
+
+/* Botão de contato */
+
+#bt_contato {
+    border-radius: 25%;
+    width: 5%;
+    height: 7%;
+    background-color: #ffffff;
+    margin-left: 72%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+#img_contato {
+    border-radius: 18%;
+    width: 70%;
+    height: 65%;    
+}
+
+#bt_contato:hover {
+    background-color: #fdf8cf;
+    border: 2.5px solid #b7ba5a;
+}
+
+
+/* Botão de compartilhar */
+
+#bt_compartilhar {
+    border-radius: 25%;
+    width: 5%;
+    height: 7%;
+    background-color: #ffffff;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+#img_compartilhar {
+    border-radius: 18%;
+    width: 70%;
+    height: 65%;
+}
+
+#bt_compartilhar:hover {
+    background-color: #e2fcbb;
+    border: 2.5px solid #87a061;
+}
+
+
 /* ASIDE COM MENU - Melissa Turbano */
 
 .aside-menu {
     display: flex;
     margin-left: 65%;
-    position: fixed;
-    margin-top: 15%;
-    margin-bottom: 5%;
 }
 
 .aside-menu ul li {
+    /*width: 350px;*/
     width: 100%;
     float: none;
 }
@@ -231,6 +285,7 @@ header {
 .aside-menu ul li {
     float: none;
     align-items: center;
+    /*font-size: 18px;*/
 }
 
 .aside-menu a {
@@ -249,17 +304,14 @@ header {
     visibility: hidden;
 }
 
+
 /* Menu sob o mouse */
 .aside-menu ul li:hover ul {
     visibility: visible;
 }
         
-.aside-menu a:hover {
+#aside-menu_titulo:hover {
     background-color: #127e96;
-}
-
-#aside-menu_menu:hover {
-    background-color: #999999;
 }
 
 
@@ -292,20 +344,24 @@ header {
     height: auto;
     max-height: 200px;
     transition: all .4s;
+} 
+
+/*Submenu sob o mouse*/
+.aside-menu ul li ul li a:hover {
+    background-color: #999999;
 }
 
 
-/* ASIDE SEM MENU - Melissa Turbano */
+/* ASIDE - Melissa Turbano */
 
 .aside {
     margin-left: 65%;
+    margin-top: 30px;
     display: flex;
-    position: fixed;
-    margin-top: 36%;
-    margin-bottom: 5%;
 }
 
 .aside ul li {
+   /*width: 350px;*/
     float: none;
     width: 125%;
 }
@@ -333,26 +389,22 @@ header {
     position: relative;
     transition: 0.5s;
 }
-
 .detalhe span:after {
     content: "\21D2";
     position: absolute;
     opacity: 0;
     top: 0;
-    left:100%;
+    left: 100%;
     transition: 0.5s;
     margin-top: -3%;
 }
-
 .detalhe:hover span {
     padding-right: 5%;
 }
-
 .detalhe:hover span:after {
     opacity: 1;
     right: 0;
 }
-
 
 /* Aside sob o mouse */
 
@@ -372,61 +424,7 @@ header {
 }
 
 
-/* BOTÕES ASIDE */
-
-/* Contato */
-
-#contato_btn {
-    border-radius: 25%;
-    width: 5%;
-    height: 7%;
-    background-color: #ffffff;
-    margin-top: 10%;
-    margin-left: 82%;
-    margin-bottom: 2%;
-    cursor: pointer;
-    position: fixed;
-}
-
-#contato_img {
-    border-radius: 18%;
-    width: 70%;
-    height: 65%;    
-}
-
-#contato_btn:hover {
-    background-color: #fdf8cf;
-    border: 2.5px solid #b7ba5a;
-}
-
-
-/* Compartilhar */
-
-#compartilhar_btn {
-    border-radius: 25%;
-    width: 5%;
-    height: 7%;
-    background-color: #ffffff;
-    margin-top: 10%;
-    margin-left: 72%;
-    margin-bottom: 3%;
-    cursor: pointer;
-    position: fixed;
-}
-
-#compartilhar_img {
-    border-radius: 18%;
-    width: 70%;
-    height: 65%;
-}
-
-#compartilhar_btn:hover {
-    background-color: #e2fcbb;
-    border: 2.5px solid #87a061;
-}
-
-
-/* FOOTER */
+/* FOOTER - Nicole Miguel */
 
 footer {
     text-align: center;
@@ -438,7 +436,7 @@ footer {
     height: 40px;
     position: fixed;
     line-height: 20px;
-    font-size: 10px;  
+    font-size: 10px; 
 }
 
 .footer_linha {
@@ -447,4 +445,120 @@ footer {
     height: 1px;
     margin-right: 5%;
     margin-left: 5%;
+}
+
+
+/*-------------------- TAGS GERAIS --------------------*/
+
+
+/* TÍTULOS E LINHAS */
+
+/* Principais */
+
+#titulo {
+    margin-top: 2%; 
+    margin-left: 40%;
+    font-size: 170%;
+    text-transform: uppercase;
+}
+
+#titulo_linha {
+    height: 0.15em;
+    width: 100%;
+    float: left;
+    margin-top: 0;
+    background-color: #000000;
+}
+
+
+/* CONTAINERS */
+
+/* Introdução */
+
+.introducao {
+    margin-top: 9%;
+    margin-left: 0;
+    width: 60%;
+    line-height: 1.2;
+}
+
+/* Conteúdo */
+
+.conteudo {
+}
+
+/* Caixas de texto */
+.caixa {
+    height: auto;
+    width: 97%;
+    background-color: #ececec;
+    border: 1px solid #aeaeae;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+#caixa_bloco {
+    text-transform: none;
+    text-align: justify;
+    margin-bottom: 0;
+    padding: 2%;
+    text-indent: 1.5em;
+}
+
+
+/*-------------------- CONFIGURAÇÕES INDIVIDUAIS --------------------*/
+
+
+/* PÁG AJUDA - Melissa Turbano */
+
+/* Conteúdo */
+.conteudo_ajuda {
+    height: 15%;
+    margin-top: 3%; 
+    align-items: center; 
+}
+
+/* Sublinha */
+#ajuda_sublinha {
+    height: 0.1em;
+    width: 43%; /*49%*/
+    margin-top: 0;
+    margin-left: 6%;
+    background-color: #000000;
+}
+
+/* Botão redirecionamento */
+.ajuda_btn {    
+    border: none;
+    text-align: center;
+    font-size: 130%;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-left: 6%;
+    width: 43%;
+    height: 40%;
+    text-transform: uppercase;   
+    background-color: #ececec;
+    font-weight: bold;
+}
+
+/*Animação*/
+.ajuda_btn span {
+    position: relative;
+    transition: 0.5s;
+}
+.ajuda_btn span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -7%;
+    transition: 0.5s;
+}
+.ajuda_btn:hover span {
+    padding-right: 7%;
+}
+.ajuda_btn:hover span:after {
+    opacity: 1;
+    right: 0;
 }
