@@ -1,0 +1,156 @@
+<!-- Codificado por Melissa Turbano -->
+<!-- Revisado por Isabella Valerio -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Tags meta que auxiliam nos mecanismos de pesquisa -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Isabella Valerio, Melissa Turbano, Nicole Miguel">
+        <meta name="description" content="Ajuda - reestruturação do site MPU">
+        <meta name="keywords" content="html, ajuda, mpu, governo, seleção">
+        <link rel="stylesheet" type="text/css" href="../css/Style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../image/logo.png">
+        <title>Ajuda</title>
+    </head>
+
+    <body>
+        <div class="acima">
+            <header>
+                <!-- Inserção do logo e título da página-->
+                <div class="logo">
+                    <a href="index.html"><img id="logo_img" src="../image/logo.png" alt="Logo MPU"></a>
+                    <h2 id="logo_letra">MPU</h2>
+                    <hr id="logo_linha">
+                    <h1 id="logo_titulo">Ministério Público da União</h1>
+                </div>
+    
+                <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
+                <div class="botoes">
+                    <a href="ajuda.html"><button id="help_bt"><img src="../image/help.jpg" id="help_img"></button></a>
+                    <a href="faq.html"><button id="faq_bt"><img src="../image/faq.jpg" id="faq_img"></button></a>
+                    <form id="caixa_pesquisa" action="pesquisa.html">
+                        <img id="lupa_img" src="../image/search.png" alt="Lupa de pesquisa"/>
+                        <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
+                        <button type="submit" id="ok_bt">OK</button>
+                    </form>
+                </div>
+            </header>
+    
+            <!-- Inserção de estrutura do menu -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="home.html">Página Inicial</a></li>
+                    <li><a href="#">Institucional</a>
+                        <ul>
+                            <li id="subMenu"><a href="sobreMPU.html">Sobre o MPU</a>
+                            <li id="subMenu"><a href="historico.html">Histórico</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Documentos</a>
+                        <ul>
+                            <li id="subMenu"><a href="tabelas.html">Tabelas</a>
+                            <li id="subMenu"><a href="demonstrativos.html">Demonstrativos</a>
+                            <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
+                        </ul>
+                    </li>
+                    <li><a href="legislacao.html">Legislação</a></li>
+                    <li><a href="#">Órgãos</a>
+                        <ul>
+                            <li id="subMenu"><a href="https://auditoria.mpu.mp.br/">AUDIN</a>
+                            <li id="subMenu"><a href="https://escola.mpu.mp.br/">ESMPU</a>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Inserção texto introdução -->
+        <section class="introducao">
+            <h1 id="titulo">AJUDA</h1>
+            <hr id="titulo_linha">
+
+            <div class="caixa">
+                <div id="caixa_bloco">
+                    <p id="texto_caixa">Caso esteja com dificuldade em encontrar as páginas, abaixo está o redirecionamento para todas e uma breve explicação de para que servem. Qualquer outra dúvida, dê uma olhada nas mais frequentes, no FAQ, e, caso não seja sanada, entre em contato, ao clicar no ícone de envelope.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inserção redirecionamentos -->
+        <article class="conteudo_ajuda">
+            <a href="index.html"><button class="ajuda_btn"><span>Página Principal</span></button></a>
+            <hr id="ajuda_sublinha">
+            <a href="paginaCandidato.html"><button class="ajuda_btn"><span>Página do candidato</span></button></a>
+            <hr id="ajuda_sublinha">
+            <a href="concursoRemocao.html"><button class="ajuda_btn"><span>Concurso de remoção</span></button></a>
+            <hr id="ajuda_sublinha">
+            <a href="sobreMpu.html"><button class="ajuda_btn"><span>Institucional - Sobre MPU</span></button></a>
+            <hr id="ajuda_sublinha">
+            <a href="historico.html"><button class="ajuda_btn"><span>Institucional - Histórico</span></button></a>
+            <hr id="ajuda_sublinha">
+            <a href="tabelas.html"><button class="ajuda_btn"><span>Documentos - Tabelas</span></button></a>
+            <hr id="ajuda_sublinha">
+            <a href="demonstrativos.html"><button class="ajuda_btn"><span>Documentos - Demonstrativos</span></button></a>
+            <hr id="ajuda_sublinha">
+            <a href="portariaConjunta.html"><button class="ajuda_btn"><span>Documentos - Portaria Conjunta</span></button></a>
+            <hr id="ajuda_sublinha">
+        </article>
+
+        <!--Botão de contatos-->
+        <a href="contato.html">
+            <button type="button" id="bt_contato"><img src="../image/contato.png" id="img_contato" /></button>
+        </a> 
+
+        <!--Botão de envio-->
+        <a href="compartilhar.html">
+            <button type="button" id="bt_compartilhar"><img src="../image/compartilhar.png" id="img_compartilhar" /></button>
+        </a>
+
+        <!-- Inserção estrutura dos asides -->
+        <aside>
+            <div class="aside-menu">
+                <ul>
+                    <li><a id="aside-menu_titulo" href="#">Concursos</a>
+                        <ul>
+                            <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/10o-concurso">10º Concurso</a>
+                            <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/9o-concurso">9º Concurso</a>
+                            <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/8o-concurso">8º Concurso</a>
+                            <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/7o-concurso">7º Concurso</a>
+                        </ul>
+                    </li>
+                    <li><a id="aside-menu_titulo" href="#">Órgãos Relacionados</a>
+                        <ul>
+                            <li><a href="https://www.cnmp.mp.br/portal/">CNMP</a>
+                            <li><a href="https://www.pgr.ao/">PGR</a>
+                        </ul>
+                    </li>
+                    <li><a id="aside-menu_titulo" href="#">Ramos do MPU</a>
+                        <ul>
+                            <li><a href="https://www.mpf.mp.br/">Ministério Público Federal (MPF)</a>
+                            <li><a href="https://mpt.mp.br/">Ministério Público do Trabalho (MPT)</a>
+                            <li><a href="https://www.mpdft.mp.br/portal/">Ministério Público do DF</a>
+                            <li><a href="https://www.mpm.mp.br/">Ministério Público Militar (MPM)</a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="aside">
+                <ul>
+                    <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores" class="detalhe"><span>Concursos MPU e MPF</span><a></li>
+                    <li><a href="http://www.transparencia.mpf.mp.br/" class="detalhe"><span>Transparência Ministério Público</span></a></li>
+                </ul>
+            </div>            
+        </aside> 
+
+        <!-- Inserção do footer -->
+        <footer>
+            <p> SAF Sul Quadra 4 Conjunto C - Brasília / DF - CEP 70050-900 - PABX: (61) 3105-5100</p>
+            <hr class="footer_linha">
+            <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
+        </footer>
+    </body>
+</html>

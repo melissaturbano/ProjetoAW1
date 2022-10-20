@@ -1,0 +1,157 @@
+<!-- Codificado por Isabella Valerio -->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Tags meta que auxiliam nos mecanismos de pesquisa-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Isabella Valerio, Melissa Turbano, Nicole Miguel">
+        <meta name="description" content="Legislação - reestruturação do site MPU">
+        <meta name="keywords" content="html, legislação, mpu, governo, seleção">
+        <link rel="stylesheet" type="text/css" href="../css/Style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../image/logo.png">
+        <title>Legislação</title>
+    </head>
+
+    <body>
+        <header>
+            <!-- Inserção do logo e título da página-->
+            <div class="logo">
+                <a href="home.html"></a><img id="logo_img" src="../image/logo.png" alt="Logo MPU"></a>
+                <h2 id="logo_letra">MPU</h2>
+                <hr id="logo_linha">
+                <h1 id="logo_titulo">Ministério Público da União</h1>
+            </div>
+           
+            <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
+            <div class="botoes">
+                <a href="ajuda.html"><button id="help_bt"><img src="../image/help.jpg" id="help_img"></button></a>
+                <a href="faq.html"><button id="faq_bt"><img src="../image/faq.jpg" id="faq_img"></button></a>
+                <form id="caixa_pesquisa" action="../html/pesquisa.html">
+                    <img id="lupa_img" src="../image/search.png" alt="Lupa de pesquisa"/>
+                    <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
+                    <button type="submit" id="ok_bt">OK</button>
+                </form>
+            </div>
+        </header>
+
+        <!-- Inserção de botão menu responsivo -->
+        <input type="checkbox" id="bt_menu">
+        <label for="bt_menu">&#9776;</label>
+
+        <!-- Inserção de estrutura do menu -->
+        <nav class="menu">
+            <ul>
+                <li><a href="home.html">Página Inicial</a></li>
+                <li><a href="#">Institucional</a>
+                    <ul>
+                        <li id="subMenu"><a href="sobreMPU.html">Sobre o MPU</a>
+                        <li id="subMenu"><a href="historico.html">Histórico</a>
+                    </ul>
+                </li>
+                <li><a href="#">Documentos</a>
+                    <ul>
+                        <li id="subMenu"><a href="tabelas.html">Tabelas</a>
+                        <li id="subMenu"><a href="demonstrativos.html">Demonstrativos</a>
+                        <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
+                    </ul>
+                </li>
+                <li><a href="legislacao.html">Legislação</a></li>
+                <li><a href="#">Órgãos</a>
+                    <ul>
+                        <li id="subMenu"><a href="https://auditoria.mpu.mp.br/">AUDIN</a>
+                        <li id="subMenu"><a href="https://escola.mpu.mp.br/">ESMPU</a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Inserção tabela de legislações -->
+        <section class="legislacoes">
+            <h1 id="titulo_legislacao">Legislações MPU</h1>
+            <hr id="linha_legislacao">
+            <div class="legislacaoTabelaConfig">
+                <table id="legislacao_tabela">
+                    <thead>
+                        <tr>
+                            <th id="titulo_tabela">Assunto</th>
+                            <th id="titulo_tabela">Documento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="conteudo_tabela_assunto">Dispõe sobre a organização, as atribuições e o estatuto do Ministério Público da União.</td>
+                            <td id="conteudo_tabela_doc"><a href="https://www.planalto.gov.br/ccivil_03/Leis/LCP/Lcp75.htm">Lei Complementar nº 75/93</a></td>
+                        </tr>
+                        <tr>
+                            <td id="conteudo_tabela_assunto">Dispõe sobre as carreiras dos servidores do Ministério Público da União, fixa os valores de sua remuneração; revoga a 
+                                <a href="https://www.planalto.gov.br/ccivil_03/Leis/L9953.htm">Lei no 9.953 - 4 de janeiro de 2000</a> e a 
+                                <a href="https://www.planalto.gov.br/ccivil_03/Leis/2002/L10476.htm">Lei no 10.476 - 27 de junho de 2002</a>, 
+                                e dá outras providências.</td>
+                            <td id="conteudo_tabela_doc"><a href="https://www.planalto.gov.br/ccivil_03/_Ato2004-2006/2006/Lei/L11415.htm">Lei nº 11.415/2006</a></td>
+                        </tr>
+                        <tr>
+                            <td id="conteudo_tabela_assunto">Regimento Interno do Ministério Público Federal.</td>
+                            <td id="conteudo_tabela_doc"><a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/http://www.mpu.mp.br/navegacao/legislacao/reg_internoMPF.pdf">Portaria Nº 358, de 02 de junho de 1998</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!--Botão de contatos-->
+        <a href="contato.html">
+            <button type="button" id="btt_contato"> <img src="../image/contato.png" id="img_contato" /></button>
+        </a> 
+
+        <!--Botão de envio-->
+        <a href="enviar.html">
+            <button type="button" id="btt_enviar"> <img src="../image/enviar.png" id="img_enviar" /></button>
+        </a>
+
+        <!-- Estrutura dos asides -->
+        <aside>
+            <div class="aside-menu">
+                <ul>
+                    <li><a href="#" >Concursos</a>
+                        <ul>
+                            <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/10o-concurso">10º Concurso</a>
+                            <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/9o-concurso">9º Concurso</a>
+                            <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/8o-concurso">8º Concurso</a>
+                            <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/7o-concurso">7º Concurso</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Órgãos Relacionados</a>
+                        <ul>
+                            <li><a href="https://www.cnmp.mp.br/portal/">CNMP</a>
+                            <li><a href="https://www.pgr.ao/">PGR</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Ramos do MPU</a>
+                        <ul>
+                            <li><a href="https://www.mpf.mp.br/">Ministério Público Federal (MPF)</a>
+                            <li><a href="https://mpt.mp.br/">Ministério Público do Trabalho (MPT)</a>
+                            <li><a href="https://www.mpdft.mp.br/portal/">Ministério Público do DF</a>
+                            <li><a href="https://www.mpm.mp.br/">Ministério Público Militar (MPM)</a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="aside">
+                <ul>
+                    <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores" class="detalhe"><span>Concursos MPU e MPF</span><a></li>
+                    <li><a href="http://www.transparencia.mpf.mp.br/" class="detalhe"><span>Transparência Ministério Público</span></a></li>
+                </ul>
+            </div>           
+        </aside>
+
+        <!-- Inserção footer -->
+        <footer>
+            <p class="linha"> SAF Sul Quadra 4 Conjunto C - Brasília / DF - CEP 70050-900 - PABX: (61) 3105-5100</p>
+            <hr class="footer_linha">
+            <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
+        </footer>
+    </body>
+</html>
