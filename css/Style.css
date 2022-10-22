@@ -168,6 +168,10 @@ header {
     font-weight: 500;
 }
 
+.menu ul {
+    padding: 0px;
+}
+
 .menu ul li {
     display: inline-block;
 }
@@ -175,13 +179,14 @@ header {
 .menu ul li a:hover {
     text-decoration: none;
     display: block;
-    background-color: #e6e6e6;
     color: #000000;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    text-shadow: #000000 0.05em 0.05em 0.8em;
 }
 
-.menu ul {
-    padding: 0px;
+.menu ul li ul li a:hover {
+    text-shadow: none;
+    background-color: #e6e6e6;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
 }
 
 .menu ul ul {
