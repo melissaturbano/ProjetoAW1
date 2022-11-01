@@ -1,136 +1,188 @@
-<!-- Codificado por Melissa Turbano-->
+<!-- Codificado por Melissa Turbano -->
+<!-- Revisado por Isabella Valerio -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <!-- Tags meta que auxiliam nos mecanismos de pesquisa-->
+        <!-- Tags meta que auxiliam nos mecanismos de pesquisa -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Isabella Valerio, Melissa Turbano, Nicole Miguel">
         <meta name="description" content="Sobre MPU - reestruturação do site MPU">
-        <meta name="keywords" content="html, sobre, mpu, governo, seleção">
+        <meta name="keywords" content="html, sobre MPU, mpu, governo, seleção">
         <link rel="stylesheet" type="text/css" href="../css/Style.css">
         <link rel="shortcut icon" type="image/x-icon" href="../image/logo.png">
         <title>Institucional - Sobre MPU</title>
     </head>
 
     <body>
-        <header>
-            <!-- Inserção do logo e título da página-->
-            <div class="logo">
-                <a href="home.html"><img id="logo_img" src="../image/logo.png" alt="Logo MPU"></a>
-                <h2 id="logo_letra">MPU</h2>
-                <hr id="logo_linha">
-                <h1 id="logo_titulo">Ministério Público da União</h1>
-            </div>
-           
-            <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
-            <div class="botoes">
-                <a href="ajuda.html"><button id="help_bt"><img src="../image/help.jpg" id="help_img"></button></a>
-                <a href="faq.html"><button id="faq_bt"><img src="../image/faq.jpg" id="faq_img"></button></a>
-                <form id="caixa_pesquisa" action="pesquisa.html">
-                    <img id="lupa_img" src="../image/search.png" alt="Lupa de pesquisa"/>
-                    <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
-                    <button type="submit" id="ok_bt">OK</button>
-                </form>
-            </div>
-        </header>
-
-        <!-- Inserção de botão menu responsivo -->
-        <input type="checkbox" id="bt_menu">
-        <label for="bt_menu">&#9776;</label>
-
-        <!-- Inserção de estrutura do menu -->
-        <nav class="menu">
-            <ul>
-                <li><a href="home.html">Página Inicial</a></li>
-                <li><a href="#">Institucional</a>
-                    <ul>
-                        <li id="subMenu"><a href="sobreMPU.html">Sobre o MPU</a>
-                        <li id="subMenu"><a href="historico.html">Histórico</a>
-                    </ul>
-                </li>
-                <li><a href="#">Documentos</a>
-                    <ul>
-                        <li id="subMenu"><a href="tabelas.html">Tabelas</a>
-                        <li id="subMenu"><a href="demonstrativos.html">Demonstrativos</a>
-                        <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
-                    </ul>
-                </li>
-                <li><a href="legislacao.html">Legislação</a></li>
-                <li><a href="#">Órgãos</a>
-                    <ul>
-                        <li id="subMenu"><a href="#">AUDIN</a>
-                        <li id="subMenu"><a href="#">ESMPU</a>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Estrutura do Sobre - Melissa Turbano -->
-        <section class="sobre">
-            <h1 id="sobre_titulo">FUNÇÃO</h1>
-            <hr id="sobre_linha">
-            <div id="div">
-                <ol type="a">
-                    <li>Defesa da ordem jurídica, ou seja, o Ministério Público deve zelar pela observância e pelo cumprimento da lei. FISCAL DA LEI, atividade interveniente.</li>
-                    <li>Defesa do patrimônio nacional, do patrimônio público e social, do patrimônio cultural, do meio ambiente, dos direitos e interesses da coletividade, especialmente das comunidades indígenas, da família, da criança, do adolescente e do idoso. DEFENSOR DO POVO.</li>
-                    <li>Defesa dos interesses sociais e individuais indisponíveis.</li>
-                    <li>Controle externo da atividade policial. Trata-se da investigação de crimes, da requisição de instauração de inquéritos policiais, da promoção pela responsabilização dos culpados, do combate à tortura e aos meios ilícitos de provas, entre outras possibilidades de atuação. Os membros do MPU têm liberdade de ação tanto para pedir a absolvição do réu quanto para acusá-lo. </li>
-                </ol>
-            </div>
-            <h1 id="sobre_titulo">ABRANGÊNCIA</h1>
-            <hr id="sobre_linha">
-            <div id="div">
-                <ol>
-                    <li>O Ministério Público da União (MPU) compreende os seguintes ramos: a) O Ministério Público Federal (MPF); b) O Ministério Público do Trabalho (MPT); c) O Ministério Público Militar (MPM); d) O Ministério Público do Distrito Federal e Territórios (MPDFT).</li>
-                    <li>
-                        <p>A organização, as atribuições e o estatuto do Ministério Público da União divergem do Ministério Público dos Estados. Enquanto o MPU é regido pela Lei Complementar nº 75/1993, o MPE rege-se pela Lei nº 8.625/1993.</p>
-                        <p>Ao MPU é assegurada autonomia funcional, administrativa e financeira. Sendo as carreiras dos membros dos diferentes ramos independentes entre si. Dessa forma, para ser membro do MPF, deve-se prestar concurso público para o MPF. Para ser membro do MPT, deve-se prestar concurso para o MPT, e assim por diante. Quanto a carreira técnico-administrativa, esta é única para todo o MPU. O candidato presta concurso público para o MPU e pode ser lotado em qualquer um dos ramos.</p>
+        <div class="acima">
+            <header>
+                <!-- Inserção do logo e título da página-->
+                <div class="logo">
+                    <a href="index.html"><img id="logo_img" src="../image/logo.png" alt="Logo MPU"></a>
+                    <h2 id="logo_letra">MPU</h2>
+                    <hr id="logo_linha">
+                    <h1 id="logo_titulo">Ministério Público da União</h1>
+                </div>
+    
+                <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
+                <div class="botoes">
+                    <a href="ajuda.html"><button id="help_bt"><img src="../image/help.jpg" id="help_img"></button></a>
+                    <a href="faq.html"><button id="faq_bt"><img src="../image/faq.jpg" id="faq_img"></button></a>
+                    <form id="caixa_pesquisa" action="pesquisa.html">
+                        <img id="lupa_img" src="../image/search.png" alt="Lupa de pesquisa"/>
+                        <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
+                        <button type="submit" id="ok_bt">OK</button>
+                    </form>
+                </div>
+            </header>
+    
+            <!-- Inserção de estrutura do menu -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="home.html">Página Inicial</a></li>
+                    <li><a href="#">Institucional</a>
+                        <ul>
+                            <li id="subMenu"><a href="sobreMPU.html">Sobre o MPU</a>
+                            <li id="subMenu"><a href="historico.html">Histórico</a>
+                        </ul>
                     </li>
-                </ol>
-            </div>
-            <h1 id="sobre_titulo">ATUAÇÃO</h1>
-            <hr id="sobre_linha">
-            <div id="div">
-                <ol type="a">
-                    <li>Promover ação direta de inconstitucionalidade e ação declaratória de constitucionalidade;</li>
-                    <li>Promover representação para intervenção federal nos Estados e Distrito Federal;</li>
-                    <li>Impetrar habeas corpus e mandado de segurança;</li>
-                    <li>Promover mandado de injunção;</li>
-                    <li>Promover inquérito civil e ação civil pública de proteger.</li> 
-                    <li>Promover ação penal pública;</li> 
-                    <li>Expedir recomendações, visando à melhoria dos serviços públicos e de relevância pública;</li>   
-                    <li>Expedir notificações ou requisições (de informações, de documentos, de diligências investigatórias, de instauração de inquérito policial à autoridade policial).</li>               
-                </ol>
-            </div>
+                    <li><a href="#">Documentos</a>
+                        <ul>
+                            <li id="subMenu"><a href="tabelas.html">Tabelas</a>
+                            <li id="subMenu"><a href="demonstrativos.html">Demonstrativos</a>
+                            <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
+                        </ul>
+                    </li>
+                    <li><a href="legislacao.html">Legislação</a></li>
+                    <li><a href="#">Órgãos</a>
+                        <ul>
+                            <li id="subMenu"><a href="https://auditoria.mpu.mp.br/">AUDIN</a>
+                            <li id="subMenu"><a href="https://escola.mpu.mp.br/">ESMPU</a>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <h1 id="sobre_titulo">GARANTIAS</h1>
-        <hr id="sobre_linha">
-        <div id="div">
-            <p>- Vitaliciedade</p>
-            <p>- Inamovibilidade (impossibilidade de remover compulsoriamente o titular de seu cargo, exceto por motivo de interesse público)</p>
-            <p>- Independência funcional (liberdade no exercício das funções)
-                - Foro especial</p>
-            <p>- Irredutibilidade de vencimentos</p>
-        </div><br><br><br>
+
+        <!-- Inserção texto introdução -->
+        <section class="introducao">
+            <h1 id="titulo">Sobre o Ministério Público da União</h1>
+            <hr id="titulo_linha">
+
+            <div class="caixa">
+                <div id="caixa_bloco">
+                    <ol id="topico_numeral">
+                        <li><a href="#abrange">Abrangência</a></li>
+                        <li><a href="#funcao">Função</a></li>
+                        <li><a href="#instrumentos">Instrumentos de atuação</a></li>
+                        <li><a href="#garantias">Garantias dos Membros</a></li>
+                        <li><a href="#vedacoes">Vedações aos Membros</a></li>
+                        <li><a href="#procurador">Procurador-Geral da República</a></li>
+                    </ol>
+                </div>
+            </div>
         </section>
 
-        <!-- Botão de contato -->
+        <!-- Inserção conteúdo -->
+        <article class="conteudo">
+            <!-- Abrangência -->
+            <span id="abrange"><h1 id="subtitulo">Abrangência</h1></span>
+            <hr id="subtitulo_linha">
+
+            <div class="caixa">
+                <div id="caixa_bloco">
+                    <ul id="topico_quadrado">
+                        <li>O Ministério Público da União (MPU) compreende os seguintes ramos: O Ministério Público Federal (MPF), o Ministério Público do Trabalho (MPT), o Ministério Público Militar (MPM), e o Ministério Público do Distrito Federal e Territórios (MPDFT);</li>
+                        <li>Os Ministérios Públicos dos Estados (MPE).</li>
+                    </ul>
+                    <p id="texto_caixa">A organização, as atribuições e o estatuto do Ministério Público da União divergem do Ministério Público dos Estados. Enquanto o MPU é regido pela Lei Complementar nº 75/1993, o MPE rege-se pela Lei nº 8.625/1993.</p>
+                    <p id="texto_caixa">Ao MPU é assegurada autonomia funcional, administrativa e financeira. Sendo as carreiras dos membros dos diferentes ramos independentes entre si. Dessa forma, para ser membro do MPF, deve-se prestar concurso público para o MPF. Para ser membro do MPT, deve-se prestar concurso para o MPT, e assim por diante. Quanto a carreira técnico-administrativa, esta é única para todo o MPU. O candidato presta concurso público para o MPU e pode ser lotado em qualquer um dos ramos.</p>
+                </div>
+            </div>
+
+            <!-- Função -->
+            <span id="funcao"><h1 id="subtitulo">Função do MPU</h1></span>
+            <hr id="subtitulo_linha">
+
+            <div class="caixa">
+                <div id="caixa_bloco">
+                    <ul id="topico_quadrado">
+                        <li>Defesa da ordem jurídica, ou seja, o Ministério Público deve zelar pela observância e pelo cumprimento da lei. <em>Fiscal da lei</em>, atividade interveniente;</li>
+                        <li>Defesa do patrimônio nacional, do patrimônio público e social, do patrimônio cultural, do meio ambiente, dos direitos e interesses da coletividade, especialmente das comunidades indígenas, da família, da criança, do adolescente e do idoso. <em>Defensor do povo</em></li>
+                        <li>Defesa dos interesses sociais e individuais indisponíveis;</li>
+                        <li>Controle externo da atividade policial. Trata-se da investigação de crimes, da requisição de instauração de inquéritos policiais, da promoção pela responsabilização dos culpados, do combate à tortura e aos meios ilícitos de provas, entre outras possibilidades de atuação. Os membros do MPU têm liberdade de ação tanto para pedir a absolvição do réu quanto para acusá-lo.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Instrumentos -->
+            <span id="instrumentos"><h1 id="subtitulo">Instrumentos de Atuação</h1></span>
+            <hr id="subtitulo_linha">
+
+            <div class="caixa">
+                <div id="caixa_bloco">
+                    <ul id="topico_quadrado">
+                        <li>Promover ação direta de inconstitucionalidade e ação declaratória de constitucionalidade;;</li>
+                        <li>Promover representação para intervenção federal nos Estados e Distrito Federal;</li>
+                        <li>Impetrar <i>habeas corpus</i> e mandado de segurança;</li>
+                        <li>Promover mandado de injunção;</li>
+                        <li>Promover inquérito civil e ação civil pública para proteger:</li>
+                        <li>Promover ação penal pública;</li>
+                        <li>Expedir recomendações, visando à melhoria dos serviços públicos e de relevância pública;</li>
+                        <li>Expedir notificações ou requisições (de informações, de documentos, de diligências investigatórias, de instauração de inquérito policial à autoridade policial).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Função -->
+            <span id="funcao"><h1 id="subtitulo">Função do MPU</h1></span>
+            <hr id="subtitulo_linha">
+
+            <div class="caixa">
+                <div id="caixa_bloco">
+                    <ul id="topico_quadrado">
+                        <li>Defesa da ordem jurídica, ou seja, o Ministério Público deve zelar pela observância e pelo cumprimento da lei. <em>Fiscal da lei</em>, atividade interveniente;</li>
+                        <li>Defesa do patrimônio nacional, do patrimônio público e social, do patrimônio cultural, do meio ambiente, dos direitos e interesses da coletividade, especialmente das comunidades indígenas, da família, da criança, do adolescente e do idoso. <em>Defensor do povo</em></li>
+                        <li>Defesa dos interesses sociais e individuais indisponíveis;</li>
+                        <li>Controle externo da atividade policial. Trata-se da investigação de crimes, da requisição de instauração de inquéritos policiais, da promoção pela responsabilização dos culpados, do combate à tortura e aos meios ilícitos de provas, entre outras possibilidades de atuação. Os membros do MPU têm liberdade de ação tanto para pedir a absolvição do réu quanto para acusá-lo.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Função -->
+            <span id="funcao"><h1 id="subtitulo">Função do MPU</h1></span>
+            <hr id="subtitulo_linha">
+
+            <div class="caixa">
+                <div id="caixa_bloco">
+                    <ul id="topico_quadrado">
+                        <li>Defesa da ordem jurídica, ou seja, o Ministério Público deve zelar pela observância e pelo cumprimento da lei. <em>Fiscal da lei</em>, atividade interveniente;</li>
+                        <li>Defesa do patrimônio nacional, do patrimônio público e social, do patrimônio cultural, do meio ambiente, dos direitos e interesses da coletividade, especialmente das comunidades indígenas, da família, da criança, do adolescente e do idoso. <em>Defensor do povo</em></li>
+                        <li>Defesa dos interesses sociais e individuais indisponíveis;</li>
+                        <li>Controle externo da atividade policial. Trata-se da investigação de crimes, da requisição de instauração de inquéritos policiais, da promoção pela responsabilização dos culpados, do combate à tortura e aos meios ilícitos de provas, entre outras possibilidades de atuação. Os membros do MPU têm liberdade de ação tanto para pedir a absolvição do réu quanto para acusá-lo.</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!--Botão de contatos-->
         <a href="contato.html">
-            <button type="button" id="btt_contato"> <img src="../image/contato.png" id="img_contato" /></button>
+            <button type="button" id="bt_contato"><img src="../image/contato.png" id="img_contato" /></button>
+        </a> 
+
+        <!--Botão de envio-->
+        <a href="compartilhar.html">
+            <button type="button" id="bt_compartilhar"><img src="../image/compartilhar.png" id="img_compartilhar" /></button>
         </a>
 
-        <!-- Botão de envio -->
-        <a href="enviar.html">
-            <button type="button" id="btt_enviar"> <img src="../image/enviar.png" id="img_enviar" /></button>
-        </a>
-
-        <!-- Estrutura dos asides -->
+        <!-- Inserção estrutura dos asides -->
         <aside>
             <div class="aside-menu">
                 <ul>
-                    <li><a href="#" >Concursos</a>
+                    <li><a id="aside-menu_titulo" href="#">Concursos</a>
                         <ul>
                             <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/10o-concurso">10º Concurso</a>
                             <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/9o-concurso">9º Concurso</a>
@@ -138,13 +190,13 @@
                             <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/7o-concurso">7º Concurso</a>
                         </ul>
                     </li>
-                    <li><a href="#">Órgãos Relacionados</a>
+                    <li><a id="aside-menu_titulo" href="#">Órgãos Relacionados</a>
                         <ul>
                             <li><a href="https://www.cnmp.mp.br/portal/">CNMP</a>
                             <li><a href="https://www.pgr.ao/">PGR</a>
                         </ul>
                     </li>
-                    <li><a href="#">Ramos do MPU</a>
+                    <li><a id="aside-menu_titulo" href="#">Ramos do MPU</a>
                         <ul>
                             <li><a href="https://www.mpf.mp.br/">Ministério Público Federal (MPF)</a>
                             <li><a href="https://mpt.mp.br/">Ministério Público do Trabalho (MPT)</a>
@@ -160,12 +212,12 @@
                     <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores" class="detalhe"><span>Concursos MPU e MPF</span><a></li>
                     <li><a href="http://www.transparencia.mpf.mp.br/" class="detalhe"><span>Transparência Ministério Público</span></a></li>
                 </ul>
-            </div>          
-        </aside>
+            </div>            
+        </aside> 
 
         <!-- Inserção do footer -->
         <footer>
-            <p class="linha"> SAF Sul Quadra 4 Conjunto C - Brasília / DF - CEP 70050-900 - PABX: (61) 3105-5100</p>
+            <p> SAF Sul Quadra 4 Conjunto C - Brasília / DF - CEP 70050-900 - PABX: (61) 3105-5100</p>
             <hr class="footer_linha">
             <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
         </footer>
