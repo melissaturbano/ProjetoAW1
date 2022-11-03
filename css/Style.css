@@ -515,6 +515,11 @@ footer {
 
 #topico_quadrado li {
     margin-bottom: 8px;
+    text-indent: 0.8em;
+    font-size: 17.4px;
+}
+#topico_quadrado li:last-child {
+    margin-bottom: 12px;
 }
 
 
@@ -534,6 +539,15 @@ footer {
 #topico_numeral a:hover {
     font-size: 17px;
     text-shadow: 1.5px 1.5px #1414141a;
+}
+
+
+/* Letrinha */
+#topico_traco {
+    list-style-type: "-";
+    margin-top: 1%;
+    margin-left: 6%;
+    line-height: 0.9;
 }
 
 
@@ -579,6 +593,26 @@ div p {
     margin-bottom: 0;
     padding: 2.2%;
     text-indent: 1.5em;
+}
+
+#caixa_indice {
+    height: auto;
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-bottom: 8%;
+    background-color: #ffffbe;
+    border: 1px solid #ece7a7;
+    box-shadow: 3px 3px 12px 0 #5e5e5e66;
+    border-radius: 30px;
+    padding: 30px;
+    text-transform: none;
+    text-align: justify;
+    text-indent: 0.9em;
+    line-height: 1.3em;
+}
+#caixa_indice ol {
+    margin-left: 50px;
 }
 
 
