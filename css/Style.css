@@ -508,9 +508,9 @@ footer {
 
 #topico_quadrado {
     list-style-type: square;
-    margin-top: 1%;
+    margin-top: 0.8%;
     margin-left: 6%;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 #topico_quadrado li {
@@ -615,6 +615,23 @@ div p {
     margin-left: 50px;
 }
 
+/* Parágrafo de citação */
+#citacao_paragrafo {
+    text-transform: none;
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-left: 6.7%;
+    margin-top: 2%;
+    text-indent: 0;
+}
+
+#citacao_autor {
+    text-transform: none;
+    text-align: end;
+    margin-bottom: 3%;
+    font-size: 13px;
+}
+
 
 /* TABELAS */
 
@@ -661,20 +678,20 @@ div p {
 
 /*Links*/
 
-#conteudo_tabela_doc a, #conteudo_tabela_assunto a {
+#conteudo_tabela_doc a, #conteudo_tabela_assunto a, #link_redirecionamento {
     text-decoration: none;
     font-weight: bold;
 }
-#conteudo_tabela_doc a:link, #conteudo_tabela_assunto a:link {
+#conteudo_tabela_doc a:link, #conteudo_tabela_assunto a:link, #link_redirecionamento:link {
     color: #0086d3;
 }
-#conteudo_tabela_doc a:visited, #conteudo_tabela_assunto a:visited{
+#conteudo_tabela_doc a:visited, #conteudo_tabela_assunto a:visited, #link_redirecionamento:visited{
     color: #9700d3;
 }
-#conteudo_tabela_doc a:hover, #conteudo_tabela_assunto a:hover {
+#conteudo_tabela_doc a:hover, #conteudo_tabela_assunto a:hover, #link_redirecionamento:hover {
     color: #014e7a;
 }
-#conteudo_tabela_doc a:active, #conteudo_tabela_assunto a:active {
+#conteudo_tabela_doc a:active, #conteudo_tabela_assunto a:active, #link_redirecionamento:active {
     color: #00253a;
 }
 
