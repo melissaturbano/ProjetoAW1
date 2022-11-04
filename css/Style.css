@@ -479,7 +479,7 @@ footer {
 /* Secundários */
 
 #subtitulo {
-    margin-top: 2%; 
+    margin-top: 3%; 
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
@@ -508,9 +508,9 @@ footer {
 
 #topico_quadrado {
     list-style-type: square;
-    margin-top: 0.8%;
+    margin-top: 1%;
     margin-left: 6%;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 #topico_quadrado li {
@@ -615,12 +615,36 @@ div p {
     margin-left: 50px;
 }
 
+/* Caixa de tabelas */
+.alinhamento_caixas {
+    float: left;
+    margin-bottom: 7%;
+}
+
+#caixa_tabela {
+    height: auto;
+    width: 80%;
+    background-color: #fffea7;
+    border: 2px solid #eeed9d;
+    box-shadow: 6px 6px 12px 0 #0c0c0c1a;
+    border-radius: 20px;
+    margin-top: 13%;
+    margin-left: 30%;
+}
+#caixa_tabela a {
+    text-decoration: none;
+}
+#caixa_tabela a p {
+    text-align: center;
+    padding: 8%;
+}
+
 /* Parágrafo de citação */
 #citacao_paragrafo {
     text-transform: none;
     text-align: justify;
     margin-bottom: 8px;
-    margin-left: 6.7%;
+    margin-left: 7%;
     margin-top: 2%;
     text-indent: 0;
 }
@@ -678,20 +702,20 @@ div p {
 
 /*Links*/
 
-#conteudo_tabela_doc a, #conteudo_tabela_assunto a, #link_redirecionamento {
+#conteudo_tabela_doc a, #conteudo_tabela_assunto a, #link_redirecionamento, #caixa_tabela a {
     text-decoration: none;
     font-weight: bold;
 }
-#conteudo_tabela_doc a:link, #conteudo_tabela_assunto a:link, #link_redirecionamento:link {
+#conteudo_tabela_doc a:link, #conteudo_tabela_assunto a:link, #link_redirecionamento:link, #caixa_tabela a:link {
     color: #0086d3;
 }
-#conteudo_tabela_doc a:visited, #conteudo_tabela_assunto a:visited, #link_redirecionamento:visited{
+#conteudo_tabela_doc a:visited, #conteudo_tabela_assunto a:visited, #link_redirecionamento:visited, #caixa_tabela a:visited {
     color: #9700d3;
 }
-#conteudo_tabela_doc a:hover, #conteudo_tabela_assunto a:hover, #link_redirecionamento:hover {
+#conteudo_tabela_doc a:hover, #conteudo_tabela_assunto a:hover, #link_redirecionamento:hover, #caixa_tabela a:hover {
     color: #014e7a;
 }
-#conteudo_tabela_doc a:active, #conteudo_tabela_assunto a:active, #link_redirecionamento:active {
+#conteudo_tabela_doc a:active, #conteudo_tabela_assunto a:active, #link_redirecionamento:active, #caixa_tabela a:active {
     color: #00253a;
 }
 
