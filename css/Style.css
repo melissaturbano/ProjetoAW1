@@ -616,7 +616,7 @@ div p {
 }
 
 /* Caixa de tabelas */
-.alinhamento_caixas {
+/* .alinhamento_caixas {
     float: left;
     margin-bottom: 7%;
 }
@@ -637,7 +637,7 @@ div p {
 #caixa_tabela a p {
     text-align: center;
     padding: 8%;
-}
+} */
 
 /* Parágrafo de citação */
 #citacao_paragrafo {
