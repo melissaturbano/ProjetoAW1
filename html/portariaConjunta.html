@@ -1,8 +1,10 @@
-<!-- Codificado por Nicole Miguel-->
+<!-- Codificado por Nicole Miguel -->
+<!-- Revisado por Isabella Valerio -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <!-- Tags meta que auxiliam nos mecanismos de pesquisa-->
+        <!-- Tags meta que auxiliam nos mecanismos de pesquisa -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,112 +17,188 @@
     </head>
 
     <body>
-        <header>
-            <!-- Inserção do logo e título da página-->
-            <div class="logo">
-                <a href="home.html"></a><img id="logo_img" src="../image/logo.png" alt="Logo MPU"></a>
-                <h2 id="logo_letra">MPU</h2>
-                <hr id="logo_linha">
-                <h1 id="logo_titulo">Ministério Público da União</h1>
+        <div class="acima">
+            <header>
+                <!-- Inserção do logo e título da página-->
+                <div class="logo">
+                    <a href="index.html"><img id="logo_img" src="../image/logo.png" alt="Logo MPU"></a>
+                    <h2 id="logo_letra">MPU</h2>
+                    <hr id="logo_linha">
+                    <h1 id="logo_titulo">Ministério Público da União</h1>
+                </div>
+    
+                <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
+                <div class="botoes">
+                    <a href="ajuda.html"><button id="help_bt"><img src="../image/help.jpg" id="help_img"></button></a>
+                    <a href="faq.html"><button id="faq_bt"><img src="../image/faq.jpg" id="faq_img"></button></a>
+                    <form id="caixa_pesquisa" action="pesquisa.html">
+                        <img id="lupa_img" src="../image/search.png" alt="Lupa de pesquisa"/>
+                        <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
+                        <button type="submit" id="ok_bt">OK</button>
+                    </form>
+                </div>
+            </header>
+    
+            <!-- Inserção de estrutura do menu -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="home.html">Página Inicial</a></li>
+                    <li><a href="#">Institucional</a>
+                        <ul>
+                            <li id="subMenu"><a href="sobreMPU.html">Sobre o MPU</a>
+                            <li id="subMenu"><a href="historico.html">Histórico</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Documentos</a>
+                        <ul>
+                            <li id="subMenu"><a href="tabelas.html">Tabelas</a>
+                            <li id="subMenu"><a href="demonstrativos.html">Demonstrativos</a>
+                            <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
+                        </ul>
+                    </li>
+                    <li><a href="legislacao.html">Legislação</a></li>
+                    <li><a href="#">Órgãos</a>
+                        <ul>
+                            <li id="subMenu"><a href="https://auditoria.mpu.mp.br/">AUDIN</a>
+                            <li id="subMenu"><a href="https://escola.mpu.mp.br/">ESMPU</a>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Inserção texto introdução -->
+        <section class="introducao">
+            <h1 id="titulo">Portaria Conjunta</h1>
+            <hr id="titulo_linha">
+
+            <div class="caixa">
+                <div id="caixa_bloco">
+                    <p id="texto_caixa">Nas seguinte tabelas, confira os documentos referentes a <b>Portaria SOF/SEGEP nº 5/2015 - MPU</b> dos meses de dezembro, de 2021, e de abril e agosto, de 2022.</p>
+                </div>
             </div>
-           
-            <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
-            <div class="botoes">
-                <a href="ajuda.html"><button id="help_bt"><img src="../image/help.jpg" id="help_img"></button></a>
-                <a href="faq.html"><button id="faq_bt"><img src="../image/faq.jpg" id="faq_img"></button></a>
-                <form id="caixa_pesquisa" action="pesquisa.html">
-                    <img id="lupa_img" src="../image/search.png" alt="Lupa de pesquisa"/>
-                    <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
-                    <button type="submit" id="ok_bt">OK</button>
-                </form>
-            </div>
-        </header>
+        </section>
 
-        <!-- Inserção de botão menu responsivo -->
-        <input type="checkbox" id="bt_menu">
-        <label for="bt_menu">&#9776;</label>
+        <!-- Inserção tabelas -->
+        <article class="tabelas">
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th id="titulo_tabela">Agosto de 2022</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo I - Quantitativo Físico de Pessoal - Servidores <a href="../docs_conteudo/PortariaConjunta/tabela_1-1_MPU_ago.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo I - Quantitativo Físico de Pessoal - Membros <a href="../docs_conteudo/PortariaConjunta/tabela_1-2_MPU_ago.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo II - Remuneração/Subsídio de Cargo Efetivo - Servidores <a href="../docs_conteudo/PortariaConjunta/tabela_2-1_MPU_ago.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo II - Remuneração/Subsídio de Cargo Efetivo - Membros <a href="../docs_conteudo/PortariaConjunta/tabela_2-2_MPU_ago.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo III - Quantitativo de Cargos em Comissão e Função de Confiança <a href="../docs_conteudo/PortariaConjunta/tabela_3_MPU_ago.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo IV - Remuneração de Cargos em Comissão e Função de Confiança <a href="../docs_conteudo/PortariaConjunta/tabela_4_MPU_ago.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo V - Quantitativo Físico de Pessoal Contratado Temporariamente <a href="../docs_conteudo/PortariaConjunta/tabela_5 MPU_ago.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo VI - Quantitativo de Beneficiários e Dependentes e Valores Per Capita de Beneficiários Assistenciais <a href="../docs_conteudo/PortariaConjunta/tabela_6 MPU_ago.ods">(Baixar)</a></td> 
+                    </tr>
+                </tbody>
+            </table>
 
-        <!-- Inserção de estrutura do menu -->
-        <nav class="menu">
-            <ul>
-                <li><a href="home.html">Página Inicial</a></li>
-                <li><a href="#">Institucional</a>
-                    <ul>
-                        <li id="subMenu"><a href="sobreMPU.html">Sobre o MPU</a>
-                        <li id="subMenu"><a href="historico.html">Histórico</a>
-                    </ul>
-                </li>
-                <li><a href="#">Documentos</a>
-                    <ul>
-                        <li id="subMenu"><a href="tabelas.html">Tabelas</a>
-                        <li id="subMenu"><a href="demonstrativos.html">Demonstrativos</a>
-                        <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
-                    </ul>
-                </li>
-                <li><a href="legislacao.html">Legislação</a></li>
-                <li><a href="#">Órgãos</a>
-                    <ul>
-                        <li id="subMenu"><a href="https://auditoria.mpu.mp.br/">AUDIN</a>
-                        <li id="subMenu"><a href="https://escola.mpu.mp.br/">ESMPU</a>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th id="titulo_tabela">Abril de 2022</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo I - Quantitativo Físico de Pessoal - Servidores <a href="../docs_conteudo/PortariaConjunta/tabela_1 1 MPU_abr.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo I - Quantitativo Físico de Pessoal - Membros <a href="../docs_conteudo/PortariaConjunta/tabela_1 2 MPU_abr .ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo II - Remuneração/Subsídio de Cargo Efetivo - Servidores <a href="../docs_conteudo/PortariaConjunta/tabela_2 1 MPU_abr.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo II - Remuneração/Subsídio de Cargo Efetivo - Membros <a href="../docs_conteudo/PortariaConjunta/tabela_2 2 MPU_abr.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo III - Quantitativo de Cargos em Comissão e Função de Confiança <a href="../docs_conteudo/PortariaConjunta/tabela_3 MPU_abr.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo IV - Remuneração de Cargos em Comissão e Função de Confiança <a href="../docs_conteudo/PortariaConjunta/tabela_4 MPU_abr.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo V - Quantitativo Físico de Pessoal Contratado Temporariamente <a href="../docs_conteudo/PortariaConjunta/tabela_5 MPU_abr.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo VI - Quantitativo de Beneficiários e Dependentes e Valores Per Capita de Beneficiários Assistenciais <a href="../docs_conteudo/PortariaConjunta/tabela_6 MPU_abr.ods">(Baixar)</a></td> 
+                    </tr>
+                </tbody>
+            </table>
 
-        <!-- Tabelas dos documentos da Portaria Conjunta -->
-       <article class="tabelas_docs">
-            <h1>Portaria Conjunta</h1>
-            <hr id="linha_portaria">
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th id="titulo_tabela">Dezembro de 2021</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo I - Quantitativo Físico de Pessoal - Servidores <a href="../docs_conteudo/PortariaConjunta/tabela_1-1_MPU_dez.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo I - Quantitativo Físico de Pessoal - Membros <a href="../docs_conteudo/PortariaConjunta/tabela_1-2_MPU_dez.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo II - Remuneração/Subsídio de Cargo Efetivo - Servidores <a href="../docs_conteudo/PortariaConjunta/tabela_2-1_MPU dez.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo II - Remuneração/Subsídio de Cargo Efetivo - Membros <a href="../docs_conteudo/PortariaConjunta/tabela_2-2_MPU_dez.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo III - Quantitativo de Cargos em Comissão e Função de Confiança <a href="../docs_conteudo/PortariaConjunta/tabela_3_MPU_dez.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo IV - Remuneração de Cargos em Comissão e Função de Confiança <a href="../docs_conteudo/PortariaConjunta/tabela_4_MPU_dez.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo V - Quantitativo Físico de Pessoal Contratado Temporariamente <a href="../docs_conteudo/PortariaConjunta/tabela_5_MPU_dez.ods">(Baixar)</a></td> 
+                    </tr>
+                    <tr>
+                        <td id="conteudo_tabela_doc">Anexo VI - Quantitativo de Beneficiários e Dependentes e Valores Per Capita de Beneficiários Assistenciais <a href="../docs_conteudo/PortariaConjunta/tabela_6_MPU_dez.ods">(Baixar)</a></td> 
+                    </tr>
+                </tbody>
+            </table>
+        </article>
 
-            <section class="portaria">
-                <table id="table3">
-                    <tr>
-                        <th id="titulo_tab">SOF/SEGEP n° 5/2015 - MPU (Abril/2022)</th>
-                    </tr>
-                    <tr>
-                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/2tabela_1_1_mpu_abr.ods">Anexo I - </a>Quantitativo Físico de Pessoal - Servidores</td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/tabela_1_2_mpu_dez.ods">Anexo I - </a>Quantitativo Físico de Pessoal - Membros</td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/2tabela_2_1_mpu_abr_.ods">Anexo II - </a>Remuneração/Subsídio de Cargo Efetivo - Servidores</td>
-                    </tr>
-                </table>
-
-                <table id="table4">
-                    <tr>
-                        <th id="titulo_tab">SOF/SEGEP n° 5/2015 - MPU (Dezembro/2022)</th>
-                    </tr>
-                    <tr>
-                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/3tabela_1_1_mpu_dez.ods">Anexo I - </a>Quantitativo Físico de Pessoal - Servidores</td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/tabela_1_2_mpu_dez.ods">Anexo I - </a>Quantitativo Físico de Pessoal - Membros</td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://www.mpu.mp.br/navegacao/documentos-e-publicacoes/tabela_2_1_mpu_dez.ods">Anexo II - </a>Remuneração/Subsídio de Cargo Efetivo - Servidores</td>
-                    </tr>
-                </table>
-            </section>
-       </article>
-
-        <!--Botão de contatos  -->
+        <!--Botão de contatos-->
         <a href="contato.html">
-            <button type="button" id="btt_contato"> <img src="../image/contato.png" id="img_contato" /></button>
-
+            <button type="button" id="bt_contato"><img src="../image/contato.png" id="img_contato" /></button>
         </a> 
 
-        <!--Botão de envio -->
-        <a href="enviar.html">
-            <button type="button" id="bnt_enviar"> <img src="../image/enviar.png" id="img_enviar" /></button> 
+        <!--Botão de envio-->
+        <a href="compartilhar.html">
+            <button type="button" id="bt_compartilhar"><img src="../image/compartilhar.png" id="img_compartilhar" /></button>
         </a>
 
-        <!-- Estrutura dos asides -->
+        <!-- Inserção estrutura dos asides -->
         <aside>
             <div class="aside-menu">
                 <ul>
-                    <li><a href="#" >Concursos</a>
+                    <li><a id="aside-menu_titulo" href="#">Concursos</a>
                         <ul>
                             <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/10o-concurso">10º Concurso</a>
                             <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/9o-concurso">9º Concurso</a>
@@ -128,13 +206,13 @@
                             <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/7o-concurso">7º Concurso</a>
                         </ul>
                     </li>
-                    <li><a href="#">Órgãos Relacionados</a>
+                    <li><a id="aside-menu_titulo" href="#">Órgãos Relacionados</a>
                         <ul>
                             <li><a href="https://www.cnmp.mp.br/portal/">CNMP</a>
                             <li><a href="https://www.pgr.ao/">PGR</a>
                         </ul>
                     </li>
-                    <li><a href="#">Ramos do MPU</a>
+                    <li><a id="aside-menu_titulo" href="#">Ramos do MPU</a>
                         <ul>
                             <li><a href="https://www.mpf.mp.br/">Ministério Público Federal (MPF)</a>
                             <li><a href="https://mpt.mp.br/">Ministério Público do Trabalho (MPT)</a>
@@ -151,11 +229,11 @@
                     <li><a href="http://www.transparencia.mpf.mp.br/" class="detalhe"><span>Transparência Ministério Público</span></a></li>
                 </ul>
             </div>            
-        </aside>
+        </aside> 
 
         <!-- Inserção do footer -->
         <footer>
-            <p class="linha"> SAF Sul Quadra 4 Conjunto C - Brasília / DF - CEP 70050-900 - PABX: (61) 3105-5100</p>
+            <p> SAF Sul Quadra 4 Conjunto C - Brasília / DF - CEP 70050-900 - PABX: (61) 3105-5100</p>
             <hr class="footer_linha">
             <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
         </footer>
