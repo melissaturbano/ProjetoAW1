@@ -700,22 +700,22 @@ div p {
 }
 
 
-/*Links*/
+/*Links ??? coloco id pra n ficar 30 ,s??*/
 
-#conteudo_tabela_doc a, #conteudo_tabela_assunto a, #link_redirecionamento, #caixa_tabela a {
+#conteudo_tabela_doc a, #conteudo_tabela_assunto a, #link_redirecionamento, #topico_quadrado a {
     text-decoration: none;
     font-weight: bold;
 }
-#conteudo_tabela_doc a:link, #conteudo_tabela_assunto a:link, #link_redirecionamento:link, #caixa_tabela a:link {
+#conteudo_tabela_doc a:link, #conteudo_tabela_assunto a:link, #link_redirecionamento:link, #topico_quadrado a:link {
     color: #0086d3;
 }
-#conteudo_tabela_doc a:visited, #conteudo_tabela_assunto a:visited, #link_redirecionamento:visited, #caixa_tabela a:visited {
+#conteudo_tabela_doc a:visited, #conteudo_tabela_assunto a:visited, #link_redirecionamento:visited, #topico_quadrado a:visited {
     color: #9700d3;
 }
-#conteudo_tabela_doc a:hover, #conteudo_tabela_assunto a:hover, #link_redirecionamento:hover, #caixa_tabela a:hover {
+#conteudo_tabela_doc a:hover, #conteudo_tabela_assunto a:hover, #link_redirecionamento:hover, #topico_quadrado a:hover {
     color: #014e7a;
 }
-#conteudo_tabela_doc a:active, #conteudo_tabela_assunto a:active, #link_redirecionamento:active, #caixa_tabela a:active {
+#conteudo_tabela_doc a:active, #conteudo_tabela_assunto a:active, #link_redirecionamento:active, #topico_quadrado a:active {
     color: #00253a;
 }
 
