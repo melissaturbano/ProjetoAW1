@@ -1,145 +1,158 @@
 <!-- Isabella: header, nav, footer, testes unitários
      Melissa: aside
      Nicole: section-->
-     <!DOCTYPE html>
-     <html lang="pt-br">
-         <head>
-             <!-- Tags meta que auxiliam nos mecanismos de pesquisa-->
-             <meta charset="utf-8">
-             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-             <meta name="author" content="Isabella Valerio, Melissa Turbano, Nicole Miguel">
-             <meta name="description" content="Home - reestruturação do site MPU">
-             <meta name="keywords" content="html, home, mpu, governo, seleção">
-             <link rel="stylesheet" type="text/css" href="../css/Style.css">
-             <link rel="shortcut icon" type="image/x-icon" href="../image/logo.png">
-             <title>Página Inicial</title>
-         </head>
-     
-         <body>
-             <header>
-                 <!-- Inserção do logo e título da página-->
-                 <div class="logo">
-                     <a href="home.html"></a><img id="logo_img" src="../image/logo.png" alt="Logo MPU"></a>
-                     <h2 id="logo_letra">MPU</h2>
-                     <hr id="logo_linha">
-                     <h1 id="logo_titulo">Ministério Público da União</h1>
-                 </div>
-                
-                 <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
-                 <div class="botoes">
-                     <a href="ajuda.html"><button id="help_bt"><img src="../image/help.jpg" id="help_img"></button></a>
-                     <a href="faq.html"><button id="faq_bt"><img src="../image/faq.jpg" id="faq_img"></button></a>
-                     <form id="caixa_pesquisa" action="pesquisa.html">
-                         <img id="lupa_img" src="../image/search.png" alt="Lupa de pesquisa"/>
-                         <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
-                         <button type="submit" id="ok_bt">OK</button>
-                     </form>
-                 </div>
-             </header>
-     
-             <!-- Inserção de botão menu responsivo -->
-             <input type="checkbox" id="bt_menu">
-             <label for="bt_menu">&#9776;</label>
-     
-             <!-- Inserção de estrutura do menu -->
-             <nav class="menu">
-                 <ul>
-                     <li><a href="home.html">Página Inicial</a></li>
-                     <li><a href="#">Institucional</a>
-                         <ul>
-                             <li id="subMenu"><a href="sobreMPU.html">Sobre o MPU</a>
-                             <li id="subMenu"><a href="historico.html">Histórico</a>
-                         </ul>
-                     </li>
-                     <li><a href="#">Documentos</a>
-                         <ul>
-                             <li id="subMenu"><a href="demonstrativos.html">Demonstrativos</a>
-                             <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
-                         </ul>
-                     </li>
-                     <li><a href="legislacao.html">Legislação</a></li>
-                     <li><a href="#">Órgãos</a>
-                         <ul>
-                             <li id="subMenu"><a href="https://auditoria.mpu.mp.br/">AUDIN</a>
-                             <li id="subMenu"><a href="https://escola.mpu.mp.br/">ESMPU</a>
-                         </ul>
-                     </li>
-                 </ul>
-             </nav>
-     
-             <!-- Textos e links de redirecionamento -->
-             <article id="MPU_sobre">
-                 <p>O Ministério Público da União é composto pelo Ministério Público Federal, o Ministério Público do Trabalho, o Ministério Público Militar e o Ministério Público do Distrito Federal e Territórios. Cada ramo do MPU, na respectiva área de atuação. defende os interesses da sociedade e zela pelo respeito à lei. </p>
-             </article>
-     
-             <img id="MPU_img" src="../image/MPU.jpg" alt="Órgão da MPU"> 
-     
-             <section class="candidatoArea">
-                 <h1 id="candidato_titulo">Área do candidato</h1>
-                 <hr id="candidato_linha">
-                 <div id="candidato_pag">
-                     <img src="../image/pag_candidato.png" aria-label="Página do Candidato">
-                     <a href="paginaCandidato.html"> <button id="candidato_btn">Página do Candidato</button></a>
-                 </div>
-                 <div class="concursoRemocao"> 
-                     <img src="../image/concurso_remocao.png" aria-label="Concurso de Remoção"> 
-                     <a href="concursoRemocao.html"> <button id="concurso_btn">Concurso de Remoção</button></a>
-                 </div>
-             </section>
-     
-             <!--Botão de contatos-->
-             <a href="contato.html">
-                 <button type="button" id="bt_contato"> <img src="../image/contato.png" id="img_contato" /></button>
-             </a> 
-     
-             <!--Botão de envio-->
-             <a href="enviar.html">
-                 <button type="button" id="bt_enviar"> <img src="../image/enviar.png" id="img_enviar" /></button>
-             </a>
-     
-             <!-- Estrutura dos asides -->
-             <aside>
-                 <div class="aside-menu">
-                     <ul>
-                         <li><a href="#" >Concursos</a>
-                             <ul>
-                                 <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/10o-concurso">10º Concurso</a>
-                                 <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/9o-concurso">9º Concurso</a>
-                                 <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/8o-concurso">8º Concurso</a>
-                                 <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/7o-concurso">7º Concurso</a>
-                             </ul>
-                         </li>
-                         <li><a href="#">Órgãos Relacionados</a>
-                             <ul>
-                                 <li><a href="https://www.cnmp.mp.br/portal/">CNMP</a>
-                                 <li><a href="https://www.pgr.ao/">PGR</a>
-                             </ul>
-                         </li>
-                         <li><a href="#">Ramos do MPU</a>
-                             <ul>
-                                 <li><a href="https://www.mpf.mp.br/">Ministério Público Federal (MPF)</a>
-                                 <li><a href="https://mpt.mp.br/">Ministério Público do Trabalho (MPT)</a>
-                                 <li><a href="https://www.mpdft.mp.br/portal/">Ministério Público do DF</a>
-                                 <li><a href="https://www.mpm.mp.br/">Ministério Público Militar (MPM)</a>
-                             </ul>
-                         </li>
-                     </ul>
-                 </div>
-                 
-                 <div class="aside">
-                     <ul>
-                         <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores" class="detalhe"><span>Concursos MPU e MPF</span><a></li>
-                         <li><a href="http://www.transparencia.mpf.mp.br/" class="detalhe"><span>Transparência Ministério Público</span></a></li>
-                     </ul>
-                 </div>            
-             </aside><br><br><br>
-     
-             <!-- Inserção do footer -->
-             <footer>
-                 <p class="linha"> SAF Sul Quadra 4 Conjunto C - Brasília / DF - CEP 70050-900 - PABX: (61) 3105-5100</p>
-                 <hr class="footer_linha">
-                 <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
-             </footer>
-         </body>
-     </html>
+
+<!-- Codificado por Isabella Valerio -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Tags meta que auxiliam nos mecanismos de pesquisa -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Isabella Valerio, Melissa Turbano, Nicole Miguel">
+        <meta name="description" content="Home - reestruturação do site MPU">
+        <meta name="keywords" content="html, home, mpu, governo, seleção">
+        <link rel="stylesheet" type="text/css" href="../css/Style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../image/logo.png">
+        <title>Home</title>
+    </head>
+
+    <body>
+        <div class="acima">
+            <header>
+                <!-- Inserção do logo e título da página-->
+                <div class="logo">
+                    <a href="index.html"><img id="logo_img" src="../image/logo.png" alt="Logo MPU"></a>
+                    <h2 id="logo_letra">MPU</h2>
+                    <hr id="logo_linha">
+                    <h1 id="logo_titulo">Ministério Público da União</h1>
+                </div>
+    
+                <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
+                <div class="botoes">
+                    <a href="ajuda.html"><button id="help_bt"><img src="../image/help.jpg" id="help_img"></button></a>
+                    <a href="faq.html"><button id="faq_bt"><img src="../image/faq.jpg" id="faq_img"></button></a>
+                    <form id="caixa_pesquisa" action="pesquisa.html">
+                        <img id="lupa_img" src="../image/search.png" alt="Lupa de pesquisa"/>
+                        <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
+                        <button type="submit" id="ok_bt">OK</button>
+                    </form>
+                </div>
+            </header>
+    
+            <!-- Inserção de estrutura do menu -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="#">Institucional</a>
+                        <ul>
+                            <li id="subMenu"><a href="sobreMPU.html">Sobre o MPU</a>
+                            <li id="subMenu"><a href="historico.html">Histórico</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Documentos</a>
+                        <ul>
+                            <li id="subMenu"><a href="demonstrativos.html">Demonstrativos</a>
+                            <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
+                        </ul>
+                    </li>
+                    <li><a href="legislacao.html">Legislação</a></li>
+                    <li><a href="#">Órgãos</a>
+                        <ul>
+                            <li id="subMenu"><a href="https://auditoria.mpu.mp.br/">AUDIN</a>
+                            <li id="subMenu"><a href="https://escola.mpu.mp.br/">ESMPU</a>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Inserção texto introdução -->
+        <section class="introducao">
+            <h1 id="titulo">PÁGINA PRINCIPAL</h1>
+            <hr id="titulo_linha">
+
+            <div class="caixa">
+                <div id="caixa_bloco">
+                    <p id="texto_caixa">O Ministério Público da União é composto pelo Ministério Público Federal, o Ministério Público do Trabalho, o Ministério Público Militar e o Ministério Público do Distrito Federal e Territórios. Cada ramo do MPU, na respectiva área de atuação. defende os interesses da sociedade e zela pelo respeito à lei.</p>
+                </div>
+            </div>
+
+            <img id="img_MPU" src="../image/MPU.jpg" alt="Órgão da MPU">
+        </section>
+
+        <!-- Inserção conteúdo -->
+        <article class="conteudo">
+            <!-- Ínicio -->
+            <h1 id="subtitulo">Área do Candidato</h1>
+            <hr id="subtitulo_linha">
+
+            <div class="alinhamento_areaCand">
+                <img src="../image/pag_candidato.png" aria-label="Página do Candidato">
+                <a href="paginaCandidato.html"> <button id="candidato_bt">Página do Candidato</button></a>
+                <!-- <img src="../image/areaCandidato.png"> -->
+            </div>
+            <div class="alinhamento_areaCand">
+                <img src="../image/concurso_remocao.png" aria-label="Concurso de Remoção">
+                <a href="concursoRemocao.html"> <button id="candidato_bt">Concurso de Remoção</button></a>
+                <!-- <img src="../image/areaCandidato.png"> -->
+            </div>
+        </article>
+
+        <!--Botão de contatos-->
+        <a href="contato.html">
+            <button type="button" id="bt_contato"><img src="../image/contato.png" id="img_contato" /></button>
+        </a> 
+
+        <!--Botão de envio-->
+        <a href="compartilhar.html">
+            <button type="button" id="bt_compartilhar"><img src="../image/compartilhar.png" id="img_compartilhar" /></button>
+        </a>
+
+        <!-- Inserção estrutura dos asides -->
+        <aside>
+            <div class="aside-menu">
+                <ul>
+                    <li><a id="aside-menu_titulo" href="#">Concursos</a>
+                        <ul>
+                            <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/10o-concurso">10º Concurso</a>
+                            <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/9o-concurso">9º Concurso</a>
+                            <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/8o-concurso">8º Concurso</a>
+                            <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/7o-concurso">7º Concurso</a>
+                        </ul>
+                    </li>
+                    <li><a id="aside-menu_titulo" href="#">Órgãos Relacionados</a>
+                        <ul>
+                            <li><a href="https://www.cnmp.mp.br/portal/">CNMP</a>
+                            <li><a href="https://www.pgr.ao/">PGR</a>
+                        </ul>
+                    </li>
+                    <li><a id="aside-menu_titulo" href="#">Ramos do MPU</a>
+                        <ul>
+                            <li><a href="https://www.mpf.mp.br/">Ministério Público Federal (MPF)</a>
+                            <li><a href="https://mpt.mp.br/">Ministério Público do Trabalho (MPT)</a>
+                            <li><a href="https://www.mpdft.mp.br/portal/">Ministério Público do DF</a>
+                            <li><a href="https://www.mpm.mp.br/">Ministério Público Militar (MPM)</a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="aside">
+                <ul>
+                    <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores" class="detalhe"><span>Concursos MPU e MPF</span><a></li>
+                    <li><a href="http://www.transparencia.mpf.mp.br/" class="detalhe"><span>Transparência Ministério Público</span></a></li>
+                </ul>
+            </div>            
+        </aside> 
+
+        <!-- Inserção do footer -->
+        <footer>
+            <p> SAF Sul Quadra 4 Conjunto C - Brasília / DF - CEP 70050-900 - PABX: (61) 3105-5100</p>
+            <hr class="footer_linha">
+            <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
+        </footer>
+    </body>
+</html>
