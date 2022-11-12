@@ -738,7 +738,7 @@ div p {
 
 /* Campos */
 
-.nome, .endereco {
+.nome, .endereco, .ocupacao, .login {
     margin-left: 17.5px;
     margin-bottom: 1%;
     margin-top: 1%;
@@ -747,6 +747,8 @@ div p {
 
 legend {
     margin-left: 17.5px;
+    border: 1px solid #7c7c7cc7;
+    padding: 2px;
 }
 
 label {
@@ -765,14 +767,19 @@ label {
     margin-left: 17.5px;
 }
 
-
-/* Botões */
-
-#nome, #sobrenome {
+#nome, #sobrenome, #email, #emaild, #emaili, #senha, #atuacao, #profissao {
     padding: 3px;
 }
 
-#enviar, #cancelar{
+option {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+
+/* Botões */
+
+#enviar, #cancelar {
     border: 3px solid #6db3c7;
     background-color: #bee1eb;
     margin-left: 3%;

@@ -1,148 +1,147 @@
-<!-- Codificado por Nicole Miguel-->
+<!-- Codificado por Melissa Turbano -->
+<!-- Revisado por Isabella Valerio -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <!-- Tags meta que auxiliam nos mecanismos de pesquisa-->
+        <!-- Tags meta que auxiliam nos mecanismos de pesquisa -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Isabella Valerio, Melissa Turbano, Nicole Miguel">
-        <meta name="description" content="Horus - reestruturação do site MPU">
-        <meta name="keywords" content="html, horus, mpu, governo, seleção">
+        <meta name="description" content="Sistema Hórus - reestruturação do site MPU">
+        <meta name="keywords" content="html, sistema hórus, mpu, governo, seleção">
         <link rel="stylesheet" type="text/css" href="../css/Style.css">
         <link rel="shortcut icon" type="image/x-icon" href="../image/logo.png">
-        <title>Concurso de Remoção - Sistema Hórus</title>
+        <title>Concurso Remoção - Sistema Hórus</title>
     </head>
 
     <body>
-        <header>
-            <!-- Inserção do logo e título da página-->
-            <div class="logo">
-                <a href="home.html"><img id="logo_img" src="../image/logo.png" alt="Logo MPU"></a>
-                <h2 id="logo_letra">MPU</h2>
-                <hr id="logo_linha">
-                <h1 id="logo_titulo">Ministério Público da União</h1>
+        <div class="acima">
+            <header>
+                <!-- Inserção do logo e título da página-->
+                <div class="logo">
+                    <a href="index.html"><img id="logo_img" src="../image/logo.png" alt="Logo MPU"></a>
+                    <h2 id="logo_letra">MPU</h2>
+                    <hr id="logo_linha">
+                    <h1 id="logo_titulo">Ministério Público da União</h1>
+                </div>
+    
+                <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
+                <div class="botoes">
+                    <a href="ajuda.html"><button id="help_bt"><img src="../image/help.jpg" id="help_img"></button></a>
+                    <a href="faq.html"><button id="faq_bt"><img src="../image/faq.jpg" id="faq_img"></button></a>
+                    <form id="caixa_pesquisa" action="pesquisa.html">
+                        <img id="lupa_img" src="../image/search.png" alt="Lupa de pesquisa"/>
+                        <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
+                        <button type="submit" id="ok_bt">OK</button>
+                    </form>
+                </div>
+            </header>
+    
+            <!-- Inserção de estrutura do menu -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="#">Institucional</a>
+                        <ul>
+                            <li id="subMenu"><a href="sobreMPU.html">Sobre o MPU</a>
+                            <li id="subMenu"><a href="historico.html">Histórico</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Documentos</a>
+                        <ul>
+                            <li id="subMenu"><a href="demonstrativos.html">Demonstrativos</a>
+                            <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
+                        </ul>
+                    </li>
+                    <li><a href="legislacao.html">Legislação</a></li>
+                    <li><a href="#">Órgãos</a>
+                        <ul>
+                            <li id="subMenu"><a href="https://auditoria.mpu.mp.br/">AUDIN</a>
+                            <li id="subMenu"><a href="https://escola.mpu.mp.br/">ESMPU</a>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Inserção texto introdução -->
+        <section class="introducao">
+            <h1 id="titulo">Sistema Hórus</h1>
+            <hr id="titulo_linha">
+
+            <div class="caixa">
+                <div id="caixa_bloco">
+                    <p id="texto_caixa">Preencha os campos a seguir para realizar seu cadastramento.</p>
+                </div>
             </div>
-           
-            <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
-            <div class="botoes">
-                <a href="ajuda.html"><button id="help_bt"><img src="../image/help.jpg" id="help_img"></button></a>
-                <a href="faq.html"><button id="faq_bt"><img src="../image/faq.jpg" id="faq_img"></button></a>
-                <form id="caixa_pesquisa" action="../html/pesquisa.html">
-                    <img id="lupa_img" src="../image/search.png" alt="Lupa de pesquisa"/>
-                    <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
-                    <button type="submit" id="ok_bt">OK</button>
-                </form>
-            </div>
-        </header>
-
-        <!-- Inserção de botão menu responsivo -->
-        <input type="checkbox" id="bt_menu">
-        <label for="bt_menu">&#9776;</label>
-
-        <!-- Inserção de estrutura do menu -->
-        <nav class="menu">
-            <ul>
-                <li><a href="home.html">Página Inicial</a></li>
-                <li><a href="#">Institucional</a>
-                    <ul>
-                        <li id="subMenu"><a href="sobreMPU.html">Sobre o MPU</a>
-                        <li id="subMenu"><a href="historico.html">Histórico</a>
-                    </ul>
-                </li>
-                <li><a href="#">Documentos</a>
-                    <ul>
-                        <li id="subMenu"><a href="demonstrativos.html">Demonstrativos</a>
-                        <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
-                    </ul>
-                </li>
-                <li><a href="legislacao.html">Legislação</a></li>
-                <li><a href="#">Órgãos</a>
-                    <ul>
-                        <li id="subMenu"><a href="https://auditoria.mpu.mp.br/">AUDIN</a>
-                        <li id="subMenu"><a href="https://escola.mpu.mp.br/">ESMPU</a>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
-        <!--Formulário horus -->
-        <section class="horus">
-            <h1>Sistema Hórus</h1>
-            <hr id="linha_horus">
-
-            <!-- Inserção Formulário -->
-            <article class="formulario">
-                <form action=" " name="form_horus" method="post">
-                    <fieldset id="ministerio">
-                        <legend>Ministério</legend>
-                        <div id="atuacao">
-                            <label id="lab_titulo" for="atuação_id">Atuação</label>
-                            <br><br>
-                            <select name="atuacao" id="atuacao_id">
-                                <option selected="selected">Selecione seu local de trabalho</option>
-                                <option value="mpf">MPF - Ministério Público Federal</option>
-                                <option value="mpt">MPT - Ministério Público do Trabalho</option>
-                                <option value="mpm">MPM - Ministério Público Militar</option>
-                                <option value="mpdft">MPDFT - Ministério Público do Distrito Federal e Territórios</option>
-                            </select>
-                        </div>
-
-                        <div id="profissao">
-                            <label id="lab_titulo" for="profissao_id">Profissão</label>
-                            <br><br>
-                            <select name="profissao" id="profissao_id">
-                                <option selected="selected">Selecione seu cargo</option>
-                                <option value="membro">Membro/Servidor (Quadro, Contratado, Requisitado)</option>
-                                <option value="cedido">Servidor Cedido</option>
-                                <option value="provisorio">Servidor em Lotação Provisória fora do MPF</option>
-                                <option value="aposentado">Membro/Servidor Aposentado</option>
-                                <option value="pensionista">Pensionista</option>
-                                <option value="estagiario">Estagiário</option>
-                                <option value="exonerado">Exonerado</option>
-                                <option value="removido">Removido para MPT, MPM ou MPDFT</option>
-                                <option value="terceirizado">Terceirizado</option>
-                                <option value="voluntario">Voluntário</option>
-                                <option value="inativo">Estagiário Inativo</option>
-                            </select>
-                        </div>
-                    </fieldset>
-
-                    <fieldset id="login">
-                        <legend>Login</legend>
-                        <div id="email">
-                            <label id="lab_titulo" for="email_id">E-mail* </label>
-                            <br><br>
-                            <input type="email" name="email" id="email_id" required placeholder="xxxxx@xxx.xx" onblur="validarEmail()">
-                        </div>
-                        <div id="senha">
-                            <label id="lab_titulo" for="senha_id">Senha* </label>
-                            <br><br>
-                            <input type="password" name="senha" id="senha_id" required placeholder="senha1234_">
-                        </div>
-                    </fieldset>
-
-                    <button type="submit" id="entrar_horus">Entrar</button>
-                    <button type="reset" id="cancelar_horus">Cancelar</button>
-                </form>
-            </article>
         </section>
+
+        <!-- Inserção form -->
+        <article class="conteudo">
+            <form class="form" method="post" action="/html/contato.html" name="contato">
+                <fieldset id="campo">
+                    <legend><b>Ministério</b></legend>
+                    <div class="ocupacao">
+                        <label id="atuacao" for="atuacao">Atuação</label>
+                        <select name="atuacao" id="atuacao">
+                            <option selected="selected">Selecione seu local de trabalho</option>
+                            <option value="mpf">MPF - Ministério Público Federal</option>
+                            <option value="mpt">MPT - Ministério Público do Trabalho</option>
+                            <option value="mpm">MPM - Ministério Público Militar</option>
+                            <option value="mpdft">MPDFT - Ministério Público do Distrito Federal e Territórios</option>
+                        </select>
+                        <br><br>
+                        <label id="profissao" for="profissao">Profissão</label>
+                        <select name="profissao" id="profissao">
+                            <option selected="selected">Selecione seu cargo</option>
+                            <option value="estagiario">Estagiário</option>
+                            <option value="inativo">Estagiário Inativo</option>
+                            <option value="exonerado">Exonerado</option>
+                            <option value="aposentado">Membro/Servidor Aposentado</option>
+                            <option value="membro">Membro/Servidor (Quadro, Contratado, Requisitado)</option>
+                            <option value="pensionista">Pensionista</option>
+                            <option value="removido">Removido para MPT, MPM ou MPDFT</option>
+                            <option value="cedido">Servidor Cedido</option>
+                            <option value="provisorio">Servidor em Lotação Provisória fora do MPF</option>
+                            <option value="terceirizado">Terceirizado</option>
+                            <option value="voluntario">Voluntário</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset id="campo">
+                    <legend><b>Login</b></legend>
+                    <div class="login">
+                        <label for="emaili">E-mail Institucional*</label>
+                        <input type="email" name="emaili" id="emaili" placeholder="xxxxx@xxx.xx" required>
+                        <br><br>
+                        <label for="senha">Senha*</label>
+                        <input type="password" name="senha" id="senha" placeholder="xxxxx@xxx.xx" required>
+                    </div>
+                </fieldset>
+                <div class="botoes">
+                    <button type="submit" id="enviar" onclick="Enviar()">Enviar</button>
+                    <button type="reset" id="cancelar">Cancelar</button>
+                </div>
+            </form>
+        </article>
 
         <!--Botão de contatos-->
         <a href="contato.html">
-            <button type="button" id="btt_contato"> <img src="../image/contato.png" id="img_contato" /></button>
+            <button type="button" id="bt_contato"><img src="../image/contato.png" id="img_contato"/></button>
         </a> 
 
         <!--Botão de envio-->
         <a href="enviar.html">
-            <button type="button" id="btt_enviar"> <img src="../image/enviar.png" id="img_enviar" /></button>
+            <button type="button" id="bt_compartilhar"><img src="../image/compartilhar.png" id="img_compartilhar"/></button>
         </a>
 
-        <!-- Estrutura dos asides -->
+        <!-- Inserção estrutura dos asides -->
         <aside>
             <div class="aside-menu">
                 <ul>
-                    <li><a href="#" >Concursos</a>
+                    <li><a id="aside-menu_titulo" href="#">Concursos</a>
                         <ul>
                             <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/10o-concurso">10º Concurso</a>
                             <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/9o-concurso">9º Concurso</a>
@@ -150,13 +149,13 @@
                             <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/7o-concurso">7º Concurso</a>
                         </ul>
                     </li>
-                    <li><a href="#">Órgãos Relacionados</a>
+                    <li><a id="aside-menu_titulo" href="#">Órgãos Relacionados</a>
                         <ul>
                             <li><a href="https://www.cnmp.mp.br/portal/">CNMP</a>
                             <li><a href="https://www.pgr.ao/">PGR</a>
                         </ul>
                     </li>
-                    <li><a href="#">Ramos do MPU</a>
+                    <li><a id="aside-menu_titulo" href="#">Ramos do MPU</a>
                         <ul>
                             <li><a href="https://www.mpf.mp.br/">Ministério Público Federal (MPF)</a>
                             <li><a href="https://mpt.mp.br/">Ministério Público do Trabalho (MPT)</a>
@@ -172,17 +171,14 @@
                     <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores" class="detalhe"><span>Concursos MPU e MPF</span><a></li>
                     <li><a href="http://www.transparencia.mpf.mp.br/" class="detalhe"><span>Transparência Ministério Público</span></a></li>
                 </ul>
-            </div>           
+            </div>            
         </aside> 
 
         <!-- Inserção do footer -->
         <footer>
-            <p class="linha"> SAF Sul Quadra 4 Conjunto C - Brasília / DF - CEP 70050-900 - PABX: (61) 3105-5100</p>
+            <p> SAF Sul Quadra 4 Conjunto C - Brasília / DF - CEP 70050-900 - PABX: (61) 3105-5100</p>
             <hr class="footer_linha">
             <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
         </footer>
-
-        <!-- Utilização de código em JavaScript -->
-        <script src="../js/horus.js"></script>
     </body>
 </html>
