@@ -720,6 +720,81 @@ div p {
 }
 
 
+/* FORMULÁRIOS */
+
+/* Geral */
+
+.form {
+    margin-left: 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#campo {
+    margin-top: 5%;
+    padding: 1em;
+    justify-content: space-between;
+}
+
+
+/* Campos */
+
+.nome {
+    margin-left: 17.5px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    float: left;
+}
+
+legend {
+    margin-left: 17.5px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+.mensagem {
+    margin-top: 1%;
+}
+
+#mensagem {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 60px;
+    padding-right: 530px;
+    margin-left: 17.5px;
+}
+
+
+/* Botões */
+
+#nome, #sobrenome {
+    padding: 3px;
+}
+
+#enviar, #cancelar{
+    border: 3px solid #6db3c7;
+    background-color: #bee1eb;
+    margin-left: 3%;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 90px;
+    height: 30px;
+    font-weight: 550;
+    margin-bottom: 8%;
+}
+
+#enviar:hover {
+    background-color: #8cce8c;
+    border: 3px solid #349c65;
+}
+
+#cancelar:hover {
+    background-color: #f79c9c;
+    border: 3px solid #a90606;
+}
+
+
 /*-------------------- CONFIGURAÇÕES INDIVIDUAIS --------------------*/
 
 
