@@ -1,8 +1,10 @@
-<!-- Codificado por Melissa Turbano-->
+<!-- Codificado por Melissa Turbano -->
+<!-- Revisado por Isabella Valerio -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <!-- Tags meta que auxiliam nos mecanismos de pesquisa-->
+        <!-- Tags meta que auxiliam nos mecanismos de pesquisa -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,103 +13,112 @@
         <meta name="keywords" content="html, enviar, mpu, governo, seleção">
         <link rel="stylesheet" type="text/css" href="../css/Style.css">
         <link rel="shortcut icon" type="image/x-icon" href="../image/logo.png">
-        <title>Compartilhar</title>
+        <title>Enviar</title>
     </head>
 
     <body>
-        <header>
-            <!-- Inserção do logo e título da página-->
-            <div class="logo">
-                <a href="home.html"><img id="logo_img" src="../image/logo.png" alt="Logo MPU"></a>
-                <h2 id="logo_letra">MPU</h2>
-                <hr id="logo_linha">
-                <h1 id="logo_titulo">Ministério Público da União</h1>
+        <div class="acima">
+            <header>
+                <!-- Inserção do logo e título da página-->
+                <div class="logo">
+                    <a href="index.html"><img id="logo_img" src="../image/logo.png" alt="Logo MPU"></a>
+                    <h2 id="logo_letra">MPU</h2>
+                    <hr id="logo_linha">
+                    <h1 id="logo_titulo">Ministério Público da União</h1>
+                </div>
+    
+                <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
+                <div class="botoes">
+                    <a href="ajuda.html"><button id="help_bt"><img src="../image/help.jpg" id="help_img"></button></a>
+                    <a href="faq.html"><button id="faq_bt"><img src="../image/faq.jpg" id="faq_img"></button></a>
+                    <form id="caixa_pesquisa" action="pesquisa.html">
+                        <img id="lupa_img" src="../image/search.png" alt="Lupa de pesquisa"/>
+                        <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
+                        <button type="submit" id="ok_bt">OK</button>
+                    </form>
+                </div>
+            </header>
+    
+            <!-- Inserção de estrutura do menu -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="#">Institucional</a>
+                        <ul>
+                            <li id="subMenu"><a href="sobreMPU.html">Sobre o MPU</a>
+                            <li id="subMenu"><a href="historico.html">Histórico</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Documentos</a>
+                        <ul>
+                            <li id="subMenu"><a href="demonstrativos.html">Demonstrativos</a>
+                            <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
+                        </ul>
+                    </li>
+                    <li><a href="legislacao.html">Legislação</a></li>
+                    <li><a href="#">Órgãos</a>
+                        <ul>
+                            <li id="subMenu"><a href="https://auditoria.mpu.mp.br/">AUDIN</a>
+                            <li id="subMenu"><a href="https://escola.mpu.mp.br/">ESMPU</a>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Inserção texto introdução -->
+        <section class="introducao">
+            <h1 id="titulo">Enviar</h1>
+            <hr id="titulo_linha">
+
+            <div class="caixa">
+                <div id="caixa_bloco">
+                    <p id="texto_caixa">Preencha os campos a seguir para entrar em contato conosco.</p>
+                </div>
             </div>
-           
-            <!--Inserção de botões de ajuda, faq (perguntas frequentes) e caixa de pesquisa usando tag a para fazer redirecionamento e form com input-->
-            <div class="botoes">
-                <a href="ajuda.html"><button id="help_bt"><img src="../image/help.jpg" id="help_img"></button></a>
-                <a href="faq.html"><button id="faq_bt"><img src="../image/faq.jpg" id="faq_img"></button></a>
-                <form id="caixa_pesquisa" action="../html/pesquisa.html">
-                    <img id="lupa_img" src="../image/search.png" alt="Lupa de pesquisa"/>
-                    <input type="text" name="lupa" id="lupa" placeholder="Buscar informações">
-                    <button type="submit" id="ok_bt">OK</button>
-                </form>
-            </div>
-        </header>
+        </section>
 
-        <!-- Inserção de botão menu responsivo -->
-        <input type="checkbox" id="bt_menu">
-        <label for="bt_menu">&#9776;</label>
+        <!-- Inserção form -->
+        <article class="conteudo">
+            <form class="form" method="post" action="/html/contato.html" name="contato">
+                <fieldset id="campo">
+                    <legend><b>Endereço</b></legend>
+                    <div class="endereco">
+                        <label for="nome">Seu e-mail*</label>
+                        <input type="text" name="nome" id="nome" placeholder="xxxxx@xxx.xx" minlength="4" required>
+                        <br><br>
+                        <label for="sobrenome">Destinatário*</label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="xxxxx@xxx.xx" minlength="4" required>
+                    </div>
+                </fieldset>
+                <fieldset id="campo">
+                    <legend><b>Comentário</b></legend>
+                    <div class="mensagem">
+                        <textarea id="mensagem" placeholder="Escreva aqui sua mensagem..." minlength="4"></textarea>
+                    </div>
+                </fieldset>
+                <div class="botoes">
+                    <button type="submit" id="enviar" onclick="Enviar()">Enviar</button>
+                    <button type="reset" id="cancelar">Cancelar</button>
+                </div>
+            </form>
+        </article>
 
-        <!-- Inserção de estrutura do menu -->
-        <nav class="menu">
-            <ul>
-                <li><a href="home.html">Página Inicial</a></li>
-                <li><a href="#">Institucional</a>
-                    <ul>
-                        <li id="subMenu"><a href="sobreMPU.html">Sobre o MPU</a>
-                        <li id="subMenu"><a href="historico.html">Histórico</a>
-                    </ul>
-                </li>
-                <li><a href="#">Documentos</a>
-                    <ul>
-                        <li id="subMenu"><a href="demonstrativos.html">Demonstrativos</a>
-                        <li id="subMenu"><a href="portariaConjunta.html">Portaria Conjunta</a>
-                    </ul>
-                </li>
-                <li><a href="legislacao.html">Legislação</a></li>
-                <li><a href="#">Órgãos</a>
-                    <ul>
-                        <li id="subMenu"><a href="https://auditoria.mpu.mp.br/">AUDIN</a>
-                        <li id="subMenu"><a href="https://escola.mpu.mp.br/">ESMPU</a>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
-        <!--Estrutura de enviar (compartilhar) - Melissa Turbano -->
-        <section class="enviar">
-            <h1 id="enviar_titulo">ENVIAR</h1>
-            <hr id="enviar_linha">
-            <article class="formulario">
-                <form action=" " name="form_enviar" method="POST">
-                    <fieldset id="caixa">
-                        <legend>Endereço</legend>
-                        <div id="email">
-                            <label for="email_id">Seu e-mail* </label>
-                            <br><br>
-                            <input type="email" name="email" id="email_id" required placeholder="xxxxx@xxx.xx" >
-                        </div>
-                        <div id="destinatario">
-                            <label for="email_id">Destinatário* </label>
-                            <br><br>
-                            <input type="email" name="email" id="destinatario_id" required placeholder="xxxxx@xxx.xx">
-                        </div>
-                    </fieldset>
-
-                    <fieldset id="caixa">
-                        <legend>Mensagem</legend>
-                        <div id="msg">
-                            <textarea placeholder="Comentário..."></textarea>
-                        </div>
-                    </fieldset>
-                    <button type="submit" id="enviar_id" onclick="validarEmail()">Enviar</button>
-                    <button type="reset" id="cancelar_id">Cancelar</button>
-                </form>
-            </article>
-        </section> 
-
-        <!--Botão de contato-->
+        <!--Botão de contatos-->
         <a href="contato.html">
-            <button type="button" id="btt_contato"> <img src="../image/contato.png" id="img_contato" /></button>
+            <button type="button" id="bt_contato"><img src="../image/contato.png" id="img_contato" /></button>
+        </a> 
+
+        <!--Botão de envio-->
+        <a href="enviar.html">
+            <button type="button" id="bt_compartilhar"><img src="../image/compartilhar.png" id="img_compartilhar" /></button>
         </a>
 
-        <!-- Estrutura dos asides -->
+        <!-- Inserção estrutura dos asides -->
         <aside>
             <div class="aside-menu">
                 <ul>
-                    <li><a href="#" >Concursos</a>
+                    <li><a id="aside-menu_titulo" href="#">Concursos</a>
                         <ul>
                             <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/10o-concurso">10º Concurso</a>
                             <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/9o-concurso">9º Concurso</a>
@@ -115,13 +126,13 @@
                             <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores/7o-concurso">7º Concurso</a>
                         </ul>
                     </li>
-                    <li><a href="#">Órgãos Relacionados</a>
+                    <li><a id="aside-menu_titulo" href="#">Órgãos Relacionados</a>
                         <ul>
                             <li><a href="https://www.cnmp.mp.br/portal/">CNMP</a>
                             <li><a href="https://www.pgr.ao/">PGR</a>
                         </ul>
                     </li>
-                    <li><a href="#">Ramos do MPU</a>
+                    <li><a id="aside-menu_titulo" href="#">Ramos do MPU</a>
                         <ul>
                             <li><a href="https://www.mpf.mp.br/">Ministério Público Federal (MPF)</a>
                             <li><a href="https://mpt.mp.br/">Ministério Público do Trabalho (MPT)</a>
@@ -137,17 +148,14 @@
                     <li><a href="https://www.mpf.mp.br/concursos/concursos/servidores" class="detalhe"><span>Concursos MPU e MPF</span><a></li>
                     <li><a href="http://www.transparencia.mpf.mp.br/" class="detalhe"><span>Transparência Ministério Público</span></a></li>
                 </ul>
-            </div>               
-        </aside>
+            </div>            
+        </aside> 
 
         <!-- Inserção do footer -->
         <footer>
-            <p class="linha"> SAF Sul Quadra 4 Conjunto C - Brasília / DF - CEP 70050-900 - PABX: (61) 3105-5100</p>
+            <p> SAF Sul Quadra 4 Conjunto C - Brasília / DF - CEP 70050-900 - PABX: (61) 3105-5100</p>
             <hr class="footer_linha">
             <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
         </footer>
-
-        <!-- Utilização de código em JavaScript -->
-        <script src="../js/enviar.js"></script>
     </body>
 </html>

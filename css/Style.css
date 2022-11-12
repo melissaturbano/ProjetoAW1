@@ -738,7 +738,7 @@ div p {
 
 /* Campos */
 
-.nome {
+.nome, .endereco {
     margin-left: 17.5px;
     margin-bottom: 1%;
     margin-top: 1%;
