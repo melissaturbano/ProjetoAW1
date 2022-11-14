@@ -667,6 +667,7 @@ div p {
     width: 45%;
     align-items: center;
     line-height: 1.5;
+    height: 0%;
 }
 
 #tabela {
@@ -927,3 +928,7 @@ option {
     font-size: 18px;
     text-transform: uppercase;
 }
+
+
+
+
