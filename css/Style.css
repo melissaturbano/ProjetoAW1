@@ -229,6 +229,7 @@ header {
     margin-left: 70%;
     margin-bottom: 2%;
     cursor: pointer;
+    
 }
 
 #img_contato {
@@ -241,7 +242,6 @@ header {
     background-color: #fdf8cf;
     border: 2.5px solid #b7ba5a;
 }
-
 
 /* Botão de compartilhar */
 
@@ -264,6 +264,17 @@ header {
 #bt_compartilhar:hover {
     background-color: #e2fcbb;
     border: 2.5px solid #87a061;
+}
+
+/*Botão página inicial*/
+#btt_contato {
+    border-radius: 25%;
+    width: 5%;
+    height: 7%;
+    background-color: #ffffff;
+    margin-left: 56%;
+    margin-bottom: 2%;
+    cursor: pointer;  
 }
 
 
