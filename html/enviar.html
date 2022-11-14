@@ -80,15 +80,15 @@
 
         <!-- Inserção form -->
         <article class="conteudo">
-            <form class="form" method="post" action="/html/contato.html" name="contato">
+            <form class="form" method="post">
                 <fieldset id="campo">
                     <legend><b>Endereço</b></legend>
                     <div class="endereco">
                         <label for="email">Seu e-mail*</label>
-                        <input type="email" name="email" id="email" placeholder="xxxxx@xxx.xx" required>
+                        <input type="email" name="email" id="email_id" placeholder="xxxxx@xxx.xx" required>
                         <br><br>
                         <label for="emaild">Destinatário*</label>
-                        <input type="email" name="emaild" id="emaild" placeholder="xxxxx@xxx.xx" required>
+                        <input type="email" name="email" id="destinatario_id" placeholder="xxxxx@xxx.xx" required>
                     </div>
                 </fieldset>
                 <fieldset id="campo">
@@ -98,7 +98,7 @@
                     </div>
                 </fieldset>
                 <div class="botoes">
-                    <button type="submit" id="enviar" onclick="Enviar()">Enviar</button>
+                    <button type="submit" id="enviar" onclick="validarEmail()">Enviar</button>
                     <button type="reset" id="cancelar">Cancelar</button>
                 </div>
             </form>
@@ -157,5 +157,8 @@
             <hr class="footer_linha">
             <p> &#169; 2022, em conformidade com: W3C HTML e W3C CSS</p>
         </footer>
+
+        <script src="../js/enviar.js"></script>
+
     </body>
 </html>
