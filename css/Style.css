@@ -226,7 +226,7 @@ header {
     width: 5%;
     height: 7%;
     background-color: #ffffff;
-    margin-left: 72%;
+    margin-left: 56%;
     margin-bottom: 2%;
     cursor: pointer;
 }
@@ -574,6 +574,7 @@ div p {
     margin-left: 0;
     width: 60%;
     line-height: 1.2;
+    height: 0%;
 }
 
 /* Caixas de texto */
