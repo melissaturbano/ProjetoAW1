@@ -941,6 +941,18 @@ option {
     text-transform: uppercase;
 }
 
+.area-galeria {
+    width: 60%;
+    margin: auto;
+    margin-top: 11%;
+    position: static;
+}
 
+.slick-prev:before, .slick-next:before{
+    color: black;
+}
 
-
+#foto {
+    width: 500px;
+    height: 300px;
+}
