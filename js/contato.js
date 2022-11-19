@@ -1,13 +1,36 @@
-/*Codificado por Melissa Turbano*/
-function Enviar() {
+/*Codificado por Nicole Miguel */
 
-    var nome = document.getElementById("nome_id");
-    var sobrenome = document.getElementById("sobrenome_id");
+let nome = document.querySelector("#nome_id");
+let sobrenome = document.querySelector("#sobrenome_id");
 
-    if (nome.value != "" && sobrenome.value != "") {
-        alert('Obrigada Sr(a) ' + nome.value + ', sua mensagem foi encaminhada com sucesso! :)');
-    } else {
-        alert( "Por favor, preencha seus dados!" );
-    }
+let dados = {
+    nome: nome_id.value,
+    sobrenome: sobrenome_id.value
+};
 
-}
+$(document).ready(function() {
+
+   $("#form").submit(function() {
+
+    dados = jQuery (this).serialize();
+
+    $.ajax({
+        url: 'https://reqres.in/api/users',
+        cache: false,
+        data: dados,
+        type: "POST",
+        
+        success: function() {
+            alert("Obrigada Sr(a) " + nome.value + ", mensagem cadastrada com sucesso!")
+        }
+
+    });
+
+    return false;
+   });
+
+});
+
+
+
+
