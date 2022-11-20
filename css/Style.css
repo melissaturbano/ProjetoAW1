@@ -18,6 +18,12 @@ html, body {
 }
 
 
+
+section.module.content {
+    background-color: #ece7d5;
+}
+
+
 /* HEADER - Nicole Miguel */
 
 .acima {
@@ -898,19 +904,38 @@ option {
 
 /* PÁG INDEX - Isabella Valerio, Melissa Turbano e Nicole Miguel */
 
+/* Animação */
+
+[data-anime] {
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
 /* Imagem */
 
 #img_MPU {
-    height: 200px;
-    width: 400px;
+    height: 300px;
+    width: 600px;
     border-radius: 12px;
     box-shadow: 6px 6px 16px 0 rgba(0,0,0,0.4);
     align-items: center;
     margin-bottom: 3%;
     margin-left: 25%;
 }
-
-
+  
 /* Caixa de redirecionamento */
 
 .alinhamento_areaCand {
