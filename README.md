@@ -11,6 +11,7 @@ Reelaboração do site http://www.mpu.mp.br/
 ## Progresso
 - Parte 1.
 - Parte 2.
+- Parte 3.
 
 
 ## Integrantes
