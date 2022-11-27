@@ -933,7 +933,8 @@ option {
     box-shadow: 6px 6px 16px 0 rgba(0,0,0,0.4);
     align-items: center;
     margin-bottom: 3%;
-    margin-left: 25%;
+    margin-left: 15%;
+    position: relative;
 }
   
 /* Caixa de redirecionamento */
@@ -966,18 +967,19 @@ option {
     text-transform: uppercase;
 }
 
+/* Carroussel de imagem */
+
 .area-galeria {
-    width: 60%;
-    margin: auto;
-    margin-top: 11%;
-    position: static;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10%;
 }
 
 .slick-prev:before, .slick-next:before{
     color: black;
 }
 
-/*#foto {
+#foto {
     width: 500px;
     height: 300px;
-}*/
+}
